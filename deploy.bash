@@ -1,2 +1,4 @@
-npm run build
-npm publish
+git pull origin main
+git add .
+git commit -m "Untitled"
+git push
