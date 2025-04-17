@@ -19,7 +19,7 @@
   "files": [
     "dist",
     "icons",
-    "LICENSE"
+    "LICENSE.md"
   ],
   "scripts": {
     "generate": "node src/update-names.js",
