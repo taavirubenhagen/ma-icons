@@ -1,6 +1,6 @@
 {
   "name": "ma-icons",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ma Icons by Taavi Rübenhagen",
   "type": "module",
   "main": "dist/ma-icons.iife.js",
@@ -19,6 +19,7 @@
   "files": [
     "dist",
     "icons",
+    "README.md",
     "LICENSE.md"
   ],
   "scripts": {

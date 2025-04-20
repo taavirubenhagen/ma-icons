@@ -1,5 +1,7 @@
 export const names = [
   "add-circle",
+  "bottom-left",
+  "bottom-right",
   "camera",
   "camera-video",
   "cmd",
@@ -8,10 +10,10 @@ export const names = [
   "download",
   "edit",
   "explore",
-  "external",
   "external-2",
   "fullscreen",
   "fullscreen-exit",
+  "github",
   "heart",
   "heart-filled",
   "home",
@@ -37,6 +39,8 @@ export const names = [
   "send",
   "settings",
   "tiktok",
+  "top-left",
+  "top-right",
   "trash",
   "up",
   "youtube"

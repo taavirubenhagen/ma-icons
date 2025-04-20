@@ -1,6 +1,6 @@
 class MaIcon extends HTMLElement {
   static get observedAttributes() {
-    return ['name', 'stroke', 'size', 'color'];
+    return ['name', "altname", 'weight', 'size', 'color'];
   }
 
   constructor() {
@@ -17,12 +17,15 @@ class MaIcon extends HTMLElement {
   }
 
   async render() {
-    const name = this.getAttribute('name');
-    const stroke = this.getAttribute('stroke') || '5';
+    const preferredName = this.getAttribute('name');
+    const altName = this.getAttribute('altname');
+    const weight = this.getAttribute('weight') || '5';
     const size = this.getAttribute('size') || '16';
     const color = this.getAttribute('color') || '#000000';
 
     if (!name) return;
+    
+    const name = this.hasError ? altName || preferredName : preferredName;
 
     let url;
     try {
@@ -44,7 +47,7 @@ class MaIcon extends HTMLElement {
       svgEl.setAttribute('fill', 'none');
 
       doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', color));
-      doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', stroke));
+      doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', weight));
 
       this.shadowRoot.innerHTML = `
         <style>
