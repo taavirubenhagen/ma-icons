@@ -1,6 +1,5 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import {styleMap} from 'lit/directives/style-map.js';
 
 @customElement('ma-icon')
 export class SimpleGreeting extends LitElement {
@@ -11,26 +10,31 @@ export class SimpleGreeting extends LitElement {
     }
     
     a {
-      transition-property: all;
-      transition-duration: 200ms;
       display: inline-flex;
       align-items: center;
       opacity: inherit;
-      color: inherit;
       text-decoration: inherit;
       font-family: inherit;
       font-size: inherit;
     }
     
-    a:hover {
+    .styled {
+      transition-property: all;
+      transition-duration: 200ms;
+      color: hsl(0deg 0% 0% / calc(100% * 3/8));
+    }
+    
+    .styled:hover {
       opacity: 75%;
     }
   `;
 
   @property() styled = false;
+  @property() download = false;
   @property() href?: string;
   @property() leading = false;
   @property() name = "top-right";
+  @property() altname = "not-found";
   @property() size = '16';
   @property() weight = '5';
   @property() color = 'hsl(0deg 0% 0%)';
@@ -46,14 +50,10 @@ export class SimpleGreeting extends LitElement {
   }
 
   render() {const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
-    if (this.href != null) {
-      const linkStyles = this.styled
-      ? {
-        color: "hsl(0deg 0% 0% / calc(100% * 3/8))",
-      } : {};
+    if (this.href) {
       return html`
-        <a style=${styleMap(linkStyles)} href=${this.href}>
-        ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
+        <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
+            ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
         </a>
       `;
     }
@@ -61,8 +61,28 @@ export class SimpleGreeting extends LitElement {
   }
   
   async modifySvg() {
-    const res = await fetch("https://raw.githubusercontent.com/taavirubenhagen/ma-icons/main/icons/" + this.name +".svg");
-    const svgText = await res.text();
+    const name = this.download ? "download" : this.name;
+    let url;
+    try {
+      url = new URL(`../icons/${name}.svg`, import.meta.url).href;
+    } catch {
+      url = `/icons/${name}.svg`;
+    }
+    let altUrl;
+    try {
+      altUrl = new URL(`../icons/${this.altname}.svg`, import.meta.url).href;
+    } catch {
+      altUrl = `/icons/${this.altname}.svg`;
+    }
+    let res;
+    let svgText;
+    try {
+      res = await fetch(url);
+      svgText = await res.text();
+    } catch {
+      res = await fetch(altUrl);
+      svgText = await res.text();
+    }
     const doc = ( new DOMParser() ).parseFromString(svgText, 'image/svg+xml');
     const svgEl = doc.querySelector('svg');
     if (!svgEl) return "";
@@ -70,7 +90,7 @@ export class SimpleGreeting extends LitElement {
     svgEl?.setAttribute('width', this.size);
     svgEl?.setAttribute('height', this.size);
     svgEl?.setAttribute('fill', 'none');
-    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
+    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.href ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
     doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
 
     this.svg = svgEl?.outerHTML;
