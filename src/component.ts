@@ -19,8 +19,7 @@ export class SimpleGreeting extends LitElement {
     }
     
     .styled {
-      transition-property: all;
-      transition-duration: 200ms;
+      transition: opacity 200ms ease-in-out;
       color: hsl(0deg 0% 0% / calc(100% * 3/8));
     }
     
