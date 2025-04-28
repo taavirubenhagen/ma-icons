@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                         // Target ECMAScript version, ES2020 is recommended for Lit
+    "module": "ESNext",                         // Use native ES Modules
+    "moduleResolution": "node",                 // Helps with module resolution for node_modules
+    "lib": ["dom", "esnext"],                   // Include DOM typings and modern JS/ES features
+    "strict": true,                             // Enable strict type-checking options
+    "esModuleInterop": true,                    // Ensures compatibility with CommonJS modules
+    "skipLibCheck": true,                       // Skip type checking of all declaration files (.d.ts)
+    "forceConsistentCasingInFileNames": true,   // Ensures that file names are consistent
+    "noImplicitAny": true,                      // Disallow `any` type unless explicitly defined
+    "resolveJsonModule": true,                  // Allows importing JSON modules
+    "noEmit": true,                             // We are not emitting JS files since Lit uses native modules
+    "isolatedModules": true,                    // Ensures each file can be transpiled independently (good for Lit)
+    "baseUrl": ".",                             // Base directory for module resolution
+    "paths": {
+      "lit/*": ["node_modules/lit/*"],          // This helps with path resolution for the Lit library
+      "@/*": ["src/*"]                          // Alias for your project's source code (optional)
+    },
+    "experimentalDecorators": true,             // Enable decorator support
+    "emitDecoratorMetadata": true              // Emit metadata for decorators
+  },
+  "include": [
+    "src/**/*.ts",                             // Include all TypeScript files in the src directory
+    "src/**/*.tsx"                             // Include JSX/TSX files (if you're using JSX in Lit)
+  ],
+  "exclude": [
+    "node_modules",                            // Exclude node_modules folder
+    "dist",                                    // Exclude the output dist folder
+    "build"                                    // Exclude build folder (if applicable)
+  ]
+}

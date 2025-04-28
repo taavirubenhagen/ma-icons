@@ -1,6 +1,6 @@
 {
   "name": "ma-icons",
-  "version": "0.2.8",
+  "version": "0.3.2",
   "description": "Ma Icons by Taavi Rübenhagen",
   "type": "module",
   "main": "dist/ma-icons.iife.js",
@@ -30,6 +30,7 @@
   "license": "BSD-4-Clause-Shortened",
   "dependencies": {
     "alpinejs": "^3.14.9",
+    "lit": "^3.3.0",
     "vite": "^6.3.0"
   }
 }
