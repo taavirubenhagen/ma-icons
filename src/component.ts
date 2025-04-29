@@ -37,7 +37,6 @@ export class SimpleGreeting extends LitElement {
   @property() size = '16';
   @property() weight = '5';
   @property() color = 'hsl(0deg 0% 0%)';
-  @property() class = "";
 
   @state() private svg: string | null = null;
 
@@ -53,12 +52,12 @@ export class SimpleGreeting extends LitElement {
     const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
     if (this.href) {
       return html`
-        <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""} ${this.class}">
+        <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
             ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
         </a>
       `;
     }
-    return html`<span class="${this.class}">${icon}</span>`;
+    return icon;
   }
   
   async modifySvg() {
