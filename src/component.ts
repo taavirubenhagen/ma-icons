@@ -55,7 +55,7 @@ export class SimpleGreeting extends LitElement {
       return html`
         <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""} ${this.class}">
             ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
-        </a>&thinsp;
+        </a>
       `;
     }
     return html`<span class="${this.class}">${icon}</span>`;
