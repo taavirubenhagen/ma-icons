@@ -616,7 +616,7 @@ let g = class extends E {
     const i = this.svg ? A`<span .innerHTML=${this.svg}></span>` : A``;
     return this.href ? A`
         <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
-            ${this.leading ? A`${i}&thinsp;` : ""}<slot></slot>${this.leading ? "" : A`&thinsp;${i}`}
+            ${this.leading ? A`${i}` : ""}<slot></slot>${this.leading ? "" : A`${i}`}
         </a>
       ` : i;
   }
