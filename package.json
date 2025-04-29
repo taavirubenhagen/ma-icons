@@ -1,6 +1,6 @@
 {
   "name": "ma-icons",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Ma Icons by Taavi Rübenhagen",
   "type": "module",
   "main": "dist/ma-icons.iife.js",
@@ -25,7 +25,8 @@
   "scripts": {
     "generate": "node src/info.js",
     "build": "npm run generate && vite build",
-    "deploy": "npm run build && npm publish && sh deploy.sh"
+    "github": "git pull origin main && git add . && git commit -m 'Untitled' && git push",
+    "deploy": "npm run build && npm publish && npm run github"
   },
   "author": "Taavi Rübenhagen",
   "license": "BSD-4-Clause-Shortened",
