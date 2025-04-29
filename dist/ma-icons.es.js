@@ -615,7 +615,7 @@ let g = class extends E {
   render() {
     const i = this.svg ? A`<span .innerHTML=${this.svg}></span>` : A``;
     return this.href ? A`
-        <a download=${this.download ? this.download : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
+        <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
             ${this.leading ? A`${i}&thinsp;` : ""}<slot></slot>${this.leading ? "" : A`&thinsp;${i}`}
         </a>
       ` : i;
@@ -662,10 +662,10 @@ g.styles = i0`
     
     .styled {
       transition: opacity 200ms ease-in-out;
-      color: hsl(0deg 0% 0% / calc(100% * 3/8 * 8/3));
+      color: hsl(0deg 0% 0% / calc(100% * 3/8));
     }
     
-    .styledd:hover {
+    .styled:hover {
       opacity: 75%;
     }
   `;
