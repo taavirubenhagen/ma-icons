@@ -642,7 +642,7 @@ let g = class extends E {
     }
     const n = new DOMParser().parseFromString(o, "image/svg+xml"), r = n.querySelector("svg");
     if (!r) return "error";
-    r == null || r.setAttribute("width", this.size), r == null || r.setAttribute("height", this.size), r == null || r.setAttribute("fill", "none"), n.querySelectorAll("[stroke]").forEach((a) => a.setAttribute("stroke", this.href && this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color)), n.querySelectorAll("[stroke-width]").forEach((a) => a.setAttribute("stroke-width", this.weight)), this.svg = r == null ? void 0 : r.outerHTML;
+    r == null || r.setAttribute("width", this.size), r == null || r.setAttribute("height", this.size), r == null || r.setAttribute("fill", "none"), n.querySelectorAll("[stroke]").forEach((a) => a.setAttribute("stroke", this.href && this.styled === !0 ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color)), n.querySelectorAll("[stroke-width]").forEach((a) => a.setAttribute("stroke-width", this.weight)), this.svg = r == null ? void 0 : r.outerHTML;
   }
 };
 g.styles = i0`
