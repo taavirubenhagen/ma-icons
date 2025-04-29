@@ -49,6 +49,7 @@ export class SimpleGreeting extends LitElement {
   }
 
   render() {
+    return html`test`;
     const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
     if (this.href) {
       return html`
