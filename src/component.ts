@@ -57,7 +57,7 @@ export class SimpleGreeting extends LitElement {
         </a>
       `;
     }
-    return icon;
+    return html`${icon}`;
   }
   
   async modifySvg() {
