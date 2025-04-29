@@ -13,6 +13,7 @@ export class SimpleGreeting extends LitElement {
       display: inline-flex;
       align-items: center;
       opacity: inherit;
+      color: inherit;
       text-decoration: inherit;
       font-family: inherit;
       font-size: inherit;
@@ -53,7 +54,7 @@ export class SimpleGreeting extends LitElement {
     if (this.href) {
       return html`
         <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
-            ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}&thinsp;`}
+            ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
         </a>
       `;
     }
@@ -90,7 +91,7 @@ export class SimpleGreeting extends LitElement {
     svgEl?.setAttribute('width', this.size);
     svgEl?.setAttribute('height', this.size);
     svgEl?.setAttribute('fill', 'none');
-    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.href ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
+    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.href && this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
     doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
 
     this.svg = svgEl?.outerHTML;
