@@ -1,5 +1,6 @@
-export const names = [
+[
   "add-circle",
+  "audio",
   "bottom-left",
   "bottom-right",
   "camera",
@@ -44,4 +45,4 @@ export const names = [
   "trash",
   "up",
   "youtube"
-];
+]

@@ -4,7 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.js'),
+      entry: resolve(__dirname, 'src/component.ts'),
       name: 'MaIcons',
       formats: ['es', 'iife'],
       fileName: (format) => `ma-icons.${format}.js`

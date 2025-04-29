@@ -47,8 +47,7 @@ var MaIcons=function(z){"use strict";var o0;var x=typeof document<"u"?document.c
     }
     
     .styled {
-      transition-property: all;
-      transition-duration: 200ms;
+      transition: opacity 200ms ease-in-out;
       color: hsl(0deg 0% 0% / calc(100% * 3/8));
     }
     
