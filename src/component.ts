@@ -53,7 +53,7 @@ export class SimpleGreeting extends LitElement {
     if (this.href) {
       return html`
         <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
-            aaaa${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
+            ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
         </a>
       `;
     }
@@ -85,7 +85,7 @@ export class SimpleGreeting extends LitElement {
     }
     const doc = ( new DOMParser() ).parseFromString(svgText, 'image/svg+xml');
     const svgEl = doc.querySelector('svg');
-    if (!svgEl) return "";
+    if (!svgEl) return "error";
 
     svgEl?.setAttribute('width', this.size);
     svgEl?.setAttribute('height', this.size);

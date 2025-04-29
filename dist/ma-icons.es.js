@@ -616,7 +616,7 @@ let g = class extends E {
     const i = this.svg ? x`<span .innerHTML=${this.svg}></span>` : x``;
     return this.href ? x`
         <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
-            aaaa${this.leading ? x`${i}&thinsp;` : ""}<slot></slot>${this.leading ? "" : x`&thinsp;${i}`}
+            ${this.leading ? x`${i}&thinsp;` : ""}<slot></slot>${this.leading ? "" : x`&thinsp;${i}`}
         </a>
       ` : x`${i}`;
   }
@@ -641,7 +641,7 @@ let g = class extends E {
       s = await fetch(e), o = await s.text();
     }
     const n = new DOMParser().parseFromString(o, "image/svg+xml"), r = n.querySelector("svg");
-    if (!r) return "";
+    if (!r) return "error";
     r == null || r.setAttribute("width", this.size), r == null || r.setAttribute("height", this.size), r == null || r.setAttribute("fill", "none"), n.querySelectorAll("[stroke]").forEach((a) => a.setAttribute("stroke", this.href ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color)), n.querySelectorAll("[stroke-width]").forEach((a) => a.setAttribute("stroke-width", this.weight)), this.svg = r == null ? void 0 : r.outerHTML;
   }
 };
