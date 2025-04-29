@@ -21,10 +21,10 @@ export class SimpleGreeting extends LitElement {
     
     .styled {
       transition: opacity 200ms ease-in-out;
-      color: hsl(0deg 0% 0% / calc(100% * 3/8));
+      color: hsl(0deg 0% 0% / calc(100% * 3/8 * 8/3));
     }
     
-    .styled:hover {
+    .styledd:hover {
       opacity: 75%;
     }
   `;
@@ -53,7 +53,7 @@ export class SimpleGreeting extends LitElement {
     const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
     if (this.href) {
       return html`
-        <a download=${this.download} href=${this.href} class="${this.styled ? "styled" : ""}">
+        <a download=${this.download ? this.download : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
             ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
         </a>
       `;
