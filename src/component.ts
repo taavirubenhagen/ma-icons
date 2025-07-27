@@ -41,16 +41,16 @@ export class SimpleGreeting extends LitElement {
 
   @state() private svg: string | null = null;
 
-  /*updated(changedProperties: Map<string | number | symbol, unknown>): void {
+  updated(changedProperties: Map<string | number | symbol, unknown>): void {
     super.updated(changedProperties);
 
     if (changedProperties.has('name')) {
       this.modifySvg();
     }
-  }*/
+  }
 
   render() {
-    const icon = html`<span .innerHTML=${this.modifySvg()}></span>`;//this.svg ? html`<span .innerHTML=${this.modifySvg()}></span>` : html``;
+    const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
     if (this.href) {
       return html`
         <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
