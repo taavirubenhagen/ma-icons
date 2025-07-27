@@ -95,6 +95,5 @@ export class SimpleGreeting extends LitElement {
     doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
 
     this.svg = svgEl?.outerHTML;
-    return this.svg;
   }
 }
