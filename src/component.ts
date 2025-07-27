@@ -91,7 +91,7 @@ export class SimpleGreeting extends LitElement {
     svgEl?.setAttribute('width', this.size);
     svgEl?.setAttribute('height', this.size);
     svgEl?.setAttribute('fill', 'none');
-    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.href && ( this.styled === true ) ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
+    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.href && this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
     doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
 
     this.svg = svgEl?.outerHTML;
