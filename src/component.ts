@@ -41,13 +41,13 @@ export class SimpleGreeting extends LitElement {
 
   @state() private svg: string | null = null;
 
-  updated(changedProperties: Map<string | number | symbol, unknown>): void {
+  /*updated(changedProperties: Map<string | number | symbol, unknown>): void {
     super.updated(changedProperties);
 
     if (changedProperties.has('name')) {
       this.modifySvg();
     }
-  }
+  }*/
 
   render() {
     const icon = this.svg ? html`<span .innerHTML=${this.modifySvg()}></span>` : html``;
@@ -91,7 +91,7 @@ export class SimpleGreeting extends LitElement {
     svgEl?.setAttribute('width', this.size);
     svgEl?.setAttribute('height', this.size);
     svgEl?.setAttribute('fill', 'none');
-    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.href && this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
+    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color));
     doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
 
     this.svg = svgEl?.outerHTML;
