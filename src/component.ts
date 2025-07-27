@@ -32,8 +32,6 @@ export class SimpleGreeting extends LitElement {
   @property() styled = false;
   @property() download = false;
   @property() href?: string;
-  @property() leading = false;
-  @property() trailing = false;
   @property() name = "top-right";
   @property() altname = "not-found";
   @property() size = '16';
@@ -52,14 +50,14 @@ export class SimpleGreeting extends LitElement {
 
   render() {
     const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
-    if (this.href) {
+    /*if (this.href) {
       return html`
         <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
             ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
         </a>
       `;
-    }
-    return this.leading ? html`${icon}&thinsp;` : ( this.trailing ? html`&thinsp;${icon}` : icon );
+    }*/
+    return icon;
   }
   
   async modifySvg() {
