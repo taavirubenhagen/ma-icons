@@ -613,7 +613,7 @@ let g = class extends V {
     super.updated(i), i.has("name") && this.modifySvg();
   }
   render() {
-    const i = this.svg ? A`<span .innerHTML=${this.svg}></span>` : A``;
+    const i = this.svg ? A`<span .innerHTML=${this.modifySvg()}></span>` : A``;
     return this.href ? A`
         <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
             ${this.leading ? A`${i}&thinsp;` : ""}<slot></slot>${this.leading ? "" : A`&thinsp;${i}`}
@@ -641,8 +641,7 @@ let g = class extends V {
       s = await fetch(e), o = await s.text();
     }
     const n = new DOMParser().parseFromString(o, "image/svg+xml"), r = n.querySelector("svg");
-    if (!r) return "error";
-    r == null || r.setAttribute("width", this.size), r == null || r.setAttribute("height", this.size), r == null || r.setAttribute("fill", "none"), n.querySelectorAll("[stroke]").forEach((a) => a.setAttribute("stroke", this.href && this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color)), n.querySelectorAll("[stroke-width]").forEach((a) => a.setAttribute("stroke-width", this.weight)), this.svg = r == null ? void 0 : r.outerHTML;
+    return r ? (r == null || r.setAttribute("width", this.size), r == null || r.setAttribute("height", this.size), r == null || r.setAttribute("fill", "none"), n.querySelectorAll("[stroke]").forEach((a) => a.setAttribute("stroke", this.href && this.styled ? "hsl(0deg 0% 0% / calc(100% * 3/8))" : this.color)), n.querySelectorAll("[stroke-width]").forEach((a) => a.setAttribute("stroke-width", this.weight)), this.svg = r == null ? void 0 : r.outerHTML, this.svg) : "error";
   }
 };
 g.styles = n0`

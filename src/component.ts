@@ -50,7 +50,7 @@ export class SimpleGreeting extends LitElement {
   }
 
   render() {
-    const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
+    const icon = this.svg ? html`<span .innerHTML=${this.modifySvg()}></span>` : html``;
     if (this.href) {
       return html`
         <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
@@ -95,5 +95,6 @@ export class SimpleGreeting extends LitElement {
     doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
 
     this.svg = svgEl?.outerHTML;
+    return this.svg;
   }
 }
