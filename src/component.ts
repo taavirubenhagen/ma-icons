@@ -50,7 +50,7 @@ export class SimpleGreeting extends LitElement {
   }*/
 
   render() {
-    const icon = this.svg ? html`<span .innerHTML=${this.modifySvg()}></span>` : html``;
+    const icon = html`<span .innerHTML=${this.modifySvg()}></span>`;//this.svg ? html`<span .innerHTML=${this.modifySvg()}></span>` : html``;
     if (this.href) {
       return html`
         <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
