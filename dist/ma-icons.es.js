@@ -1,21 +1,21 @@
-const J = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2044V20'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M20%2032L44%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2058C46.3594%2058%2058%2046.3594%2058%2032C58%2017.6406%2046.3594%206%2032%206C17.6406%206%206%2017.6406%206%2032C6%2046.3594%2017.6406%2058%2032%2058Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", K = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2048V16'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M44%2048V16'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2028V36'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2028V36'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", G = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2050L40%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2050L14%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2014L14%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", Q = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M50%2050L24%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2050L50%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2014L50%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", X = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='4'%20y='14'%20width='36'%20height='36'%20rx='8'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M40%2028.2648C40%2026.8597%2040.7372%2025.5577%2041.942%2024.8348L53.942%2017.6348C56.6081%2016.0351%2060%2017.9556%2060%2021.0648V42.9352C60%2046.0444%2056.6081%2047.9649%2053.942%2046.3652L41.942%2039.1652C40.7372%2038.4423%2040%2037.1403%2040%2035.7352V28.2648Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", Y = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2024C4%2019.5817%207.58172%2016%2012%2016H17C17.6295%2016%2018.2223%2015.7036%2018.6%2015.2L22.8%209.6C23.5554%208.59278%2024.741%208%2026%208H38C39.259%208%2040.4446%208.59278%2041.2%209.6L45.4%2015.2C45.7777%2015.7036%2046.3705%2016%2047%2016H52C56.4183%2016%2060%2019.5817%2060%2024V46C60%2050.4183%2056.4183%2054%2052%2054H12C7.58172%2054%204%2050.4183%204%2046V24Z'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='32'%20cy='34'%20r='9'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", t2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23%2050L55%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M9%2036L23%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", e2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2016L24%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2048L24%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2048H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", s2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2032L20%2016'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2032L20%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2032L44%2016'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2032L44%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", o2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2056L50%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056L14%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%207.99999L32%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", i2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2048L16%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M48%2032L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%204L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2060L60%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", r2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.482%2041.7398L46.4956%207.72621C47.0814%207.14043%2048.0312%207.14043%2048.6169%207.72621L54.2738%2013.3831C54.8596%2013.9689%2054.8596%2014.9186%2054.2738%2015.5044L19.9681%2049.8101L11.2135%2050.8459L12.482%2041.7398Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M40%2052L56%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", n2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M52%2012V32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2012H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052L12%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", c2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2261_18)'%3e%3ccircle%20cx='32'%20cy='32'%20r='5'%20fill='black'/%3e%3cpath%20d='M53.1447%205.53905C56.5298%203.95932%2060.0407%207.47018%2058.4609%2010.8553L43.9288%2041.9956C43.5314%2042.8471%2042.847%2043.5315%2041.9956%2043.9288L10.8553%2058.461C7.47012%2060.0407%203.95927%2056.5298%205.539%2053.1447L20.0711%2022.0044C20.4685%2021.1529%2021.1529%2020.4685%2022.0043%2020.0712L53.1447%205.53905Z'%20stroke='black'%20stroke-width='5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2261_18'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", a2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M24.3399%205.52869H20.4978C12.4897%205.52869%205.9978%2012.0206%205.9978%2020.0287V43.5435C5.9978%2051.5516%2012.4897%2058.0435%2020.4978%2058.0435H44.0242C52.0323%2058.0435%2058.5242%2051.5516%2058.5242%2043.5435V40.3792H53.5242V43.5435C53.5242%2048.7902%2049.2709%2053.0435%2044.0242%2053.0435H20.4978C15.2511%2053.0435%2010.9978%2048.7902%2010.9978%2043.5435V20.0287C10.9978%2014.782%2015.2511%2010.5287%2020.4978%2010.5287H24.3399V5.52869Z'%20fill='black'/%3e%3cpath%20d='M24%2040L56%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208H56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2024L56%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M22%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2042L56%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", l2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%2024L24%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2024L4%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", h2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2012L12%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2012H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2052V32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2052H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", d2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2266_10)'%3e%3cpath%20d='M52.4121%206.97363C52.7991%208.24576%2053%209.56855%2053%2010.9014V11.8457L52.5195%2015.6895L52.3848%2016.7666L53.0791%2017.6006L54.3994%2019.1846C55.0596%2019.9769%2055.6266%2020.8432%2056.0879%2021.7656C57.0165%2023.6229%2057.5%2025.6716%2057.5%2027.748V28.9189C57.5%2030.6363%2057.172%2032.3381%2056.5342%2033.9326L56.2979%2034.5244C55.9508%2035.392%2055.5144%2036.2215%2054.9961%2036.999L54.7988%2037.2949C54.3057%2038.0346%2053.7409%2038.724%2053.1123%2039.3525L52.0684%2040.3965C51.0424%2041.4225%2049.8574%2042.2759%2048.5596%2042.9248L47.5361%2043.4365C47.2064%2043.6014%2046.8654%2043.7428%2046.5156%2043.8594L45.5498%2044.1816C44.4565%2044.5461%2043.4501%2045.1286%2042.5918%2045.8926L42.2334%2046.2314C41.7635%2046.7014%2041.5%2047.3386%2041.5%2048.002V85C41.5%2089.6944%2037.6944%2093.5%2033%2093.5C28.3056%2093.5%2024.5%2089.6944%2024.5%2085V48.7812C24.5%2047.1752%2023.4067%2045.7753%2021.8486%2045.3857L20.3105%2045.001C19.355%2044.7621%2018.4279%2044.419%2017.5469%2043.9785L17.4404%2043.9248C16.1426%2043.2759%2014.9576%2042.4225%2013.9316%2041.3965L13.5723%2041.0361C13.1206%2040.5845%2012.7006%2040.1018%2012.3174%2039.5908L11.5576%2038.5771C10.6871%2037.4164%2010.0096%2036.1226%209.55078%2034.7461L9.19238%2033.6729C8.73353%2032.2963%208.5%2030.8543%208.5%2029.4033V28.5762C8.50003%2027.1386%208.73196%2025.7105%209.18652%2024.3467C9.84324%2022.3765%2010.9495%2020.5857%2012.418%2019.1172L13.6514%2017.8838L13.0088%2013.3857C12.7124%2011.311%2012.9037%209.19529%2013.5664%207.20703L13.5811%207.16211L14.7461%207.55078C16.1226%208.00961%2017.4164%208.68706%2018.5771%209.55762L20.5%2011L21.5479%2011.7861L22.791%2011.3721L25.6484%2010.4189L28.9365%209.76172C29.8082%209.58739%2030.6951%209.50002%2031.584%209.5H32.416C33.3049%209.50002%2034.1918%209.58739%2035.0635%209.76172L38.3506%2010.4189L41.209%2011.3721L42.4521%2011.7861L43.5%2011L44.915%209.93848C46.3545%208.85889%2047.9956%208.078%2049.7412%207.6416L52.4121%206.97363Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M2.00003%2048V48C6.51423%2046.8715%2011.1363%2049.4087%2012.6077%2053.823L12.6667%2054C13.4191%2056.2571%2015.7824%2057.5544%2018.0905%2056.9774L22%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2266_10'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", p2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.2702%2017.305L32%2018.9627L33.7298%2017.305L37.2707%2013.9116C41.4876%209.87033%2047.8611%209.08572%2052.9323%2011.9836C60.4794%2016.2962%2061.8599%2026.6046%2055.7135%2032.751L35.8891%2052.5754C33.7412%2054.7233%2030.2588%2054.7233%2028.1109%2052.5754L8.28654%2032.751C2.14012%2026.6046%203.5206%2016.2962%2011.0677%2011.9836C16.1389%209.08572%2022.5124%209.87033%2026.7293%2013.9116L30.2702%2017.305Z'%20fill='black'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", g2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.2702%2017.305L32%2018.9627L33.7298%2017.305L37.2707%2013.9116C41.4876%209.87033%2047.8611%209.08572%2052.9323%2011.9836C60.4794%2016.2962%2061.8599%2026.6046%2055.7135%2032.751L35.8891%2052.5754C33.7412%2054.7233%2030.2588%2054.7233%2028.1109%2052.5754L8.28654%2032.751C2.14012%2026.6046%203.5206%2016.2962%2011.0677%2011.9836C16.1389%209.08572%2022.5124%209.87033%2026.7293%2013.9116L30.2702%2017.305Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", k2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M37.5136%208.2201L55.1407%2024.7491C56.9577%2026.453%2058%2028.9145%2058%2031.5019V49.0271C58%2053.9827%2054.2513%2058%2049.6271%2058H14.3729C9.74866%2058%206%2053.9827%206%2049.0271V31.5019C6%2028.9145%207.04226%2026.453%208.8593%2024.7491L26.4864%208.22009C29.6433%205.25997%2034.3567%205.25997%2037.5136%208.2201Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", w2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2045V33'%20stroke='black'%20stroke-width='6'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2059.5C47.1878%2059.5%2059.5%2047.1878%2059.5%2032C59.5%2016.8122%2047.1878%204.5%2032%204.5C16.8122%204.5%204.5%2016.8122%204.5%2032C4.5%2047.1878%2016.8122%2059.5%2032%2059.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2022C33.1046%2022%2034%2021.1046%2034%2020C34%2018.8954%2033.1046%2018%2032%2018C30.8954%2018%2030%2018.8954%2030%2020C30%2021.1046%2030.8954%2022%2032%2022Z'%20stroke='black'%20stroke-width='4'/%3e%3c/svg%3e", v2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2012H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2052H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%2012V52'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2052H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", _2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='6.5'%20y='6.5'%20width='51'%20height='51'%20rx='13.5'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='32'%20cy='32'%20r='11.5'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='47'%20cy='17'%20r='2'%20stroke='black'%20stroke-width='4'/%3e%3c/svg%3e", u2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2277_3)'%3e%3cpath%20d='M12%2022C20%2036%2032%2040%2032%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2044C8%2044%2028%2036%2032%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2012L44%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2012V4'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M55.9998%2052L36%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M46%2032L32%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60.0002%2060L46%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2277_3'%3e%3crect%20width='64'%20height='64'%20fill='white'%20transform='matrix(-1%200%200%20-1%2064%2064)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", m2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2032L26%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2032L26%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2032L8.00001%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", b2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M32%201.5C23.9919%201.5%2017.5%207.99187%2017.5%2016V24H22.5V16C22.5%2010.7533%2026.7533%206.5%2032%206.5C37.2467%206.5%2041.5%2010.7533%2041.5%2016V24H46.5V16C46.5%207.99187%2040.0081%201.5%2032%201.5Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M20%2020C13.3726%2020%208%2025.3726%208%2032V52C8%2058.6274%2013.3726%2064%2020%2064H44C50.6274%2064%2056%2058.6274%2056%2052V32C56%2025.3726%2050.6274%2020%2044%2020H20ZM29.5%2046C29.5%2047.3807%2030.6193%2048.5%2032%2048.5C33.3807%2048.5%2034.5%2047.3807%2034.5%2046V38C34.5%2036.6193%2033.3807%2035.5%2032%2035.5C30.6193%2035.5%2029.5%2036.6193%2029.5%2038V46Z'%20fill='black'/%3e%3c/svg%3e", f2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10.5'%20y='26.5'%20width='43'%20height='35'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M18.5%2016C18.5%207.99187%2024.9919%201.5%2033%201.5C41.0081%201.5%2047.5%207.99187%2047.5%2016V28C47.5%2028.3361%2047.4886%2028.6696%2047.4661%2029H42.448C42.4824%2028.6714%2042.5%2028.3377%2042.5%2028V16C42.5%2010.7533%2038.2467%206.5%2033%206.5C27.7533%206.5%2023.5%2010.7533%2023.5%2016H18.5ZM18.5%2024V28C18.5%2028.3361%2018.5114%2028.6696%2018.5339%2029H23.552C23.5176%2028.6714%2023.5%2028.3377%2023.5%2028V24H18.5Z'%20fill='black'/%3e%3cpath%20d='M32%2048L32%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M21%2016L21%2015'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", C2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10.5'%20y='22.5'%20width='43'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M32%201.5C23.9919%201.5%2017.5%207.99187%2017.5%2016V24H22.5V16C22.5%2010.7533%2026.7533%206.5%2032%206.5C37.2467%206.5%2041.5%2010.7533%2041.5%2016V24H46.5V16C46.5%207.99187%2040.0081%201.5%2032%201.5Z'%20fill='black'/%3e%3cpath%20d='M32%2046L32%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", x2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48%2032L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2016L48%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2032L48%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2060L60%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", $2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%208V26'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2017L24%2017'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2026L24%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208V26'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2017L40%2017'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2026L40%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%208L40%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2038V56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2047H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2038H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056V38'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", M2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%208V24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2024L24%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208V24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2024L40%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%208L40%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2040V56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056V40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", L2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%2018L54%2018'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M10%2046L54%2046'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", y2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M45.5%204V28'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M18.5%2036V60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M21%2050.5H8C6.61929%2050.5%205.5%2049.3807%205.5%2048C5.5%2046.6193%206.61929%2045.5%208%2045.5H21V50.5ZM56%2045.5C57.3807%2045.5%2058.5%2046.6193%2058.5%2048C58.5%2049.3807%2057.3807%2050.5%2056%2050.5H32V45.5H56Z'%20fill='black'/%3e%3cpath%20d='M32%2018.5H8C6.61929%2018.5%205.5%2017.3807%205.5%2016C5.5%2014.6193%206.61929%2013.5%208%2013.5H32V18.5ZM56%2013.5C57.3807%2013.5%2058.5%2014.6193%2058.5%2016C58.5%2017.3807%2057.3807%2018.5%2056%2018.5H43V13.5H56Z'%20fill='black'/%3e%3c/svg%3e", A2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48%203L56%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2020L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2060H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M15.5%203L8%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2020L24%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2060H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%203L48%203'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", H2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M25.5%2016C25.5%2012.9624%2023.0376%2010.5%2020%2010.5C16.9624%2010.5%2014.5%2012.9624%2014.5%2016V48C14.5%2051.0376%2016.9624%2053.5%2020%2053.5C23.0376%2053.5%2025.5%2051.0376%2025.5%2048V16Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M25.5%2016C25.5%2012.9624%2023.0376%2010.5%2020%2010.5C16.9624%2010.5%2014.5%2012.9624%2014.5%2016V48C14.5%2051.0376%2016.9624%2053.5%2020%2053.5C23.0376%2053.5%2025.5%2051.0376%2025.5%2048V16Z'%20stroke='black'%20stroke-opacity='0.2'%20stroke-width='5'/%3e%3cpath%20d='M49.5%2016C49.5%2012.9624%2047.0376%2010.5%2044%2010.5C40.9624%2010.5%2038.5%2012.9624%2038.5%2016V48C38.5%2051.0376%2040.9624%2053.5%2044%2053.5C47.0376%2053.5%2049.5%2051.0376%2049.5%2048V16Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M49.5%2016C49.5%2012.9624%2047.0376%2010.5%2044%2010.5C40.9624%2010.5%2038.5%2012.9624%2038.5%2016V48C38.5%2051.0376%2040.9624%2053.5%2044%2053.5C47.0376%2053.5%2049.5%2051.0376%2049.5%2048V16Z'%20stroke='black'%20stroke-opacity='0.2'%20stroke-width='5'/%3e%3c/svg%3e", S2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2239_69)'%3e%3cpath%20d='M32%2032C38.6274%2032%2044%2026.6274%2044%2020C44%2013.3726%2038.6274%208%2032%208C25.3726%208%2020%2013.3726%2020%2020C20%2026.6274%2025.3726%2032%2032%2032Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2094C46.3594%2094%2058%2082.3594%2058%2068C58%2053.6406%2046.3594%2042%2032%2042C17.6406%2042%206%2053.6406%206%2068C6%2082.3594%2017.6406%2094%2032%2094Z'%20stroke='black'%20stroke-width='5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2239_69'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", V2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.2249%209.86505L49.0848%2026.3564C53.4516%2028.8517%2053.4516%2035.1483%2049.0848%2037.6436L20.2249%2054.135C15.8916%2056.6111%2010.5%2053.4822%2010.5%2048.4914V15.5086C10.5%2010.5178%2015.8916%207.38889%2020.2249%209.86505Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", E2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.8569%2032L43.1426%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2058C46.3594%2058%2058%2046.3594%2058%2032C58%2017.6406%2046.3594%206%2032%206C17.6406%206%206%2017.6406%206%2032C6%2046.3594%2017.6406%2058%2032%2058Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", P2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56%2032L38%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2032L38%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8.00023%2032L56.0002%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", B2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M36%2036L56%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M22%2040C31.9411%2040%2040%2031.9411%2040%2022C40%2012.0589%2031.9411%204%2022%204C12.0589%204%204%2012.0589%204%2022C4%2031.9411%2012.0589%2040%2022%2040Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", O2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.1514%209.86599L52.2445%2026.3566C57.2518%2028.8518%2057.2518%2035.1482%2052.2445%2037.6434L19.1514%2054.134C14.1825%2056.61%208%2053.4813%208%2048.4907V15.5093C8%2010.5187%2014.1825%207.38993%2019.1514%209.86599Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M8%2032H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", U2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M36.7499%205.62918L52.4627%2014.701C55.402%2016.398%2057.2127%2019.5342%2057.2127%2022.9282V41.0718C57.2127%2044.4658%2055.402%2047.602%2052.4627%2049.299L36.7499%2058.3708C33.8106%2060.0678%2030.1892%2060.0678%2027.2499%2058.3708L11.5371%2049.299C8.5978%2047.602%206.78711%2044.4658%206.78711%2041.0718V22.9282C6.78711%2019.5342%208.5978%2016.398%2011.5371%2014.701L27.2499%205.62918C30.1892%203.93216%2033.8106%203.93216%2036.7499%205.62918Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2042.5C37.799%2042.5%2042.5%2037.799%2042.5%2032C42.5%2026.201%2037.799%2021.5%2032%2021.5C26.201%2021.5%2021.5%2026.201%2021.5%2032C21.5%2037.799%2026.201%2042.5%2032%2042.5Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", Z2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%2024L24%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2024L4%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", T2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2201_74)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M31%2038C31%2040.7614%2028.7614%2043%2026%2043C23.2386%2043%2021%2040.7614%2021%2038C21%2035.2386%2023.2386%2033%2026%2033C27.1256%2033%2028.1643%2033.3719%2029%2033.9996V28.4578C28.053%2028.1604%2027.0452%2028%2026%2028C20.4772%2028%2016%2032.4772%2016%2038C16%2043.5228%2020.4772%2048%2026%2048C31.5228%2048%2036%2043.5228%2036%2038H31Z'%20fill='black'/%3e%3cline%20x1='33.5'%20y1='38'%20x2='33.5'%20y2='14'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M47%2025C47.3371%2025%2047.6706%2024.9848%2048%2024.9552V29.9693C47.6693%2029.9897%2047.3358%2030%2047%2030C38.1634%2030%2031%2022.8366%2031%2014H36C36%2020.0751%2040.9249%2025%2047%2025ZM39.248%200C41.5445%20-1.27433%2044.1875%20-2%2047%20-2C49.8125%20-2%2052.4555%20-1.27433%2054.752%200H48H39.248Z'%20fill='black'/%3e%3crect%20x='6.5'%20y='6.5'%20width='51'%20height='51'%20rx='13.5'%20stroke='black'%20stroke-width='5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2201_74'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", N2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2014L40%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2014L14%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M49.9999%2050L13.9999%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", R2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M50%2014L24%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2014L50%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14.0001%2050L50.0001%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", z2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2012L56%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%204L40%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%2012H48V50C48%2053.3137%2045.3137%2056%2042%2056H22C18.6863%2056%2016%2053.3137%2016%2050V12Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", j2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%208L14%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%208L50%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M31.9998%2056L31.9998%208.00001'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", D2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='2.5'%20y='12.5'%20width='59'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M36.9014%2032L28.5%2036.7246V27.2744L36.9014%2032Z'%20fill='black'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e";
+const d2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2044V20'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M20%2032L44%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2058C46.3594%2058%2058%2046.3594%2058%2032C58%2017.6406%2046.3594%206%2032%206C17.6406%206%206%2017.6406%206%2032C6%2046.3594%2017.6406%2058%2032%2058Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", p2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2048V16'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M44%2048V16'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2028V36'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2028V36'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", k2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2050L40%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2050L14%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2014L14%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", g2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M50%2050L24%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2050L50%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2014L50%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", w2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='4'%20y='14'%20width='36'%20height='36'%20rx='8'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M40%2028.2648C40%2026.8597%2040.7372%2025.5577%2041.942%2024.8348L53.942%2017.6348C56.6081%2016.0351%2060%2017.9556%2060%2021.0648V42.9352C60%2046.0444%2056.6081%2047.9649%2053.942%2046.3652L41.942%2039.1652C40.7372%2038.4423%2040%2037.1403%2040%2035.7352V28.2648Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", v2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2024C4%2019.5817%207.58172%2016%2012%2016H17C17.6295%2016%2018.2223%2015.7036%2018.6%2015.2L22.8%209.6C23.5554%208.59278%2024.741%208%2026%208H38C39.259%208%2040.4446%208.59278%2041.2%209.6L45.4%2015.2C45.7777%2015.7036%2046.3705%2016%2047%2016H52C56.4183%2016%2060%2019.5817%2060%2024V46C60%2050.4183%2056.4183%2054%2052%2054H12C7.58172%2054%204%2050.4183%204%2046V24Z'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='32'%20cy='34'%20r='9'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", u2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23%2050L55%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M9%2036L23%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", _2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2016L24%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2048L24%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2048H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", b2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2032L20%2016'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2032L20%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2032L44%2016'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2032L44%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", m2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2056L50%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056L14%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%207.99999L32%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", f2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2048L16%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M48%2032L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%204L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2060L60%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", C2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.482%2041.7398L46.4956%207.72621C47.0814%207.14043%2048.0312%207.14043%2048.6169%207.72621L54.2738%2013.3831C54.8596%2013.9689%2054.8596%2014.9186%2054.2738%2015.5044L19.9681%2049.8101L11.2135%2050.8459L12.482%2041.7398Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M40%2052L56%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", x2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M52%2012V32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2012H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052L12%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", $2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2261_18)'%3e%3ccircle%20cx='32'%20cy='32'%20r='5'%20fill='black'/%3e%3cpath%20d='M53.1447%205.53905C56.5298%203.95932%2060.0407%207.47018%2058.4609%2010.8553L43.9288%2041.9956C43.5314%2042.8471%2042.847%2043.5315%2041.9956%2043.9288L10.8553%2058.461C7.47012%2060.0407%203.95927%2056.5298%205.539%2053.1447L20.0711%2022.0044C20.4685%2021.1529%2021.1529%2020.4685%2022.0043%2020.0712L53.1447%205.53905Z'%20stroke='black'%20stroke-width='5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2261_18'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", M2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M24.3399%205.52869H20.4978C12.4897%205.52869%205.9978%2012.0206%205.9978%2020.0287V43.5435C5.9978%2051.5516%2012.4897%2058.0435%2020.4978%2058.0435H44.0242C52.0323%2058.0435%2058.5242%2051.5516%2058.5242%2043.5435V40.3792H53.5242V43.5435C53.5242%2048.7902%2049.2709%2053.0435%2044.0242%2053.0435H20.4978C15.2511%2053.0435%2010.9978%2048.7902%2010.9978%2043.5435V20.0287C10.9978%2014.782%2015.2511%2010.5287%2020.4978%2010.5287H24.3399V5.52869Z'%20fill='black'/%3e%3cpath%20d='M24%2040L56%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208H56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2024L56%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M22%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2042L56%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", L2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%2024L24%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2024L4%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", y2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12%2012L12%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2012H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2052V32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2052H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", A2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2266_10)'%3e%3cpath%20d='M52.4121%206.97363C52.7991%208.24576%2053%209.56855%2053%2010.9014V11.8457L52.5195%2015.6895L52.3848%2016.7666L53.0791%2017.6006L54.3994%2019.1846C55.0596%2019.9769%2055.6266%2020.8432%2056.0879%2021.7656C57.0165%2023.6229%2057.5%2025.6716%2057.5%2027.748V28.9189C57.5%2030.6363%2057.172%2032.3381%2056.5342%2033.9326L56.2979%2034.5244C55.9508%2035.392%2055.5144%2036.2215%2054.9961%2036.999L54.7988%2037.2949C54.3057%2038.0346%2053.7409%2038.724%2053.1123%2039.3525L52.0684%2040.3965C51.0424%2041.4225%2049.8574%2042.2759%2048.5596%2042.9248L47.5361%2043.4365C47.2064%2043.6014%2046.8654%2043.7428%2046.5156%2043.8594L45.5498%2044.1816C44.4565%2044.5461%2043.4501%2045.1286%2042.5918%2045.8926L42.2334%2046.2314C41.7635%2046.7014%2041.5%2047.3386%2041.5%2048.002V85C41.5%2089.6944%2037.6944%2093.5%2033%2093.5C28.3056%2093.5%2024.5%2089.6944%2024.5%2085V48.7812C24.5%2047.1752%2023.4067%2045.7753%2021.8486%2045.3857L20.3105%2045.001C19.355%2044.7621%2018.4279%2044.419%2017.5469%2043.9785L17.4404%2043.9248C16.1426%2043.2759%2014.9576%2042.4225%2013.9316%2041.3965L13.5723%2041.0361C13.1206%2040.5845%2012.7006%2040.1018%2012.3174%2039.5908L11.5576%2038.5771C10.6871%2037.4164%2010.0096%2036.1226%209.55078%2034.7461L9.19238%2033.6729C8.73353%2032.2963%208.5%2030.8543%208.5%2029.4033V28.5762C8.50003%2027.1386%208.73196%2025.7105%209.18652%2024.3467C9.84324%2022.3765%2010.9495%2020.5857%2012.418%2019.1172L13.6514%2017.8838L13.0088%2013.3857C12.7124%2011.311%2012.9037%209.19529%2013.5664%207.20703L13.5811%207.16211L14.7461%207.55078C16.1226%208.00961%2017.4164%208.68706%2018.5771%209.55762L20.5%2011L21.5479%2011.7861L22.791%2011.3721L25.6484%2010.4189L28.9365%209.76172C29.8082%209.58739%2030.6951%209.50002%2031.584%209.5H32.416C33.3049%209.50002%2034.1918%209.58739%2035.0635%209.76172L38.3506%2010.4189L41.209%2011.3721L42.4521%2011.7861L43.5%2011L44.915%209.93848C46.3545%208.85889%2047.9956%208.078%2049.7412%207.6416L52.4121%206.97363Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M2.00003%2048V48C6.51423%2046.8715%2011.1363%2049.4087%2012.6077%2053.823L12.6667%2054C13.4191%2056.2571%2015.7824%2057.5544%2018.0905%2056.9774L22%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2266_10'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", E2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.2702%2017.305L32%2018.9627L33.7298%2017.305L37.2707%2013.9116C41.4876%209.87033%2047.8611%209.08572%2052.9323%2011.9836C60.4794%2016.2962%2061.8599%2026.6046%2055.7135%2032.751L35.8891%2052.5754C33.7412%2054.7233%2030.2588%2054.7233%2028.1109%2052.5754L8.28654%2032.751C2.14012%2026.6046%203.5206%2016.2962%2011.0677%2011.9836C16.1389%209.08572%2022.5124%209.87033%2026.7293%2013.9116L30.2702%2017.305Z'%20fill='black'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", H2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.2702%2017.305L32%2018.9627L33.7298%2017.305L37.2707%2013.9116C41.4876%209.87033%2047.8611%209.08572%2052.9323%2011.9836C60.4794%2016.2962%2061.8599%2026.6046%2055.7135%2032.751L35.8891%2052.5754C33.7412%2054.7233%2030.2588%2054.7233%2028.1109%2052.5754L8.28654%2032.751C2.14012%2026.6046%203.5206%2016.2962%2011.0677%2011.9836C16.1389%209.08572%2022.5124%209.87033%2026.7293%2013.9116L30.2702%2017.305Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", S2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M37.5136%208.2201L55.1407%2024.7491C56.9577%2026.453%2058%2028.9145%2058%2031.5019V49.0271C58%2053.9827%2054.2513%2058%2049.6271%2058H14.3729C9.74866%2058%206%2053.9827%206%2049.0271V31.5019C6%2028.9145%207.04226%2026.453%208.8593%2024.7491L26.4864%208.22009C29.6433%205.25997%2034.3567%205.25997%2037.5136%208.2201Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", V2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2045V33'%20stroke='black'%20stroke-width='6'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2059.5C47.1878%2059.5%2059.5%2047.1878%2059.5%2032C59.5%2016.8122%2047.1878%204.5%2032%204.5C16.8122%204.5%204.5%2016.8122%204.5%2032C4.5%2047.1878%2016.8122%2059.5%2032%2059.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2022C33.1046%2022%2034%2021.1046%2034%2020C34%2018.8954%2033.1046%2018%2032%2018C30.8954%2018%2030%2018.8954%2030%2020C30%2021.1046%2030.8954%2022%2032%2022Z'%20stroke='black'%20stroke-width='4'/%3e%3c/svg%3e", P2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2012H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2052H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%2012V52'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2052H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", B2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='6.5'%20y='6.5'%20width='51'%20height='51'%20rx='13.5'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='32'%20cy='32'%20r='11.5'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='47'%20cy='17'%20r='2'%20stroke='black'%20stroke-width='4'/%3e%3c/svg%3e", O2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2277_3)'%3e%3cpath%20d='M12%2022C20%2036%2032%2040%2032%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2044C8%2044%2028%2036%2032%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2012L44%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2012V4'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M55.9998%2052L36%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M46%2032L32%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60.0002%2060L46%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2277_3'%3e%3crect%20width='64'%20height='64'%20fill='white'%20transform='matrix(-1%200%200%20-1%2064%2064)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", U2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2032L26%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2032L26%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2032L8.00001%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", Z2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M32%201.5C23.9919%201.5%2017.5%207.99187%2017.5%2016V24H22.5V16C22.5%2010.7533%2026.7533%206.5%2032%206.5C37.2467%206.5%2041.5%2010.7533%2041.5%2016V24H46.5V16C46.5%207.99187%2040.0081%201.5%2032%201.5Z'%20fill='black'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M20%2020C13.3726%2020%208%2025.3726%208%2032V52C8%2058.6274%2013.3726%2064%2020%2064H44C50.6274%2064%2056%2058.6274%2056%2052V32C56%2025.3726%2050.6274%2020%2044%2020H20ZM29.5%2046C29.5%2047.3807%2030.6193%2048.5%2032%2048.5C33.3807%2048.5%2034.5%2047.3807%2034.5%2046V38C34.5%2036.6193%2033.3807%2035.5%2032%2035.5C30.6193%2035.5%2029.5%2036.6193%2029.5%2038V46Z'%20fill='black'/%3e%3c/svg%3e", T2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10.5'%20y='26.5'%20width='43'%20height='35'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M18.5%2016C18.5%207.99187%2024.9919%201.5%2033%201.5C41.0081%201.5%2047.5%207.99187%2047.5%2016V28C47.5%2028.3361%2047.4886%2028.6696%2047.4661%2029H42.448C42.4824%2028.6714%2042.5%2028.3377%2042.5%2028V16C42.5%2010.7533%2038.2467%206.5%2033%206.5C27.7533%206.5%2023.5%2010.7533%2023.5%2016H18.5ZM18.5%2024V28C18.5%2028.3361%2018.5114%2028.6696%2018.5339%2029H23.552C23.5176%2028.6714%2023.5%2028.3377%2023.5%2028V24H18.5Z'%20fill='black'/%3e%3cpath%20d='M32%2048L32%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M21%2016L21%2015'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", N2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10.5'%20y='22.5'%20width='43'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M32%201.5C23.9919%201.5%2017.5%207.99187%2017.5%2016V24H22.5V16C22.5%2010.7533%2026.7533%206.5%2032%206.5C37.2467%206.5%2041.5%2010.7533%2041.5%2016V24H46.5V16C46.5%207.99187%2040.0081%201.5%2032%201.5Z'%20fill='black'/%3e%3cpath%20d='M32%2046L32%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", R2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48%2032L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2016L48%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2032L48%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2060L60%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", z2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%208V26'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2017L24%2017'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2026L24%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208V26'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2017L40%2017'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2026L40%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%208L40%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2038V56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2047H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2038H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056V38'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", D2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%208V24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2024L24%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208V24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2024L40%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%208L40%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2040V56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056V40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", j2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10%2018L54%2018'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M10%2046L54%2046'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", q2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M45.5%204V28'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M18.5%2036V60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M21%2050.5H8C6.61929%2050.5%205.5%2049.3807%205.5%2048C5.5%2046.6193%206.61929%2045.5%208%2045.5H21V50.5ZM56%2045.5C57.3807%2045.5%2058.5%2046.6193%2058.5%2048C58.5%2049.3807%2057.3807%2050.5%2056%2050.5H32V45.5H56Z'%20fill='black'/%3e%3cpath%20d='M32%2018.5H8C6.61929%2018.5%205.5%2017.3807%205.5%2016C5.5%2014.6193%206.61929%2013.5%208%2013.5H32V18.5ZM56%2013.5C57.3807%2013.5%2058.5%2014.6193%2058.5%2016C58.5%2017.3807%2057.3807%2018.5%2056%2018.5H43V13.5H56Z'%20fill='black'/%3e%3c/svg%3e", I2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48%203L56%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2020L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2060H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M15.5%203L8%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2020L24%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2060H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%203L48%203'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", W2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M25.5%2016C25.5%2012.9624%2023.0376%2010.5%2020%2010.5C16.9624%2010.5%2014.5%2012.9624%2014.5%2016V48C14.5%2051.0376%2016.9624%2053.5%2020%2053.5C23.0376%2053.5%2025.5%2051.0376%2025.5%2048V16Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M25.5%2016C25.5%2012.9624%2023.0376%2010.5%2020%2010.5C16.9624%2010.5%2014.5%2012.9624%2014.5%2016V48C14.5%2051.0376%2016.9624%2053.5%2020%2053.5C23.0376%2053.5%2025.5%2051.0376%2025.5%2048V16Z'%20stroke='black'%20stroke-opacity='0.2'%20stroke-width='5'/%3e%3cpath%20d='M49.5%2016C49.5%2012.9624%2047.0376%2010.5%2044%2010.5C40.9624%2010.5%2038.5%2012.9624%2038.5%2016V48C38.5%2051.0376%2040.9624%2053.5%2044%2053.5C47.0376%2053.5%2049.5%2051.0376%2049.5%2048V16Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M49.5%2016C49.5%2012.9624%2047.0376%2010.5%2044%2010.5C40.9624%2010.5%2038.5%2012.9624%2038.5%2016V48C38.5%2051.0376%2040.9624%2053.5%2044%2053.5C47.0376%2053.5%2049.5%2051.0376%2049.5%2048V16Z'%20stroke='black'%20stroke-opacity='0.2'%20stroke-width='5'/%3e%3c/svg%3e", F2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2239_69)'%3e%3cpath%20d='M32%2032C38.6274%2032%2044%2026.6274%2044%2020C44%2013.3726%2038.6274%208%2032%208C25.3726%208%2020%2013.3726%2020%2020C20%2026.6274%2025.3726%2032%2032%2032Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2094C46.3594%2094%2058%2082.3594%2058%2068C58%2053.6406%2046.3594%2042%2032%2042C17.6406%2042%206%2053.6406%206%2068C6%2082.3594%2017.6406%2094%2032%2094Z'%20stroke='black'%20stroke-width='5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2239_69'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", J2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.2249%209.86505L49.0848%2026.3564C53.4516%2028.8517%2053.4516%2035.1483%2049.0848%2037.6436L20.2249%2054.135C15.8916%2056.6111%2010.5%2053.4822%2010.5%2048.4914V15.5086C10.5%2010.5178%2015.8916%207.38889%2020.2249%209.86505Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", K2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.8569%2032L43.1426%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2058C46.3594%2058%2058%2046.3594%2058%2032C58%2017.6406%2046.3594%206%2032%206C17.6406%206%206%2017.6406%206%2032C6%2046.3594%2017.6406%2058%2032%2058Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", G2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56%2032L38%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2032L38%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8.00023%2032L56.0002%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", Q2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M36%2036L56%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M22%2040C31.9411%2040%2040%2031.9411%2040%2022C40%2012.0589%2031.9411%204%2022%204C12.0589%204%204%2012.0589%204%2022C4%2031.9411%2012.0589%2040%2022%2040Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", X2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.1514%209.86599L52.2445%2026.3566C57.2518%2028.8518%2057.2518%2035.1482%2052.2445%2037.6434L19.1514%2054.134C14.1825%2056.61%208%2053.4813%208%2048.4907V15.5093C8%2010.5187%2014.1825%207.38993%2019.1514%209.86599Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M8%2032H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", Y2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M36.7499%205.62918L52.4627%2014.701C55.402%2016.398%2057.2127%2019.5342%2057.2127%2022.9282V41.0718C57.2127%2044.4658%2055.402%2047.602%2052.4627%2049.299L36.7499%2058.3708C33.8106%2060.0678%2030.1892%2060.0678%2027.2499%2058.3708L11.5371%2049.299C8.5978%2047.602%206.78711%2044.4658%206.78711%2041.0718V22.9282C6.78711%2019.5342%208.5978%2016.398%2011.5371%2014.701L27.2499%205.62918C30.1892%203.93216%2033.8106%203.93216%2036.7499%205.62918Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2042.5C37.799%2042.5%2042.5%2037.799%2042.5%2032C42.5%2026.201%2037.799%2021.5%2032%2021.5C26.201%2021.5%2021.5%2026.201%2021.5%2032C21.5%2037.799%2026.201%2042.5%2032%2042.5Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", t0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%2024L24%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2024L4%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", e0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2201_74)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M31%2038C31%2040.7614%2028.7614%2043%2026%2043C23.2386%2043%2021%2040.7614%2021%2038C21%2035.2386%2023.2386%2033%2026%2033C27.1256%2033%2028.1643%2033.3719%2029%2033.9996V28.4578C28.053%2028.1604%2027.0452%2028%2026%2028C20.4772%2028%2016%2032.4772%2016%2038C16%2043.5228%2020.4772%2048%2026%2048C31.5228%2048%2036%2043.5228%2036%2038H31Z'%20fill='black'/%3e%3cline%20x1='33.5'%20y1='38'%20x2='33.5'%20y2='14'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M47%2025C47.3371%2025%2047.6706%2024.9848%2048%2024.9552V29.9693C47.6693%2029.9897%2047.3358%2030%2047%2030C38.1634%2030%2031%2022.8366%2031%2014H36C36%2020.0751%2040.9249%2025%2047%2025ZM39.248%200C41.5445%20-1.27433%2044.1875%20-2%2047%20-2C49.8125%20-2%2052.4555%20-1.27433%2054.752%200H48H39.248Z'%20fill='black'/%3e%3crect%20x='6.5'%20y='6.5'%20width='51'%20height='51'%20rx='13.5'%20stroke='black'%20stroke-width='5'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2201_74'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", s0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2014L40%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2014L14%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M49.9999%2050L13.9999%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", o0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M50%2014L24%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2014L50%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14.0001%2050L50.0001%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", i0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2012L56%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%204L40%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%2012H48V50C48%2053.3137%2045.3137%2056%2042%2056H22C18.6863%2056%2016%2053.3137%2016%2050V12Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", r0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%208L14%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%208L50%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M31.9998%2056L31.9998%208.00001'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", c0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='2.5'%20y='12.5'%20width='59'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M36.9014%2032L28.5%2036.7246V27.2744L36.9014%2032Z'%20fill='black'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e";
 /**
  * @license
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const U = globalThis, I = U.ShadowRoot && (U.ShadyCSS === void 0 || U.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype, q = Symbol(), I2 = /* @__PURE__ */ new WeakMap();
-let s0 = class {
+const U = globalThis, q = U.ShadowRoot && (U.ShadyCSS === void 0 || U.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype, I = Symbol(), J = /* @__PURE__ */ new WeakMap();
+let c2 = class {
   constructor(t, e, s) {
-    if (this._$cssResult$ = !0, s !== q) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
+    if (this._$cssResult$ = !0, s !== I) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
     this.cssText = t, this.t = e;
   }
   get styleSheet() {
     let t = this.o;
     const e = this.t;
-    if (I && t === void 0) {
+    if (q && t === void 0) {
       const s = e !== void 0 && e.length === 1;
-      s && (t = I2.get(e)), t === void 0 && ((this.o = t = new CSSStyleSheet()).replaceSync(this.cssText), s && I2.set(e, t));
+      s && (t = J.get(e)), t === void 0 && ((this.o = t = new CSSStyleSheet()).replaceSync(this.cssText), s && J.set(e, t));
     }
     return t;
   }
@@ -23,30 +23,30 @@ let s0 = class {
     return this.cssText;
   }
 };
-const c0 = (i) => new s0(typeof i == "string" ? i : i + "", void 0, q), a0 = (i, ...t) => {
-  const e = i.length === 1 ? i[0] : t.reduce((s, o, n) => s + ((r) => {
-    if (r._$cssResult$ === !0) return r.cssText;
-    if (typeof r == "number") return r;
-    throw Error("Value passed to 'css' function must be a 'css' function result: " + r + ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.");
-  })(o) + i[n + 1], i[0]);
-  return new s0(e, i, q);
+const n0 = (i) => new c2(typeof i == "string" ? i : i + "", void 0, I), a0 = (i, ...t) => {
+  const e = i.length === 1 ? i[0] : t.reduce((s, o, r) => s + ((c) => {
+    if (c._$cssResult$ === !0) return c.cssText;
+    if (typeof c == "number") return c;
+    throw Error("Value passed to 'css' function must be a 'css' function result: " + c + ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.");
+  })(o) + i[r + 1], i[0]);
+  return new c2(e, i, I);
 }, l0 = (i, t) => {
-  if (I) i.adoptedStyleSheets = t.map((e) => e instanceof CSSStyleSheet ? e : e.styleSheet);
+  if (q) i.adoptedStyleSheets = t.map((e) => e instanceof CSSStyleSheet ? e : e.styleSheet);
   else for (const e of t) {
     const s = document.createElement("style"), o = U.litNonce;
     o !== void 0 && s.setAttribute("nonce", o), s.textContent = e.cssText, i.appendChild(s);
   }
-}, q2 = I ? (i) => i : (i) => i instanceof CSSStyleSheet ? ((t) => {
+}, K = q ? (i) => i : (i) => i instanceof CSSStyleSheet ? ((t) => {
   let e = "";
   for (const s of t.cssRules) e += s.cssText;
-  return c0(e);
+  return n0(e);
 })(i) : i;
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const { is: h0, defineProperty: d0, getOwnPropertyDescriptor: p0, getOwnPropertyNames: g0, getOwnPropertySymbols: k0, getPrototypeOf: w0 } = Object, _ = globalThis, W2 = _.trustedTypes, v0 = W2 ? W2.emptyScript : "", R = _.reactiveElementPolyfillSupport, A = (i, t) => i, Z = { toAttribute(i, t) {
+const { is: h0, defineProperty: d0, getOwnPropertyDescriptor: p0, getOwnPropertyNames: k0, getOwnPropertySymbols: g0, getPrototypeOf: w0 } = Object, u = globalThis, G = u.trustedTypes, v0 = G ? G.emptyScript : "", R = u.reactiveElementPolyfillSupport, A = (i, t) => i, Z = { toAttribute(i, t) {
   switch (t) {
     case Boolean:
       i = i ? v0 : null;
@@ -74,8 +74,8 @@ const { is: h0, defineProperty: d0, getOwnPropertyDescriptor: p0, getOwnProperty
       }
   }
   return e;
-} }, W = (i, t) => !h0(i, t), F2 = { attribute: !0, type: String, converter: Z, reflect: !1, useDefault: !1, hasChanged: W };
-Symbol.metadata ?? (Symbol.metadata = Symbol("metadata")), _.litPropertyMetadata ?? (_.litPropertyMetadata = /* @__PURE__ */ new WeakMap());
+} }, W = (i, t) => !h0(i, t), Q = { attribute: !0, type: String, converter: Z, reflect: !1, useDefault: !1, hasChanged: W };
+Symbol.metadata ?? (Symbol.metadata = Symbol("metadata")), u.litPropertyMetadata ?? (u.litPropertyMetadata = /* @__PURE__ */ new WeakMap());
 let x = class extends HTMLElement {
   static addInitializer(t) {
     this._$Ei(), (this.l ?? (this.l = [])).push(t);
@@ -83,25 +83,25 @@ let x = class extends HTMLElement {
   static get observedAttributes() {
     return this.finalize(), this._$Eh && [...this._$Eh.keys()];
   }
-  static createProperty(t, e = F2) {
+  static createProperty(t, e = Q) {
     if (e.state && (e.attribute = !1), this._$Ei(), this.prototype.hasOwnProperty(t) && ((e = Object.create(e)).wrapped = !0), this.elementProperties.set(t, e), !e.noAccessor) {
       const s = Symbol(), o = this.getPropertyDescriptor(t, s, e);
       o !== void 0 && d0(this.prototype, t, o);
     }
   }
   static getPropertyDescriptor(t, e, s) {
-    const { get: o, set: n } = p0(this.prototype, t) ?? { get() {
+    const { get: o, set: r } = p0(this.prototype, t) ?? { get() {
       return this[e];
-    }, set(r) {
-      this[e] = r;
+    }, set(c) {
+      this[e] = c;
     } };
-    return { get: o, set(r) {
+    return { get: o, set(c) {
       const a = o == null ? void 0 : o.call(this);
-      n == null || n.call(this, r), this.requestUpdate(t, a, s);
+      r == null || r.call(this, c), this.requestUpdate(t, a, s);
     }, configurable: !0, enumerable: !0 };
   }
   static getPropertyOptions(t) {
-    return this.elementProperties.get(t) ?? F2;
+    return this.elementProperties.get(t) ?? Q;
   }
   static _$Ei() {
     if (this.hasOwnProperty(A("elementProperties"))) return;
@@ -111,7 +111,7 @@ let x = class extends HTMLElement {
   static finalize() {
     if (this.hasOwnProperty(A("finalized"))) return;
     if (this.finalized = !0, this._$Ei(), this.hasOwnProperty(A("properties"))) {
-      const e = this.properties, s = [...g0(e), ...k0(e)];
+      const e = this.properties, s = [...k0(e), ...g0(e)];
       for (const o of s) this.createProperty(o, e[o]);
     }
     const t = this[Symbol.metadata];
@@ -130,8 +130,8 @@ let x = class extends HTMLElement {
     const e = [];
     if (Array.isArray(t)) {
       const s = new Set(t.flat(1 / 0).reverse());
-      for (const o of s) e.unshift(q2(o));
-    } else t !== void 0 && e.push(q2(t));
+      for (const o of s) e.unshift(K(o));
+    } else t !== void 0 && e.push(K(t));
     return e;
   }
   static _$Eu(t, e) {
@@ -182,32 +182,32 @@ let x = class extends HTMLElement {
     this._$AK(t, s);
   }
   _$ET(t, e) {
-    var n;
+    var r;
     const s = this.constructor.elementProperties.get(t), o = this.constructor._$Eu(t, s);
     if (o !== void 0 && s.reflect === !0) {
-      const r = (((n = s.converter) == null ? void 0 : n.toAttribute) !== void 0 ? s.converter : Z).toAttribute(e, s.type);
-      this._$Em = t, r == null ? this.removeAttribute(o) : this.setAttribute(o, r), this._$Em = null;
+      const c = (((r = s.converter) == null ? void 0 : r.toAttribute) !== void 0 ? s.converter : Z).toAttribute(e, s.type);
+      this._$Em = t, c == null ? this.removeAttribute(o) : this.setAttribute(o, c), this._$Em = null;
     }
   }
   _$AK(t, e) {
-    var n, r;
+    var r, c;
     const s = this.constructor, o = s._$Eh.get(t);
     if (o !== void 0 && this._$Em !== o) {
-      const a = s.getPropertyOptions(o), c = typeof a.converter == "function" ? { fromAttribute: a.converter } : ((n = a.converter) == null ? void 0 : n.fromAttribute) !== void 0 ? a.converter : Z;
-      this._$Em = o, this[o] = c.fromAttribute(e, a.type) ?? ((r = this._$Ej) == null ? void 0 : r.get(o)) ?? null, this._$Em = null;
+      const a = s.getPropertyOptions(o), n = typeof a.converter == "function" ? { fromAttribute: a.converter } : ((r = a.converter) == null ? void 0 : r.fromAttribute) !== void 0 ? a.converter : Z;
+      this._$Em = o, this[o] = n.fromAttribute(e, a.type) ?? ((c = this._$Ej) == null ? void 0 : c.get(o)) ?? null, this._$Em = null;
     }
   }
   requestUpdate(t, e, s) {
     var o;
     if (t !== void 0) {
-      const n = this.constructor, r = this[t];
-      if (s ?? (s = n.getPropertyOptions(t)), !((s.hasChanged ?? W)(r, e) || s.useDefault && s.reflect && r === ((o = this._$Ej) == null ? void 0 : o.get(t)) && !this.hasAttribute(n._$Eu(t, s)))) return;
+      const r = this.constructor, c = this[t];
+      if (s ?? (s = r.getPropertyOptions(t)), !((s.hasChanged ?? W)(c, e) || s.useDefault && s.reflect && c === ((o = this._$Ej) == null ? void 0 : o.get(t)) && !this.hasAttribute(r._$Eu(t, s)))) return;
       this.C(t, e, s);
     }
     this.isUpdatePending === !1 && (this._$ES = this._$EP());
   }
-  C(t, e, { useDefault: s, reflect: o, wrapped: n }, r) {
-    s && !(this._$Ej ?? (this._$Ej = /* @__PURE__ */ new Map())).has(t) && (this._$Ej.set(t, r ?? e ?? this[t]), n !== !0 || r !== void 0) || (this._$AL.has(t) || (this.hasUpdated || s || (e = void 0), this._$AL.set(t, e)), o === !0 && this._$Em !== t && (this._$Eq ?? (this._$Eq = /* @__PURE__ */ new Set())).add(t));
+  C(t, e, { useDefault: s, reflect: o, wrapped: r }, c) {
+    s && !(this._$Ej ?? (this._$Ej = /* @__PURE__ */ new Map())).has(t) && (this._$Ej.set(t, c ?? e ?? this[t]), r !== !0 || c !== void 0) || (this._$AL.has(t) || (this.hasUpdated || s || (e = void 0), this._$AL.set(t, e)), o === !0 && this._$Em !== t && (this._$Eq ?? (this._$Eq = /* @__PURE__ */ new Set())).add(t));
   }
   async _$EP() {
     this.isUpdatePending = !0;
@@ -227,21 +227,21 @@ let x = class extends HTMLElement {
     if (!this.isUpdatePending) return;
     if (!this.hasUpdated) {
       if (this.renderRoot ?? (this.renderRoot = this.createRenderRoot()), this._$Ep) {
-        for (const [n, r] of this._$Ep) this[n] = r;
+        for (const [r, c] of this._$Ep) this[r] = c;
         this._$Ep = void 0;
       }
       const o = this.constructor.elementProperties;
-      if (o.size > 0) for (const [n, r] of o) {
-        const { wrapped: a } = r, c = this[n];
-        a !== !0 || this._$AL.has(n) || c === void 0 || this.C(n, void 0, r, c);
+      if (o.size > 0) for (const [r, c] of o) {
+        const { wrapped: a } = c, n = this[r];
+        a !== !0 || this._$AL.has(r) || n === void 0 || this.C(r, void 0, c, n);
       }
     }
     let t = !1;
     const e = this._$AL;
     try {
       t = this.shouldUpdate(e), t ? (this.willUpdate(e), (s = this._$EO) == null || s.forEach((o) => {
-        var n;
-        return (n = o.hostUpdate) == null ? void 0 : n.call(o);
+        var r;
+        return (r = o.hostUpdate) == null ? void 0 : r.call(o);
       }), this.update(e)) : this._$EM();
     } catch (o) {
       throw t = !1, this._$EM(), o;
@@ -277,61 +277,61 @@ let x = class extends HTMLElement {
   firstUpdated(t) {
   }
 };
-x.elementStyles = [], x.shadowRootOptions = { mode: "open" }, x[A("elementProperties")] = /* @__PURE__ */ new Map(), x[A("finalized")] = /* @__PURE__ */ new Map(), R == null || R({ ReactiveElement: x }), (_.reactiveElementVersions ?? (_.reactiveElementVersions = [])).push("2.1.0");
+x.elementStyles = [], x.shadowRootOptions = { mode: "open" }, x[A("elementProperties")] = /* @__PURE__ */ new Map(), x[A("finalized")] = /* @__PURE__ */ new Map(), R == null || R({ ReactiveElement: x }), (u.reactiveElementVersions ?? (u.reactiveElementVersions = [])).push("2.1.0");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const H = globalThis, T = H.trustedTypes, J2 = T ? T.createPolicy("lit-html", { createHTML: (i) => i }) : void 0, o0 = "$lit$", v = `lit$${Math.random().toFixed(9).slice(2)}$`, i0 = "?" + v, _0 = `<${i0}>`, f = document, V = () => f.createComment(""), E = (i) => i === null || typeof i != "object" && typeof i != "function", F = Array.isArray, u0 = (i) => F(i) || typeof (i == null ? void 0 : i[Symbol.iterator]) == "function", z = `[ 	
-\f\r]`, y = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, K2 = /-->/g, G2 = />/g, u = RegExp(`>|${z}(?:([^\\s"'>=/]+)(${z}*=${z}*(?:[^ 	
-\f\r"'\`<>=]|("|')|))|$)`, "g"), Q2 = /'/g, X2 = /"/g, r0 = /^(?:script|style|textarea|title)$/i, m0 = (i) => (t, ...e) => ({ _$litType$: i, strings: t, values: e }), Y2 = m0(1), $ = Symbol.for("lit-noChange"), d = Symbol.for("lit-nothing"), t0 = /* @__PURE__ */ new WeakMap(), m = f.createTreeWalker(f, 129);
-function n0(i, t) {
+const E = globalThis, T = E.trustedTypes, X = T ? T.createPolicy("lit-html", { createHTML: (i) => i }) : void 0, n2 = "$lit$", v = `lit$${Math.random().toFixed(9).slice(2)}$`, a2 = "?" + v, u0 = `<${a2}>`, f = document, S = () => f.createComment(""), V = (i) => i === null || typeof i != "object" && typeof i != "function", F = Array.isArray, _0 = (i) => F(i) || typeof (i == null ? void 0 : i[Symbol.iterator]) == "function", z = `[ 	
+\f\r]`, y = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, Y = /-->/g, t2 = />/g, _ = RegExp(`>|${z}(?:([^\\s"'>=/]+)(${z}*=${z}*(?:[^ 	
+\f\r"'\`<>=]|("|')|))|$)`, "g"), e2 = /'/g, s2 = /"/g, l2 = /^(?:script|style|textarea|title)$/i, b0 = (i) => (t, ...e) => ({ _$litType$: i, strings: t, values: e }), o2 = b0(1), $ = Symbol.for("lit-noChange"), p = Symbol.for("lit-nothing"), i2 = /* @__PURE__ */ new WeakMap(), b = f.createTreeWalker(f, 129);
+function h2(i, t) {
   if (!F(i) || !i.hasOwnProperty("raw")) throw Error("invalid template strings array");
-  return J2 !== void 0 ? J2.createHTML(t) : t;
+  return X !== void 0 ? X.createHTML(t) : t;
 }
-const b0 = (i, t) => {
+const m0 = (i, t) => {
   const e = i.length - 1, s = [];
-  let o, n = t === 2 ? "<svg>" : t === 3 ? "<math>" : "", r = y;
+  let o, r = t === 2 ? "<svg>" : t === 3 ? "<math>" : "", c = y;
   for (let a = 0; a < e; a++) {
-    const c = i[a];
-    let h, p, l = -1, g = 0;
-    for (; g < c.length && (r.lastIndex = g, p = r.exec(c), p !== null); ) g = r.lastIndex, r === y ? p[1] === "!--" ? r = K2 : p[1] !== void 0 ? r = G2 : p[2] !== void 0 ? (r0.test(p[2]) && (o = RegExp("</" + p[2], "g")), r = u) : p[3] !== void 0 && (r = u) : r === u ? p[0] === ">" ? (r = o ?? y, l = -1) : p[1] === void 0 ? l = -2 : (l = r.lastIndex - p[2].length, h = p[1], r = p[3] === void 0 ? u : p[3] === '"' ? X2 : Q2) : r === X2 || r === Q2 ? r = u : r === K2 || r === G2 ? r = y : (r = u, o = void 0);
-    const w = r === u && i[a + 1].startsWith("/>") ? " " : "";
-    n += r === y ? c + _0 : l >= 0 ? (s.push(h), c.slice(0, l) + o0 + c.slice(l) + v + w) : c + v + (l === -2 ? a : w);
+    const n = i[a];
+    let l, d, h = -1, k = 0;
+    for (; k < n.length && (c.lastIndex = k, d = c.exec(n), d !== null); ) k = c.lastIndex, c === y ? d[1] === "!--" ? c = Y : d[1] !== void 0 ? c = t2 : d[2] !== void 0 ? (l2.test(d[2]) && (o = RegExp("</" + d[2], "g")), c = _) : d[3] !== void 0 && (c = _) : c === _ ? d[0] === ">" ? (c = o ?? y, h = -1) : d[1] === void 0 ? h = -2 : (h = c.lastIndex - d[2].length, l = d[1], c = d[3] === void 0 ? _ : d[3] === '"' ? s2 : e2) : c === s2 || c === e2 ? c = _ : c === Y || c === t2 ? c = y : (c = _, o = void 0);
+    const w = c === _ && i[a + 1].startsWith("/>") ? " " : "";
+    r += c === y ? n + u0 : h >= 0 ? (s.push(l), n.slice(0, h) + n2 + n.slice(h) + v + w) : n + v + (h === -2 ? a : w);
   }
-  return [n0(i, n + (i[e] || "<?>") + (t === 2 ? "</svg>" : t === 3 ? "</math>" : "")), s];
+  return [h2(i, r + (i[e] || "<?>") + (t === 2 ? "</svg>" : t === 3 ? "</math>" : "")), s];
 };
 class P {
   constructor({ strings: t, _$litType$: e }, s) {
     let o;
     this.parts = [];
-    let n = 0, r = 0;
-    const a = t.length - 1, c = this.parts, [h, p] = b0(t, e);
-    if (this.el = P.createElement(h, s), m.currentNode = this.el.content, e === 2 || e === 3) {
-      const l = this.el.content.firstChild;
-      l.replaceWith(...l.childNodes);
+    let r = 0, c = 0;
+    const a = t.length - 1, n = this.parts, [l, d] = m0(t, e);
+    if (this.el = P.createElement(l, s), b.currentNode = this.el.content, e === 2 || e === 3) {
+      const h = this.el.content.firstChild;
+      h.replaceWith(...h.childNodes);
     }
-    for (; (o = m.nextNode()) !== null && c.length < a; ) {
+    for (; (o = b.nextNode()) !== null && n.length < a; ) {
       if (o.nodeType === 1) {
-        if (o.hasAttributes()) for (const l of o.getAttributeNames()) if (l.endsWith(o0)) {
-          const g = p[r++], w = o.getAttribute(l).split(v), O = /([.?@])?(.*)/.exec(g);
-          c.push({ type: 1, index: n, name: O[2], strings: w, ctor: O[1] === "." ? C0 : O[1] === "?" ? x0 : O[1] === "@" ? $0 : N }), o.removeAttribute(l);
-        } else l.startsWith(v) && (c.push({ type: 6, index: n }), o.removeAttribute(l));
-        if (r0.test(o.tagName)) {
-          const l = o.textContent.split(v), g = l.length - 1;
-          if (g > 0) {
+        if (o.hasAttributes()) for (const h of o.getAttributeNames()) if (h.endsWith(n2)) {
+          const k = d[c++], w = o.getAttribute(h).split(v), O = /([.?@])?(.*)/.exec(k);
+          n.push({ type: 1, index: r, name: O[2], strings: w, ctor: O[1] === "." ? C0 : O[1] === "?" ? x0 : O[1] === "@" ? $0 : N }), o.removeAttribute(h);
+        } else h.startsWith(v) && (n.push({ type: 6, index: r }), o.removeAttribute(h));
+        if (l2.test(o.tagName)) {
+          const h = o.textContent.split(v), k = h.length - 1;
+          if (k > 0) {
             o.textContent = T ? T.emptyScript : "";
-            for (let w = 0; w < g; w++) o.append(l[w], V()), m.nextNode(), c.push({ type: 2, index: ++n });
-            o.append(l[g], V());
+            for (let w = 0; w < k; w++) o.append(h[w], S()), b.nextNode(), n.push({ type: 2, index: ++r });
+            o.append(h[k], S());
           }
         }
-      } else if (o.nodeType === 8) if (o.data === i0) c.push({ type: 2, index: n });
+      } else if (o.nodeType === 8) if (o.data === a2) n.push({ type: 2, index: r });
       else {
-        let l = -1;
-        for (; (l = o.data.indexOf(v, l + 1)) !== -1; ) c.push({ type: 7, index: n }), l += v.length - 1;
+        let h = -1;
+        for (; (h = o.data.indexOf(v, h + 1)) !== -1; ) n.push({ type: 7, index: r }), h += v.length - 1;
       }
-      n++;
+      r++;
     }
   }
   static createElement(t, e) {
@@ -340,11 +340,11 @@ class P {
   }
 }
 function M(i, t, e = i, s) {
-  var r, a;
+  var c, a;
   if (t === $) return t;
-  let o = s !== void 0 ? (r = e._$Co) == null ? void 0 : r[s] : e._$Cl;
-  const n = E(t) ? void 0 : t._$litDirective$;
-  return (o == null ? void 0 : o.constructor) !== n && ((a = o == null ? void 0 : o._$AO) == null || a.call(o, !1), n === void 0 ? o = void 0 : (o = new n(i), o._$AT(i, e, s)), s !== void 0 ? (e._$Co ?? (e._$Co = []))[s] = o : e._$Cl = o), o !== void 0 && (t = M(i, o._$AS(i, t.values), o, s)), t;
+  let o = s !== void 0 ? (c = e._$Co) == null ? void 0 : c[s] : e._$Cl;
+  const r = V(t) ? void 0 : t._$litDirective$;
+  return (o == null ? void 0 : o.constructor) !== r && ((a = o == null ? void 0 : o._$AO) == null || a.call(o, !1), r === void 0 ? o = void 0 : (o = new r(i), o._$AT(i, e, s)), s !== void 0 ? (e._$Co ?? (e._$Co = []))[s] = o : e._$Cl = o), o !== void 0 && (t = M(i, o._$AS(i, t.values), o, s)), t;
 }
 class f0 {
   constructor(t, e) {
@@ -358,16 +358,16 @@ class f0 {
   }
   u(t) {
     const { el: { content: e }, parts: s } = this._$AD, o = ((t == null ? void 0 : t.creationScope) ?? f).importNode(e, !0);
-    m.currentNode = o;
-    let n = m.nextNode(), r = 0, a = 0, c = s[0];
-    for (; c !== void 0; ) {
-      if (r === c.index) {
-        let h;
-        c.type === 2 ? h = new B(n, n.nextSibling, this, t) : c.type === 1 ? h = new c.ctor(n, c.name, c.strings, this, t) : c.type === 6 && (h = new M0(n, this, t)), this._$AV.push(h), c = s[++a];
+    b.currentNode = o;
+    let r = b.nextNode(), c = 0, a = 0, n = s[0];
+    for (; n !== void 0; ) {
+      if (c === n.index) {
+        let l;
+        n.type === 2 ? l = new B(r, r.nextSibling, this, t) : n.type === 1 ? l = new n.ctor(r, n.name, n.strings, this, t) : n.type === 6 && (l = new M0(r, this, t)), this._$AV.push(l), n = s[++a];
       }
-      r !== (c == null ? void 0 : c.index) && (n = m.nextNode(), r++);
+      c !== (n == null ? void 0 : n.index) && (r = b.nextNode(), c++);
     }
-    return m.currentNode = f, o;
+    return b.currentNode = f, o;
   }
   p(t) {
     let e = 0;
@@ -380,7 +380,7 @@ class B {
     return ((t = this._$AM) == null ? void 0 : t._$AU) ?? this._$Cv;
   }
   constructor(t, e, s, o) {
-    this.type = 2, this._$AH = d, this._$AN = void 0, this._$AA = t, this._$AB = e, this._$AM = s, this.options = o, this._$Cv = (o == null ? void 0 : o.isConnected) ?? !0;
+    this.type = 2, this._$AH = p, this._$AN = void 0, this._$AA = t, this._$AB = e, this._$AM = s, this.options = o, this._$Cv = (o == null ? void 0 : o.isConnected) ?? !0;
   }
   get parentNode() {
     let t = this._$AA.parentNode;
@@ -394,7 +394,7 @@ class B {
     return this._$AB;
   }
   _$AI(t, e = this) {
-    t = M(this, t, e), E(t) ? t === d || t == null || t === "" ? (this._$AH !== d && this._$AR(), this._$AH = d) : t !== this._$AH && t !== $ && this._(t) : t._$litType$ !== void 0 ? this.$(t) : t.nodeType !== void 0 ? this.T(t) : u0(t) ? this.k(t) : this._(t);
+    t = M(this, t, e), V(t) ? t === p || t == null || t === "" ? (this._$AH !== p && this._$AR(), this._$AH = p) : t !== this._$AH && t !== $ && this._(t) : t._$litType$ !== void 0 ? this.$(t) : t.nodeType !== void 0 ? this.T(t) : _0(t) ? this.k(t) : this._(t);
   }
   O(t) {
     return this._$AA.parentNode.insertBefore(t, this._$AB);
@@ -403,26 +403,26 @@ class B {
     this._$AH !== t && (this._$AR(), this._$AH = this.O(t));
   }
   _(t) {
-    this._$AH !== d && E(this._$AH) ? this._$AA.nextSibling.data = t : this.T(f.createTextNode(t)), this._$AH = t;
+    this._$AH !== p && V(this._$AH) ? this._$AA.nextSibling.data = t : this.T(f.createTextNode(t)), this._$AH = t;
   }
   $(t) {
-    var n;
-    const { values: e, _$litType$: s } = t, o = typeof s == "number" ? this._$AC(t) : (s.el === void 0 && (s.el = P.createElement(n0(s.h, s.h[0]), this.options)), s);
-    if (((n = this._$AH) == null ? void 0 : n._$AD) === o) this._$AH.p(e);
+    var r;
+    const { values: e, _$litType$: s } = t, o = typeof s == "number" ? this._$AC(t) : (s.el === void 0 && (s.el = P.createElement(h2(s.h, s.h[0]), this.options)), s);
+    if (((r = this._$AH) == null ? void 0 : r._$AD) === o) this._$AH.p(e);
     else {
-      const r = new f0(o, this), a = r.u(this.options);
-      r.p(e), this.T(a), this._$AH = r;
+      const c = new f0(o, this), a = c.u(this.options);
+      c.p(e), this.T(a), this._$AH = c;
     }
   }
   _$AC(t) {
-    let e = t0.get(t.strings);
-    return e === void 0 && t0.set(t.strings, e = new P(t)), e;
+    let e = i2.get(t.strings);
+    return e === void 0 && i2.set(t.strings, e = new P(t)), e;
   }
   k(t) {
     F(this._$AH) || (this._$AH = [], this._$AR());
     const e = this._$AH;
     let s, o = 0;
-    for (const n of t) o === e.length ? e.push(s = new B(this.O(V()), this.O(V()), this, this.options)) : s = e[o], s._$AI(n), o++;
+    for (const r of t) o === e.length ? e.push(s = new B(this.O(S()), this.O(S()), this, this.options)) : s = e[o], s._$AI(r), o++;
     o < e.length && (this._$AR(s && s._$AB.nextSibling, o), e.length = o);
   }
   _$AR(t = this._$AA.nextSibling, e) {
@@ -444,22 +444,22 @@ class N {
   get _$AU() {
     return this._$AM._$AU;
   }
-  constructor(t, e, s, o, n) {
-    this.type = 1, this._$AH = d, this._$AN = void 0, this.element = t, this.name = e, this._$AM = o, this.options = n, s.length > 2 || s[0] !== "" || s[1] !== "" ? (this._$AH = Array(s.length - 1).fill(new String()), this.strings = s) : this._$AH = d;
+  constructor(t, e, s, o, r) {
+    this.type = 1, this._$AH = p, this._$AN = void 0, this.element = t, this.name = e, this._$AM = o, this.options = r, s.length > 2 || s[0] !== "" || s[1] !== "" ? (this._$AH = Array(s.length - 1).fill(new String()), this.strings = s) : this._$AH = p;
   }
   _$AI(t, e = this, s, o) {
-    const n = this.strings;
-    let r = !1;
-    if (n === void 0) t = M(this, t, e, 0), r = !E(t) || t !== this._$AH && t !== $, r && (this._$AH = t);
+    const r = this.strings;
+    let c = !1;
+    if (r === void 0) t = M(this, t, e, 0), c = !V(t) || t !== this._$AH && t !== $, c && (this._$AH = t);
     else {
       const a = t;
-      let c, h;
-      for (t = n[0], c = 0; c < n.length - 1; c++) h = M(this, a[s + c], e, c), h === $ && (h = this._$AH[c]), r || (r = !E(h) || h !== this._$AH[c]), h === d ? t = d : t !== d && (t += (h ?? "") + n[c + 1]), this._$AH[c] = h;
+      let n, l;
+      for (t = r[0], n = 0; n < r.length - 1; n++) l = M(this, a[s + n], e, n), l === $ && (l = this._$AH[n]), c || (c = !V(l) || l !== this._$AH[n]), l === p ? t = p : t !== p && (t += (l ?? "") + r[n + 1]), this._$AH[n] = l;
     }
-    r && !o && this.j(t);
+    c && !o && this.j(t);
   }
   j(t) {
-    t === d ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, t ?? "");
+    t === p ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, t ?? "");
   }
 }
 class C0 extends N {
@@ -467,7 +467,7 @@ class C0 extends N {
     super(...arguments), this.type = 3;
   }
   j(t) {
-    this.element[this.name] = t === d ? void 0 : t;
+    this.element[this.name] = t === p ? void 0 : t;
   }
 }
 class x0 extends N {
@@ -475,17 +475,17 @@ class x0 extends N {
     super(...arguments), this.type = 4;
   }
   j(t) {
-    this.element.toggleAttribute(this.name, !!t && t !== d);
+    this.element.toggleAttribute(this.name, !!t && t !== p);
   }
 }
 class $0 extends N {
-  constructor(t, e, s, o, n) {
-    super(t, e, s, o, n), this.type = 5;
+  constructor(t, e, s, o, r) {
+    super(t, e, s, o, r), this.type = 5;
   }
   _$AI(t, e = this) {
-    if ((t = M(this, t, e, 0) ?? d) === $) return;
-    const s = this._$AH, o = t === d && s !== d || t.capture !== s.capture || t.once !== s.once || t.passive !== s.passive, n = t !== d && (s === d || o);
-    o && this.element.removeEventListener(this.name, this, s), n && this.element.addEventListener(this.name, this, t), this._$AH = t;
+    if ((t = M(this, t, e, 0) ?? p) === $) return;
+    const s = this._$AH, o = t === p && s !== p || t.capture !== s.capture || t.once !== s.once || t.passive !== s.passive, r = t !== p && (s === p || o);
+    o && this.element.removeEventListener(this.name, this, s), r && this.element.addEventListener(this.name, this, t), this._$AH = t;
   }
   handleEvent(t) {
     var e;
@@ -503,14 +503,14 @@ class M0 {
     M(this, t);
   }
 }
-const j = H.litHtmlPolyfillSupport;
-j == null || j(P, B), (H.litHtmlVersions ?? (H.litHtmlVersions = [])).push("3.3.0");
+const D = E.litHtmlPolyfillSupport;
+D == null || D(P, B), (E.litHtmlVersions ?? (E.litHtmlVersions = [])).push("3.3.0");
 const L0 = (i, t, e) => {
   const s = (e == null ? void 0 : e.renderBefore) ?? t;
   let o = s._$litPart$;
   if (o === void 0) {
-    const n = (e == null ? void 0 : e.renderBefore) ?? null;
-    s._$litPart$ = o = new B(t.insertBefore(V(), n), n, void 0, e ?? {});
+    const r = (e == null ? void 0 : e.renderBefore) ?? null;
+    s._$litPart$ = o = new B(t.insertBefore(S(), r), r, void 0, e ?? {});
   }
   return o._$AI(i), o;
 };
@@ -519,8 +519,8 @@ const L0 = (i, t, e) => {
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const b = globalThis;
-class S extends x {
+const m = globalThis;
+class H extends x {
   constructor() {
     super(...arguments), this.renderOptions = { host: this }, this._$Do = void 0;
   }
@@ -545,11 +545,11 @@ class S extends x {
     return $;
   }
 }
-var e0;
-S._$litElement$ = !0, S.finalized = !0, (e0 = b.litElementHydrateSupport) == null || e0.call(b, { LitElement: S });
-const D = b.litElementPolyfillSupport;
-D == null || D({ LitElement: S });
-(b.litElementVersions ?? (b.litElementVersions = [])).push("4.2.0");
+var r2;
+H._$litElement$ = !0, H.finalized = !0, (r2 = m.litElementHydrateSupport) == null || r2.call(m, { LitElement: H });
+const j = m.litElementPolyfillSupport;
+j == null || j({ LitElement: H });
+(m.litElementVersions ?? (m.litElementVersions = [])).push("4.2.0");
 /**
  * @license
  * Copyright 2017 Google LLC
@@ -565,31 +565,31 @@ const y0 = (i) => (t, e) => {
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const A0 = { attribute: !0, type: String, converter: Z, reflect: !1, hasChanged: W }, H0 = (i = A0, t, e) => {
+const A0 = { attribute: !0, type: String, converter: Z, reflect: !1, hasChanged: W }, E0 = (i = A0, t, e) => {
   const { kind: s, metadata: o } = e;
-  let n = globalThis.litPropertyMetadata.get(o);
-  if (n === void 0 && globalThis.litPropertyMetadata.set(o, n = /* @__PURE__ */ new Map()), s === "setter" && ((i = Object.create(i)).wrapped = !0), n.set(e.name, i), s === "accessor") {
-    const { name: r } = e;
+  let r = globalThis.litPropertyMetadata.get(o);
+  if (r === void 0 && globalThis.litPropertyMetadata.set(o, r = /* @__PURE__ */ new Map()), s === "setter" && ((i = Object.create(i)).wrapped = !0), r.set(e.name, i), s === "accessor") {
+    const { name: c } = e;
     return { set(a) {
-      const c = t.get.call(this);
-      t.set.call(this, a), this.requestUpdate(r, c, i);
+      const n = t.get.call(this);
+      t.set.call(this, a), this.requestUpdate(c, n, i);
     }, init(a) {
-      return a !== void 0 && this.C(r, void 0, i, a), a;
+      return a !== void 0 && this.C(c, void 0, i, a), a;
     } };
   }
   if (s === "setter") {
-    const { name: r } = e;
+    const { name: c } = e;
     return function(a) {
-      const c = this[r];
-      t.call(this, a), this.requestUpdate(r, c, i);
+      const n = this[c];
+      t.call(this, a), this.requestUpdate(c, n, i);
     };
   }
   throw Error("Unsupported decorator location: " + s);
 };
 function L(i) {
-  return (t, e) => typeof e == "object" ? H0(i, t, e) : ((s, o, n) => {
-    const r = o.hasOwnProperty(n);
-    return o.constructor.createProperty(n, s), r ? Object.getOwnPropertyDescriptor(o, n) : void 0;
+  return (t, e) => typeof e == "object" ? E0(i, t, e) : ((s, o, r) => {
+    const c = o.hasOwnProperty(r);
+    return o.constructor.createProperty(r, s), c ? Object.getOwnPropertyDescriptor(o, r) : void 0;
   })(i, t, e);
 }
 /**
@@ -597,94 +597,89 @@ function L(i) {
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-function S0(i) {
+function H0(i) {
   return L({ ...i, state: !0, attribute: !1 });
 }
-var V0 = Object.defineProperty, E0 = Object.getOwnPropertyDescriptor, C = (i, t, e, s) => {
-  for (var o = s > 1 ? void 0 : s ? E0(t, e) : t, n = i.length - 1, r; n >= 0; n--)
-    (r = i[n]) && (o = (s ? r(t, e, o) : r(o)) || o);
-  return s && o && V0(t, e, o), o;
+var S0 = Object.defineProperty, V0 = Object.getOwnPropertyDescriptor, C = (i, t, e, s) => {
+  for (var o = s > 1 ? void 0 : s ? V0(t, e) : t, r = i.length - 1, c; r >= 0; r--)
+    (c = i[r]) && (o = (s ? c(t, e, o) : c(o)) || o);
+  return s && o && S0(t, e, o), o;
 };
-let k = class extends S {
+const P0 = "not-found";
+let g = class extends H {
   constructor() {
-    super(...arguments), this.name = "top-right", this.altname = "not-found", this.size = "16", this.weight = "5", this.color = "hsl(0deg 0% 0%)", this.svg = null;
+    super(...arguments), this.name = "top-right", this.secondary = "", this.size = "16", this.weight = "5", this.color = "hsl(0deg 0% 0%)", this.svg = void 0;
   }
   updated(i) {
-    super.updated(i), i.has("name") && this.modifySvg();
+    super.updated(i), i.has("name") && (async () => {
+      var t;
+      return this.svg = (t = await this.icon(!1)) == null ? void 0 : t.outerHTML;
+    })();
   }
   render() {
-    return this.svg ? Y2`<span .innerHTML=${this.svg}></span>` : Y2``;
+    return this.svg ? o2`<span .innerHTML=${this.svg}></span>` : o2``;
   }
-  async modifySvg() {
-    const i = this.name;
-    let t;
+  async icon(i) {
+    const t = i ? this.secondary : this.name, e = i ? "32" : this.size, s = i ? "32" : "0", o = (parseFloat(this.weight) * (i ? 2 : 1)).toString(), r = async (l) => {
+      try {
+        const d = new URL((/* @__PURE__ */ Object.assign({ "../icons/add-circle.svg": d2, "../icons/audio.svg": p2, "../icons/bottom-left.svg": k2, "../icons/bottom-right.svg": g2, "../icons/camera-video.svg": w2, "../icons/camera.svg": v2, "../icons/check.svg": u2, "../icons/cmd.svg": _2, "../icons/code.svg": b2, "../icons/down.svg": m2, "../icons/download.svg": f2, "../icons/edit.svg": C2, "../icons/expand.svg": x2, "../icons/explore.svg": $2, "../icons/external-2.svg": M2, "../icons/fullscreen-exit.svg": L2, "../icons/fullscreen.svg": y2, "../icons/github.svg": A2, "../icons/heart-filled.svg": E2, "../icons/heart.svg": H2, "../icons/home.svg": S2, "../icons/info.svg": V2, "../icons/input.svg": P2, "../icons/instagram.svg": B2, "../icons/language.svg": O2, "../icons/left.svg": U2, "../icons/lock-closed.svg": Z2, "../icons/lock-open.svg": T2, "../icons/lock.svg": N2, "../icons/login.svg": R2, "../icons/ma-2.svg": z2, "../icons/ma.svg": D2, "../icons/menu.svg": j2, "../icons/options.svg": q2, "../icons/pants.svg": I2, "../icons/pause.svg": W2, "../icons/person.svg": F2, "../icons/play.svg": J2, "../icons/remove-circle.svg": K2, "../icons/right.svg": G2, "../icons/search.svg": Q2, "../icons/send.svg": X2, "../icons/settings.svg": Y2, "../icons/shrink.svg": t0, "../icons/tiktok.svg": e0, "../icons/top-left.svg": s0, "../icons/top-right.svg": o0, "../icons/trash.svg": i0, "../icons/up.svg": r0, "../icons/youtube.svg": c0 }))[`../icons/${l}.svg`], import.meta.url).href;
+        return await (await fetch(d)).text();
+      } catch {
+        return await (await fetch(`/icons/${l}.svg`)).text();
+      }
+    };
+    let c;
     try {
-      t = new URL((/* @__PURE__ */ Object.assign({ "../icons/add-circle.svg": J, "../icons/audio.svg": K, "../icons/bottom-left.svg": G, "../icons/bottom-right.svg": Q, "../icons/camera-video.svg": X, "../icons/camera.svg": Y, "../icons/check.svg": t2, "../icons/cmd.svg": e2, "../icons/code.svg": s2, "../icons/down.svg": o2, "../icons/download.svg": i2, "../icons/edit.svg": r2, "../icons/expand.svg": n2, "../icons/explore.svg": c2, "../icons/external-2.svg": a2, "../icons/fullscreen-exit.svg": l2, "../icons/fullscreen.svg": h2, "../icons/github.svg": d2, "../icons/heart-filled.svg": p2, "../icons/heart.svg": g2, "../icons/home.svg": k2, "../icons/info.svg": w2, "../icons/input.svg": v2, "../icons/instagram.svg": _2, "../icons/language.svg": u2, "../icons/left.svg": m2, "../icons/lock-closed.svg": b2, "../icons/lock-open.svg": f2, "../icons/lock.svg": C2, "../icons/login.svg": x2, "../icons/ma-2.svg": $2, "../icons/ma.svg": M2, "../icons/menu.svg": L2, "../icons/options.svg": y2, "../icons/pants.svg": A2, "../icons/pause.svg": H2, "../icons/person.svg": S2, "../icons/play.svg": V2, "../icons/remove-circle.svg": E2, "../icons/right.svg": P2, "../icons/search.svg": B2, "../icons/send.svg": O2, "../icons/settings.svg": U2, "../icons/shrink.svg": Z2, "../icons/tiktok.svg": T2, "../icons/top-left.svg": N2, "../icons/top-right.svg": R2, "../icons/trash.svg": z2, "../icons/up.svg": j2, "../icons/youtube.svg": D2 }))[`../icons/${i}.svg`], import.meta.url).href;
+      c = await r(t);
     } catch {
-      t = `/icons/${i}.svg`;
+      c = await r(P0);
     }
-    let e;
-    try {
-      e = new URL((/* @__PURE__ */ Object.assign({ "../icons/add-circle.svg": J, "../icons/audio.svg": K, "../icons/bottom-left.svg": G, "../icons/bottom-right.svg": Q, "../icons/camera-video.svg": X, "../icons/camera.svg": Y, "../icons/check.svg": t2, "../icons/cmd.svg": e2, "../icons/code.svg": s2, "../icons/down.svg": o2, "../icons/download.svg": i2, "../icons/edit.svg": r2, "../icons/expand.svg": n2, "../icons/explore.svg": c2, "../icons/external-2.svg": a2, "../icons/fullscreen-exit.svg": l2, "../icons/fullscreen.svg": h2, "../icons/github.svg": d2, "../icons/heart-filled.svg": p2, "../icons/heart.svg": g2, "../icons/home.svg": k2, "../icons/info.svg": w2, "../icons/input.svg": v2, "../icons/instagram.svg": _2, "../icons/language.svg": u2, "../icons/left.svg": m2, "../icons/lock-closed.svg": b2, "../icons/lock-open.svg": f2, "../icons/lock.svg": C2, "../icons/login.svg": x2, "../icons/ma-2.svg": $2, "../icons/ma.svg": M2, "../icons/menu.svg": L2, "../icons/options.svg": y2, "../icons/pants.svg": A2, "../icons/pause.svg": H2, "../icons/person.svg": S2, "../icons/play.svg": V2, "../icons/remove-circle.svg": E2, "../icons/right.svg": P2, "../icons/search.svg": B2, "../icons/send.svg": O2, "../icons/settings.svg": U2, "../icons/shrink.svg": Z2, "../icons/tiktok.svg": T2, "../icons/top-left.svg": N2, "../icons/top-right.svg": R2, "../icons/trash.svg": z2, "../icons/up.svg": j2, "../icons/youtube.svg": D2 }))[`../icons/${this.altname}.svg`], import.meta.url).href;
-    } catch {
-      e = `/icons/${this.altname}.svg`;
-    }
-    let s, o;
-    try {
-      s = await fetch(t), o = await s.text();
-    } catch {
-      s = await fetch(e), o = await s.text();
-    }
-    const n = new DOMParser().parseFromString(o, "image/svg+xml"), r = n.querySelector("svg");
-    if (!r) return "error";
-    r == null || r.setAttribute("width", this.size), r == null || r.setAttribute("height", this.size), r == null || r.setAttribute("fill", "none"), n.querySelectorAll("[stroke]").forEach((a) => a.setAttribute("stroke", this.color)), n.querySelectorAll("[stroke-width]").forEach((a) => a.setAttribute("stroke-width", this.weight)), this.svg = r == null ? void 0 : r.outerHTML;
+    const a = new DOMParser().parseFromString(c, "image/svg+xml"), n = a.querySelector("svg");
+    if (n)
+      return n.setAttribute("x", s), n.setAttribute("y", s), n.setAttribute("width", e), n.setAttribute("height", e), n.setAttribute("fill", "none"), a.querySelectorAll("[stroke]").forEach((l) => l.setAttribute("stroke", this.color)), a.querySelectorAll("[stroke-width]").forEach((l) => l.setAttribute("stroke-width", o)), this.secondary && !i && await this.child(n), n;
+  }
+  async child(i) {
+    const t = "http://www.w3.org/2000/svg";
+    let e = i.querySelector("defs");
+    e || (e = document.createElementNS(t, "defs"), i.prepend(e));
+    const s = document.createElementNS(t, "mask");
+    s.setAttribute("id", "quarterMask");
+    const o = document.createElementNS(t, "rect");
+    o.setAttribute("width", "64"), o.setAttribute("height", "64"), o.setAttribute("fill", "white"), s.appendChild(o);
+    const r = document.createElementNS(t, "rect");
+    r.setAttribute("x", "32"), r.setAttribute("y", "32"), r.setAttribute("width", "32"), r.setAttribute("height", "32"), r.setAttribute("fill", "black"), s.appendChild(r), e.appendChild(s), i.querySelectorAll("path, rect, circle, line, polygon, polyline").forEach((a) => {
+      a.setAttribute("mask", "url(#quarterMask)");
+    });
+    const c = await this.icon(!0);
+    c && i.appendChild(c);
   }
 };
-k.styles = a0`
+g.styles = a0`
     svg {
-      display: block;
-    }
-    
-    a {
-      display: inline-flex;
-      align-items: center;
-      opacity: inherit;
-      color: inherit;
-      text-decoration: inherit;
-      font-family: inherit;
-      font-size: inherit;
-    }
-    
-    .styled {
-      transition: opacity 200ms ease-in-out;
-      color: hsl(0deg 0% 0% / calc(100% * 3/8));
-    }
-    
-    .styled:hover {
-      opacity: 75%;
+        display: block;
     }
   `;
 C([
   L()
-], k.prototype, "name", 2);
+], g.prototype, "name", 2);
 C([
   L()
-], k.prototype, "altname", 2);
+], g.prototype, "secondary", 2);
 C([
   L()
-], k.prototype, "size", 2);
+], g.prototype, "size", 2);
 C([
   L()
-], k.prototype, "weight", 2);
+], g.prototype, "weight", 2);
 C([
   L()
-], k.prototype, "color", 2);
+], g.prototype, "color", 2);
 C([
-  S0()
-], k.prototype, "svg", 2);
-k = C([
+  H0()
+], g.prototype, "svg", 2);
+g = C([
   y0("ma-icon")
-], k);
+], g);
 export {
-  k as SimpleGreeting
+  g as MaIcon
 };

@@ -1,95 +1,91 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 
-@customElement('ma-icon')
-export class SimpleGreeting extends LitElement {
+const ALTNAME = 'not-found';
 
+@customElement('ma-icon')
+export class MaIcon extends LitElement {
   static styles = css`
     svg {
-      display: block;
-    }
-    
-    a {
-      display: inline-flex;
-      align-items: center;
-      opacity: inherit;
-      color: inherit;
-      text-decoration: inherit;
-      font-family: inherit;
-      font-size: inherit;
-    }
-    
-    .styled {
-      transition: opacity 200ms ease-in-out;
-      color: hsl(0deg 0% 0% / calc(100% * 3/8));
-    }
-    
-    .styled:hover {
-      opacity: 75%;
+        display: block;
     }
   `;
 
   @property() name = "top-right";
-  @property() altname = "not-found";
+  @property() secondary = '';
   @property() size = '16';
   @property() weight = '5';
   @property() color = 'hsl(0deg 0% 0%)';
+  @state() private svg: string | undefined = undefined;
 
-  @state() private svg: string | null = null;
-
-  updated(changedProperties: Map<string | number | symbol, unknown>): void {
-    super.updated(changedProperties);
-
-    if (changedProperties.has('name')) {
-      this.modifySvg();
-    }
+  updated(changed: Map<string | number | symbol, unknown>) {
+    super.updated(changed);
+    if (changed.has('name')) (async () => this.svg = (await this.icon(false))?.outerHTML)();
   }
 
   render() {
-    const icon = this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
-    /*if (this.href) {
-      return html`
-        <a ${this.download ? 'download="' + this.download + '"' : ""} href=${this.href} class="${this.styled ? "styled" : ""}">
-            ${this.leading ? html`${icon}&thinsp;` : ""}<slot></slot>${this.leading ? "" : html`&thinsp;${icon}`}
-        </a>
-      `;
-    }*/
-    return icon;
+    return this.svg ? html`<span .innerHTML=${this.svg}></span>` : html``;
   }
-  
-  async modifySvg() {
-    const name = this.name;
-    let url;
-    try {
-      url = new URL(`../icons/${name}.svg`, import.meta.url).href;
-    } catch {
-      url = `/icons/${name}.svg`;
-    }
-    let altUrl;
-    try {
-      altUrl = new URL(`../icons/${this.altname}.svg`, import.meta.url).href;
-    } catch {
-      altUrl = `/icons/${this.altname}.svg`;
-    }
-    let res;
+
+  async icon(isChild: boolean) {
+    const name = isChild ? this.secondary : this.name;
+    const size = isChild ? '32' : this.size;
+    const offset = isChild ? "32" : "0";
+    const weight = (parseFloat(this.weight) * (isChild ? 2 : 1)).toString()
+    const load = async (n: string) => {
+      try {
+        const u = new URL(`../icons/${n}.svg`, import.meta.url).href; 
+        return await (await fetch(u)).text(); 
+      } catch { 
+        return await (await fetch(`/icons/${n}.svg`)).text(); 
+      }
+    };
     let svgText;
     try {
-      res = await fetch(url);
-      svgText = await res.text();
+      svgText = await load(name);
     } catch {
-      res = await fetch(altUrl);
-      svgText = await res.text();
+      svgText = await load(ALTNAME);
     }
-    const doc = ( new DOMParser() ).parseFromString(svgText, 'image/svg+xml');
+    const doc = new DOMParser().parseFromString(svgText, 'image/svg+xml');
     const svgEl = doc.querySelector('svg');
-    if (!svgEl) return "error";
+    if (!svgEl) return;
+    svgEl.setAttribute('x', offset);
+    svgEl.setAttribute('y', offset);
+    svgEl.setAttribute('width', size);
+    svgEl.setAttribute('height', size);
+    svgEl.setAttribute('fill', 'none');
+    doc.querySelectorAll('[stroke]').forEach(e => e.setAttribute('stroke', this.color));
+    doc.querySelectorAll('[stroke-width]').forEach(e => e.setAttribute('stroke-width', weight));
+    if (this.secondary && !isChild) await this.child(svgEl);
+    return svgEl;
+  }
 
-    svgEl?.setAttribute('width', this.size);
-    svgEl?.setAttribute('height', this.size);
-    svgEl?.setAttribute('fill', 'none');
-    doc.querySelectorAll('[stroke]').forEach(el => el.setAttribute('stroke', this.color));
-    doc.querySelectorAll('[stroke-width]').forEach(el => el.setAttribute('stroke-width', this.weight));
-
-    this.svg = svgEl?.outerHTML;
+  async child(parent: SVGSVGElement) {
+    const ns = "http://www.w3.org/2000/svg";
+    let defs = parent.querySelector('defs');
+    if (!defs) {
+      defs = document.createElementNS(ns, 'defs');
+      parent.prepend(defs);
+    }
+    const mask = document.createElementNS(ns, 'mask');
+    mask.setAttribute('id', 'quarterMask');
+    const fullRect = document.createElementNS(ns, 'rect');
+    fullRect.setAttribute('width', "64");
+    fullRect.setAttribute('height', "64");
+    fullRect.setAttribute('fill', 'white');
+    mask.appendChild(fullRect);
+    const transparentRect = document.createElementNS(ns, 'rect');
+    transparentRect.setAttribute('x', "32");
+    transparentRect.setAttribute('y', "32");
+    transparentRect.setAttribute('width', "32");
+    transparentRect.setAttribute('height', "32");
+    transparentRect.setAttribute('fill', 'black');
+    mask.appendChild(transparentRect);
+    defs.appendChild(mask);
+    parent.querySelectorAll('path, rect, circle, line, polygon, polyline').forEach(e => {
+      e.setAttribute('mask', 'url(#quarterMask)');
+    });
+    const child = await this.icon(true);
+    if (child) parent.appendChild(child);
   }
 }
