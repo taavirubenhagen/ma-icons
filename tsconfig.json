@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "target": "ES2020",                         // Target ECMAScript version, ES2020 is recommended for Lit
     "module": "ESNext",                         // Use native ES Modules
     "moduleResolution": "node",                 // Helps with module resolution for node_modules
@@ -23,7 +24,7 @@
   "include": [
     "src/**/*.ts",                             // Include all TypeScript files in the src directory
     "src/**/*.tsx"                             // Include JSX/TSX files (if you're using JSX in Lit)
-, "src/info.js"  ],
+, "scripts/update.ts", "src/generate-all.js", "src/icon.ts", "src/component"  ],
   "exclude": [
     "node_modules",                            // Exclude node_modules folder
     "dist",                                    // Exclude the output dist folder
