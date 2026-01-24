@@ -14,26 +14,15 @@ export async function icon(id: string, isChild: boolean): Promise<string> {
     return fs.readFile(file, "utf8");
   };
 
-  let svg = "";
-  try {
-    svg = await load(name);
-  } catch {
-    return "";
-  }
-
-  // set root attributes
+  let svg = await load(name);
   svg = svg.replace(
     /<svg\b([^>]*)>/,
-    `<svg$1 x="${offset}" y="${offset}" fill="none">`,
+    `<svg$1 x="${offset}" y="${offset}">`,
   );
-
-  // normalize stroke widths
   svg = svg.replace(/stroke-width="[^"]*"/g, `stroke-width="${weight}"`);
-
   if (ids[1] && !isChild) {
     svg = await applyChild(svg, id);
   }
-
   return svg;
 }
 

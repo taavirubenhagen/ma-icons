@@ -601,19 +601,14 @@ function kt(r) {
 }
 const rt = {}, Dt = 5;
 async function pt(r, t) {
-  const e = r.split("+"), s = t ? e[1] : e[0], i = t ? "32" : "0", o = (Dt * (t ? 2 : 1)).toString(), n = async (h) => {
+  const e = r.split("+"), s = t ? e[1] : e[0], i = t ? "32" : "0", o = (Dt * (t ? 2 : 1)).toString();
+  let a = await (async (h) => {
     const c = rt.resolve(process.cwd(), "../icons", `${h}.svg`);
     return rt.readFile(c, "utf8");
-  };
-  let a = "";
-  try {
-    a = await n(s);
-  } catch {
-    return "";
-  }
+  })(s);
   return a = a.replace(
     /<svg\b([^>]*)>/,
-    `<svg$1 x="${i}" y="${i}" fill="none">`
+    `<svg$1 x="${i}" y="${i}">`
   ), a = a.replace(/stroke-width="[^"]*"/g, `stroke-width="${o}"`), e[1] && !t && (a = await jt(a, r)), a;
 }
 async function jt(r, t) {

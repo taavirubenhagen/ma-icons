@@ -28,7 +28,7 @@ var MaIcons=function($){"use strict";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */function kt(r){return lt({...r,state:!0,attribute:!1})}const ct={},It=5;async function dt(r,t){const e=r.split("+"),s=t?e[1]:e[0],i=t?"32":"0",o=(It*(t?2:1)).toString(),n=async h=>{const c=ct.resolve(process.cwd(),"../icons",`${h}.svg`);return ct.readFile(c,"utf8")};let a="";try{a=await n(s)}catch{return""}return a=a.replace(/<svg\b([^>]*)>/,`<svg$1 x="${i}" y="${i}" fill="none">`),a=a.replace(/stroke-width="[^"]*"/g,`stroke-width="${o}"`),e[1]&&!t&&(a=await jt(a,r)),a}async function jt(r,t){const e=`
+ */function kt(r){return lt({...r,state:!0,attribute:!1})}const ct={},It=5;async function dt(r,t){const e=r.split("+"),s=t?e[1]:e[0],i=t?"32":"0",o=(It*(t?2:1)).toString();let a=await(async h=>{const c=ct.resolve(process.cwd(),"../icons",`${h}.svg`);return ct.readFile(c,"utf8")})(s);return a=a.replace(/<svg\b([^>]*)>/,`<svg$1 x="${i}" y="${i}">`),a=a.replace(/stroke-width="[^"]*"/g,`stroke-width="${o}"`),e[1]&&!t&&(a=await jt(a,r)),a}async function jt(r,t){const e=`
 <defs>
   <mask id="quarterMask">
     <rect width="64" height="64" fill="white"/>

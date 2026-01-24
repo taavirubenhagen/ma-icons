@@ -24,7 +24,7 @@
   "include": [
     "src/**/*.ts",                             // Include all TypeScript files in the src directory
     "src/**/*.tsx"                             // Include JSX/TSX files (if you're using JSX in Lit)
-, "scripts/update.ts", "src/generate-all.js", "src/icon.ts", "src/component"  ],
+, "src/update.ts", "src/generate-all.js", "src/icon.ts", "src/component"  ],
   "exclude": [
     "node_modules",                            // Exclude node_modules folder
     "dist",                                    // Exclude the output dist folder
