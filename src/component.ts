@@ -12,7 +12,6 @@ export class MaIcon extends LitElement {
   `;
 
   @property() name = "top-right";
-  @property() secondary = '';
   @property() size = '16';
   @property() weight = '5';
   @property() color = 'hsl(0deg 0% 0%)';
@@ -28,7 +27,8 @@ export class MaIcon extends LitElement {
   }
 
   async icon(isChild: boolean) {
-    const name = isChild ? this.secondary : this.name;
+    const ids = this.name.split("+");
+    const name = isChild ? ids[1] : ids[0];
     const size = isChild ? '32' : this.size;
     const offset = isChild ? "32" : "0";
     const weight = (parseFloat(this.weight) * (isChild ? 2 : 1)).toString()
@@ -56,7 +56,7 @@ export class MaIcon extends LitElement {
     svgEl.setAttribute('fill', 'none');
     doc.querySelectorAll('[stroke]').forEach(e => e.setAttribute('stroke', this.color));
     doc.querySelectorAll('[stroke-width]').forEach(e => e.setAttribute('stroke-width', weight));
-    if (this.secondary && !isChild) await this.child(svgEl);
+    if (ids[1] && !isChild) await this.child(svgEl);
     return svgEl;
   }
 

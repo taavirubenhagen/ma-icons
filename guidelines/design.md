@@ -4,7 +4,7 @@
 
 ### Setup
 
-Icons are designed on a `64x64` grid in Figma.
+Icons are designed on a `64x64` grid in Figma with an `8x8` layout grid.
 
 ### Default values for variable properties
 
