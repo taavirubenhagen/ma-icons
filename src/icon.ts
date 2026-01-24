@@ -4,7 +4,7 @@ import path from "path";
 const WEIGHT = 5;
 
 export async function icon(id: string, isChild: boolean): Promise<string> {
-  const ids = id.split("+");
+  const ids = id.split("-");
   const name = isChild ? ids[1] : ids[0];
   const offset = isChild ? "32" : "0";
   const weight = (WEIGHT * (isChild ? 2 : 1)).toString();

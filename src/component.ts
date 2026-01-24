@@ -25,7 +25,7 @@ export class MaIcon extends LitElement {
   }
 
   async icon(isChild: boolean) {
-    const ids = this.id.split("+");
+    const ids = this.id.split("-");
     const name = isChild ? ids[1] : ids[0];
     const size = isChild ? '32' : this.size;
     const offset = isChild ? "32" : "0";
