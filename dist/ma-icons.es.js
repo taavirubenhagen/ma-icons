@@ -1,18 +1,19 @@
+const d2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2032L56%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056L32%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", p2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2048V16'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M44%2048V16'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2028V36'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2028V36'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", g2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2050L40%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2050L14%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2014L14%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", k2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M50%2050L24%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2050L50%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2014L50%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", w2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='2.5'%20y='12.5'%20width='39'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M52.9326%2018.4492C56.5863%2015.9944%2061.5%2018.6128%2061.5%2023.0146V40.9854C61.5%2045.3872%2056.5863%2048.0056%2052.9326%2045.5508L43.9326%2039.5029C42.4123%2038.4812%2041.5%2036.7693%2041.5%2034.9375V29.0625C41.5%2027.2307%2042.4123%2025.5188%2043.9326%2024.4971L52.9326%2018.4492Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", v2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.9443%206.5H37.0557C39.1388%206.5%2041.0429%207.67697%2041.9746%209.54004L43.2109%2012.0127C43.9732%2013.5372%2045.5319%2014.5%2047.2363%2014.5H52C57.2467%2014.5%2061.5%2018.7533%2061.5%2024V44C61.5%2049.2467%2057.2467%2053.5%2052%2053.5H12C6.7533%2053.5%202.5%2049.2467%202.5%2044V24C2.5%2018.7533%206.7533%2014.5%2012%2014.5H16.7637C18.4681%2014.5%2020.0268%2013.5372%2020.7891%2012.0127L22.0254%209.54004C22.9571%207.67697%2024.8612%206.5%2026.9443%206.5Z'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='32'%20cy='33'%20r='8.5'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", _2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2016L24%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2048L24%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2048H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", u2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%2032L20%2016'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2032L20%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2032L44%2016'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2032L44%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", m2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M40%2024V4'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2024L60%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2040L24%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2040L4%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", b2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%204.5C47.1878%204.5%2059.5%2016.8122%2059.5%2032C59.5%2047.1878%2047.1878%2059.5%2032%2059.5C16.8122%2059.5%204.5%2047.1878%204.5%2032C4.5%2016.8122%2016.8122%204.5%2032%204.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M43%2027C38%2016%2020%2018%2020%2032C20%2046%2038%2048%2043%2037'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", f2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%202.5H31.3955C33.7422%202.50008%2036.0057%203.36873%2037.75%204.93848L50.3555%2016.2832C52.3571%2018.0848%2053.5%2020.6517%2053.5%2023.3447V52C53.5%2057.2467%2049.2467%2061.5%2044%2061.5H20C14.7533%2061.5%2010.5%2057.2467%2010.5%2052V12C10.5%206.7533%2014.7533%202.5%2020%202.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2014V20C32%2022.2091%2033.7909%2024%2036%2024H42'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", C2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2056L50%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056L14%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%208.00001L32%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", x2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2048L16%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M48%2032L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%204L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2060L60%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", $2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.482%2041.7398L46.4956%207.72621C47.0814%207.14043%2048.0312%207.14043%2048.6169%207.72621L54.2738%2013.3831C54.8596%2013.9689%2054.8596%2014.9186%2054.2738%2015.5044L19.9681%2049.8101L11.2135%2050.8459L12.482%2041.7398Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M40%2052L56%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", M2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M52%2012V32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M52%2012L32%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052L12%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052L32%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", y2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2293_94)'%3e%3cpath%20d='M52.4121%206.97363C52.7991%208.24576%2053%209.56855%2053%2010.9014V11.8457L52.5195%2015.6895L52.3848%2016.7666L53.0791%2017.6006L54.3994%2019.1846C55.0596%2019.9769%2055.6266%2020.8432%2056.0879%2021.7656C57.0165%2023.6229%2057.5%2025.6716%2057.5%2027.748V28.9189C57.5%2030.6363%2057.172%2032.3381%2056.5342%2033.9326L56.2979%2034.5244C55.9508%2035.392%2055.5144%2036.2215%2054.9961%2036.999L54.7988%2037.2949C54.3057%2038.0346%2053.7409%2038.724%2053.1123%2039.3525L52.0684%2040.3965C51.0424%2041.4225%2049.8574%2042.2759%2048.5596%2042.9248L47.5361%2043.4365C47.2064%2043.6014%2046.8654%2043.7428%2046.5156%2043.8594L45.5498%2044.1816C44.4565%2044.5461%2043.4501%2045.1286%2042.5918%2045.8926L42.2334%2046.2314C41.7635%2046.7014%2041.5%2047.3386%2041.5%2048.002V85C41.5%2089.6944%2037.6944%2093.5%2033%2093.5C28.3056%2093.5%2024.5%2089.6944%2024.5%2085V48.7812C24.5%2047.1752%2023.4067%2045.7753%2021.8486%2045.3857L20.3105%2045.001C19.355%2044.7621%2018.4279%2044.419%2017.5469%2043.9785L17.4404%2043.9248C16.1426%2043.2759%2014.9576%2042.4225%2013.9316%2041.3965L13.5723%2041.0361C13.1206%2040.5845%2012.7006%2040.1018%2012.3174%2039.5908L11.5576%2038.5771C10.6871%2037.4164%2010.0096%2036.1226%209.55078%2034.7461L9.19238%2033.6729C8.73353%2032.2963%208.5%2030.8543%208.5%2029.4033V28.5762C8.50003%2027.1386%208.73196%2025.7105%209.18652%2024.3467C9.84324%2022.3765%2010.9495%2020.5857%2012.418%2019.1172L13.6514%2017.8838L13.0088%2013.3857C12.7124%2011.311%2012.9037%209.19529%2013.5664%207.20703L13.5811%207.16211L14.7461%207.55078C16.1226%208.00961%2017.4164%208.68706%2018.5771%209.55762L20.5%2011L21.5479%2011.7861L22.791%2011.3721L25.6484%2010.4189L28.9365%209.76172C29.8082%209.58739%2030.6951%209.50002%2031.584%209.5H32.416C33.3049%209.50002%2034.1918%209.58739%2035.0635%209.76172L38.3506%2010.4189L41.209%2011.3721L42.4521%2011.7861L43.5%2011L44.915%209.93848C46.3545%208.85889%2047.9956%208.078%2049.7412%207.6416L52.4121%206.97363Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M2.00003%2048C6.51423%2046.8714%2011.1363%2049.4087%2012.6077%2053.823L12.6667%2054C13.4191%2056.2571%2015.7824%2057.5544%2018.0905%2056.9774L22%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2293_94'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", A2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M42%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2022L56%2022'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2042L56%2042'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", L2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M60%2020C60%2036%2042%2048%2032%2056C22%2048%203.99998%2036%203.99998%2020C3.99998%209.53674e-06%2032%20-1.90735e-05%2032%2020C32%20-2.28882e-05%2060%204.95911e-05%2060%2020Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", H2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M27.3486%206.38574C30.0294%203.872%2033.9706%203.872%2036.6514%206.38574L56.9902%2025.457C58.5611%2026.9302%2059.4999%2029.1003%2059.5%2031.4248V51.6465C59.5%2056.1495%2056.1336%2059.5%2052.3389%2059.5H11.6611C7.86636%2059.5%204.5%2056.1495%204.5%2051.6465V31.4248C4.50011%2029.1003%205.43799%2026.9301%207.00879%2025.457L27.3486%206.38574Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", E2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2044V32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%204.5C47.1878%204.5%2059.5%2016.8122%2059.5%2032C59.5%2047.1878%2047.1878%2059.5%2032%2059.5C16.8122%2059.5%204.5%2047.1878%204.5%2032C4.5%2016.8122%2016.8122%204.5%2032%204.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2020V22'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", V2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='4.5'%20y='4.5'%20width='55'%20height='55'%20rx='13.5'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='32'%20cy='32'%20r='10.5'%20stroke='black'%20stroke-width='5'/%3e%3ccircle%20cx='47'%20cy='17'%20r='2'%20stroke='black'%20stroke-width='4'/%3e%3c/svg%3e", S2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2293_128)'%3e%3cpath%20d='M12%2022C20%2036%2032%2040%2032%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2044C8%2044%2028%2036%2032%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2012L44%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2012V4'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2052L36.0001%2052'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M45.9999%2032L31.9999%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60.0001%2060L45.9999%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2293_128'%3e%3crect%20width='64'%20height='64'%20fill='white'%20transform='matrix(-1%200%200%20-1%2064%2064)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", P2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2032L26%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2032L26%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2032L8.00001%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", B2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%201.5C40.0081%201.5%2046.5%207.99187%2046.5%2016V24H41.5V16C41.5%2010.7533%2037.2467%206.5%2032%206.5C26.7533%206.5%2022.5%2010.7533%2022.5%2016V24H17.5V16C17.5%207.99187%2023.9919%201.5%2032%201.5Z'%20fill='black'/%3e%3cpath%20d='M44%2020C50.6274%2020%2056%2025.3726%2056%2032V52C56%2058.6274%2050.6274%2064%2044%2064H20C13.3726%2064%208%2058.6274%208%2052V32C8%2025.3726%2013.3726%2020%2020%2020H44ZM32%2035.5C30.6196%2035.5002%2029.5002%2036.6196%2029.5%2038V46C29.5002%2047.3804%2030.6196%2048.4998%2032%2048.5C33.3804%2048.4998%2034.4998%2047.3804%2034.5%2046V38C34.4999%2036.6195%2033.3805%2035.5002%2032%2035.5Z'%20fill='black'/%3e%3c/svg%3e", Z2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10.5'%20y='26.5'%20width='43'%20height='35'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M23.5%2028C23.5%2028.3378%2023.5183%2028.6713%2023.5527%2029H18.5352C18.5126%2028.6696%2018.5%2028.3362%2018.5%2028V24H23.5V28ZM33%201.5C41.0081%201.5%2047.5%207.99187%2047.5%2016V28C47.5%2028.3362%2047.4874%2028.6696%2047.4648%2029H42.4473C42.4816%2028.6713%2042.5%2028.3378%2042.5%2028V16C42.5%2010.7533%2038.2467%206.5%2033%206.5C27.7533%206.5%2023.5%2010.7533%2023.5%2016H18.5C18.5%207.99187%2024.9919%201.5%2033%201.5Z'%20fill='black'/%3e%3cpath%20d='M32%2048L32%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M21%2016L21%2015'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", O2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10.5'%20y='22.5'%20width='43'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%201.5C40.0081%201.5%2046.5%207.99187%2046.5%2016V24H41.5V16C41.5%2010.7533%2037.2467%206.5%2032%206.5C26.7533%206.5%2022.5%2010.7533%2022.5%2016V24H17.5V16C17.5%207.99187%2023.9919%201.5%2032%201.5Z'%20fill='black'/%3e%3cpath%20d='M32%2046L32%2038'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", U2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48%2032L32%2048'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2016L48%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2032L48%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M60%2060L60%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", T2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%208V24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2024L24%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%208L24%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%208V24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2024L40%2024'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%208L40%208'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2056V8'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%2040V56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2040H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M40%2056V40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", N2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='2.5'%20y='10.5'%20width='59'%20height='43'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M50.0001%2022.2535L36.0544%2035.037C33.7605%2037.1398%2030.2397%2037.1398%2027.9457%2035.037L14%2022.2535'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", R2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2020H56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2044H56'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", z2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2062C46.3594%2062%2058%2050.3594%2058%2036H53C53%2047.598%2043.598%2057%2032%2057C20.402%2057%2011%2047.598%2011%2036H6C6%2050.3594%2017.6406%2062%2032%2062Z'%20fill='black'/%3e%3cmask%20id='path-2-inside-1_2304_2'%20fill='white'%3e%3cpath%20d='M22%2012C22%206.47715%2026.4772%202%2032%202C37.5228%202%2042%206.47715%2042%2012V36C42%2041.5228%2037.5228%2046%2032%2046C26.4772%2046%2022%2041.5228%2022%2036V12Z'/%3e%3c/mask%3e%3cpath%20d='M42%2012H37V36H42H47V12H42ZM22%2036H27V12H22H17V36H22ZM32%2046V41C29.2386%2041%2027%2038.7614%2027%2036H22H17C17%2044.2843%2023.7157%2051%2032%2051V46ZM42%2036H37C37%2038.7614%2034.7614%2041%2032%2041V46V51C40.2843%2051%2047%2044.2843%2047%2036H42ZM32%202V7C34.7614%207%2037%209.23858%2037%2012H42H47C47%203.71573%2040.2843%20-3%2032%20-3V2ZM32%202V-3C23.7157%20-3%2017%203.71573%2017%2012H22H27C27%209.23858%2029.2386%207%2032%207V2Z'%20fill='black'%20mask='url(%23path-2-inside-1_2304_2)'/%3e%3c/svg%3e", D2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M52%2052L12%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M12%2052L52%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", j2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M45.5%204V28'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M18.5%2036V60'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M21%2050.5H8C6.61929%2050.5%205.5%2049.3807%205.5%2048C5.5%2046.6193%206.61929%2045.5%208%2045.5H21V50.5ZM56%2045.5C57.3807%2045.5%2058.5%2046.6193%2058.5%2048C58.5%2049.3807%2057.3807%2050.5%2056%2050.5H32V45.5H56Z'%20fill='black'/%3e%3cpath%20d='M32%2018.5H8C6.61929%2018.5%205.5%2017.3807%205.5%2016C5.5%2014.6193%206.61929%2013.5%208%2013.5H32V18.5ZM56%2013.5C57.3807%2013.5%2058.5%2014.6193%2058.5%2016C58.5%2017.3807%2057.3807%2018.5%2056%2018.5H43V13.5H56Z'%20fill='black'/%3e%3c/svg%3e", q2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M48%203L56%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2020L40%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2060H40'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M15.5%203L8%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2020L24%2060'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M8%2060H24'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%203L48%203'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", I2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M25.5%2016C25.5%2012.9624%2023.0376%2010.5%2020%2010.5C16.9624%2010.5%2014.5%2012.9624%2014.5%2016V48C14.5%2051.0376%2016.9624%2053.5%2020%2053.5C23.0376%2053.5%2025.5%2051.0376%2025.5%2048V16Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M25.5%2016C25.5%2012.9624%2023.0376%2010.5%2020%2010.5C16.9624%2010.5%2014.5%2012.9624%2014.5%2016V48C14.5%2051.0376%2016.9624%2053.5%2020%2053.5C23.0376%2053.5%2025.5%2051.0376%2025.5%2048V16Z'%20stroke='black'%20stroke-opacity='0.2'%20stroke-width='5'/%3e%3cpath%20d='M49.5%2016C49.5%2012.9624%2047.0376%2010.5%2044%2010.5C40.9624%2010.5%2038.5%2012.9624%2038.5%2016V48C38.5%2051.0376%2040.9624%2053.5%2044%2053.5C47.0376%2053.5%2049.5%2051.0376%2049.5%2048V16Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M49.5%2016C49.5%2012.9624%2047.0376%2010.5%2044%2010.5C40.9624%2010.5%2038.5%2012.9624%2038.5%2016V48C38.5%2051.0376%2040.9624%2053.5%2044%2053.5C47.0376%2053.5%2049.5%2051.0376%2049.5%2048V16Z'%20stroke='black'%20stroke-opacity='0.2'%20stroke-width='5'/%3e%3c/svg%3e", W2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2293_229)'%3e%3cpath%20d='M32%2028C38.6274%2028%2044%2022.6274%2044%2016C44%209.37258%2038.6274%204%2032%204C25.3726%204%2020%209.37258%2020%2016C20%2022.6274%2025.3726%2028%2032%2028Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M60.5%2064C60.5%2079.7401%2047.7401%2092.5%2032%2092.5C16.2599%2092.5%203.5%2079.7401%203.5%2064H8.5C8.5%2076.9787%2019.0213%2087.5%2032%2087.5C44.9787%2087.5%2055.5%2076.9787%2055.5%2064H60.5ZM32%2035.5C46.3824%2035.5%2058.2748%2046.1538%2060.2197%2060H55.1592C53.2602%2048.9268%2043.615%2040.5%2032%2040.5C20.385%2040.5%2010.7398%2048.9268%208.84082%2060H3.78027C5.72515%2046.1538%2017.6176%2035.5%2032%2035.5Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2293_229'%3e%3crect%20width='64'%20height='64'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e", F2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.2249%209.86505L49.0848%2026.3564C53.4516%2028.8517%2053.4516%2035.1483%2049.0848%2037.6436L20.2249%2054.135C15.8916%2056.6111%2010.5%2053.4822%2010.5%2048.4914V15.5086C10.5%2010.5178%2015.8916%207.38889%2020.2249%209.86505Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", J2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2050L56%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2034L20%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", K2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2032L56%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", G2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56%2032L38%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M56%2032L38%2050'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M7.99999%2032L56%2032'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", Q2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M36%2036L56%2056'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M22%2040C31.9411%2040%2040%2031.9411%2040%2022C40%2012.0589%2031.9411%204%2022%204C12.0589%204%204%2012.0589%204%2022C4%2031.9411%2012.0589%2040%2022%2040Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", X2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.1514%209.86599L52.2445%2026.3566C57.2518%2028.8518%2057.2518%2035.1482%2052.2445%2037.6434L19.1514%2054.134C14.1825%2056.61%208%2053.4813%208%2048.4907V15.5093C8%2010.5187%2014.1825%207.38993%2019.1514%209.86599Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M8%2032H32'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", Y2 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M36.75%205.62915L52.4628%2014.701C55.4021%2016.398%2057.2128%2019.5342%2057.2128%2022.9282V41.0718C57.2128%2044.4658%2055.4021%2047.602%2052.4628%2049.299L36.75%2058.3708C33.8107%2060.0678%2030.1893%2060.0678%2027.25%2058.3708L11.5372%2049.299C8.59789%2047.602%206.7872%2044.4658%206.7872%2041.0718V22.9282C6.7872%2019.5342%208.59789%2016.398%2011.5372%2014.701L27.25%205.62915C30.1893%203.93213%2033.8107%203.93213%2036.75%205.62915Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2042.5C37.799%2042.5%2042.5%2037.799%2042.5%2032C42.5%2026.201%2037.799%2021.5%2032%2021.5C26.201%2021.5%2021.5%2026.201%2021.5%2032C21.5%2037.799%2026.201%2042.5%2032%2042.5Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", t0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%2030.5C35.0376%2030.5%2037.5%2032.9624%2037.5%2036C37.5%2039.0376%2035.0376%2041.5%2032%2041.5C28.9624%2041.5%2026.5%2039.0376%2026.5%2036C26.5%2032.9624%2028.9624%2030.5%2032%2030.5Z'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M32%2016C43.0457%2016%2052%2024.9543%2052%2036C52%2041.5228%2049.7619%2046.5233%2046.1426%2050.1426L42.6064%2046.6064C45.3209%2043.892%2047%2040.1421%2047%2036C47%2027.7157%2040.2843%2021%2032%2021C23.7157%2021%2017%2027.7157%2017%2036C17%2040.1421%2018.6791%2043.892%2021.3936%2046.6064L17.8574%2050.1426C14.2381%2046.5233%2012%2041.5228%2012%2036C12%2024.9543%2020.9543%2016%2032%2016Z'%20fill='black'/%3e%3cpath%20d='M32.8262%204.01074C50.1175%204.44895%2064%2018.6031%2064%2036L63.9893%2036.8262C63.7736%2045.3345%2060.2357%2053.0161%2054.626%2058.626L51.0918%2055.0918C55.9778%2050.2058%2059%2043.4558%2059%2036C59%2021.0883%2046.9117%209%2032%209C17.0883%209%205%2021.0883%205%2036C5%2043.4558%208.02216%2050.2058%2012.9082%2055.0918L9.37305%2058.627C3.76327%2053.0172%200.226368%2045.3345%200.0107422%2036.8262L0%2036C0%2018.3269%2014.3269%204%2032%204L32.8262%204.01074Z'%20fill='black'/%3e%3c/svg%3e", e0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M29%2028C29.7641%2028%2030.5077%2028.0877%2031.2227%2028.25V33.5205C30.5531%2033.1876%2029.7985%2033%2029%2033C26.2386%2033%2024%2035.2386%2024%2038C24%2040.7614%2026.2386%2043%2029%2043C31.7614%2043%2034%2040.7614%2034%2038H39C39%2043.5228%2034.5228%2048%2029%2048C23.4772%2048%2019%2043.5228%2019%2038C19%2032.4772%2023.4772%2028%2029%2028Z'%20fill='black'/%3e%3cline%20x1='36.5'%20y1='38'%20x2='36.5'%20y2='16'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M39%2016C39%2018.7614%2041.2386%2021%2044%2021C44.3425%2021%2044.6769%2020.965%2045%2020.8994V25.9492C44.671%2025.9819%2044.3375%2026%2044%2026C38.4772%2026%2034%2021.5228%2034%2016H39Z'%20fill='black'/%3e%3crect%20x='4.5'%20y='4.5'%20width='55'%20height='55'%20rx='13.5'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", s0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M14%2013.9999L40%2013.9999'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2014L14%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2050L14%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", i0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M50%2013.9999L24%2013.9999'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M50%2014L50%2040'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M14%2050L50%2014'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", o0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2012L56%2012'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M24%204L40%204'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M16%2012H48V50C48%2053.3137%2045.3137%2056%2042%2056H22C18.6863%2056%2016%2053.3137%2016%2050V12Z'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e", r0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M32%208L14%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%208L50%2026'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3cpath%20d='M32%2056L32%208.00001'%20stroke='black'%20stroke-width='5'%20stroke-linecap='round'/%3e%3c/svg%3e", n0 = "data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='2.5'%20y='12.5'%20width='59'%20height='39'%20rx='9.5'%20stroke='black'%20stroke-width='5'/%3e%3cpath%20d='M36.9014%2032L28.5%2036.7246V27.2744L36.9014%2032Z'%20fill='black'%20stroke='black'%20stroke-width='5'/%3e%3c/svg%3e";
 /**
  * @license
  * Copyright 2019 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const N = globalThis, B = N.ShadowRoot && (N.ShadyCSS === void 0 || N.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype, q = Symbol(), J = /* @__PURE__ */ new WeakMap();
-let ot = class {
+const O = globalThis, q = O.ShadowRoot && (O.ShadyCSS === void 0 || O.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype, I = Symbol(), J = /* @__PURE__ */ new WeakMap();
+let n2 = class {
   constructor(t, e, s) {
-    if (this._$cssResult$ = !0, s !== q) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
+    if (this._$cssResult$ = !0, s !== I) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
     this.cssText = t, this.t = e;
   }
   get styleSheet() {
     let t = this.o;
     const e = this.t;
-    if (B && t === void 0) {
+    if (q && t === void 0) {
       const s = e !== void 0 && e.length === 1;
       s && (t = J.get(e)), t === void 0 && ((this.o = t = new CSSStyleSheet()).replaceSync(this.cssText), s && J.set(e, t));
     }
@@ -22,95 +23,95 @@ let ot = class {
     return this.cssText;
   }
 };
-const ut = (r) => new ot(typeof r == "string" ? r : r + "", void 0, q), $t = (r, ...t) => {
-  const e = r.length === 1 ? r[0] : t.reduce((s, i, o) => s + ((n) => {
+const c0 = (o) => new n2(typeof o == "string" ? o : o + "", void 0, I), a0 = (o, ...t) => {
+  const e = o.length === 1 ? o[0] : t.reduce((s, i, r) => s + ((n) => {
     if (n._$cssResult$ === !0) return n.cssText;
     if (typeof n == "number") return n;
     throw Error("Value passed to 'css' function must be a 'css' function result: " + n + ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.");
-  })(i) + r[o + 1], r[0]);
-  return new ot(e, r, q);
-}, ft = (r, t) => {
-  if (B) r.adoptedStyleSheets = t.map((e) => e instanceof CSSStyleSheet ? e : e.styleSheet);
+  })(i) + o[r + 1], o[0]);
+  return new n2(e, o, I);
+}, h0 = (o, t) => {
+  if (q) o.adoptedStyleSheets = t.map((e) => e instanceof CSSStyleSheet ? e : e.styleSheet);
   else for (const e of t) {
-    const s = document.createElement("style"), i = N.litNonce;
-    i !== void 0 && s.setAttribute("nonce", i), s.textContent = e.cssText, r.appendChild(s);
+    const s = document.createElement("style"), i = O.litNonce;
+    i !== void 0 && s.setAttribute("nonce", i), s.textContent = e.cssText, o.appendChild(s);
   }
-}, K = B ? (r) => r : (r) => r instanceof CSSStyleSheet ? ((t) => {
+}, K = q ? (o) => o : (o) => o instanceof CSSStyleSheet ? ((t) => {
   let e = "";
   for (const s of t.cssRules) e += s.cssText;
-  return ut(e);
-})(r) : r;
+  return c0(e);
+})(o) : o;
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const { is: _t, defineProperty: gt, getOwnPropertyDescriptor: yt, getOwnPropertyNames: mt, getOwnPropertySymbols: At, getPrototypeOf: vt } = Object, _ = globalThis, Z = _.trustedTypes, Et = Z ? Z.emptyScript : "", j = _.reactiveElementPolyfillSupport, w = (r, t) => r, R = { toAttribute(r, t) {
+const { is: l0, defineProperty: d0, getOwnPropertyDescriptor: p0, getOwnPropertyNames: g0, getOwnPropertySymbols: k0, getPrototypeOf: w0 } = Object, v = globalThis, G = v.trustedTypes, v0 = G ? G.emptyScript : "", R = v.reactiveElementPolyfillSupport, A = (o, t) => o, U = { toAttribute(o, t) {
   switch (t) {
     case Boolean:
-      r = r ? Et : null;
+      o = o ? v0 : null;
       break;
     case Object:
     case Array:
-      r = r == null ? r : JSON.stringify(r);
+      o = o == null ? o : JSON.stringify(o);
   }
-  return r;
-}, fromAttribute(r, t) {
-  let e = r;
+  return o;
+}, fromAttribute(o, t) {
+  let e = o;
   switch (t) {
     case Boolean:
-      e = r !== null;
+      e = o !== null;
       break;
     case Number:
-      e = r === null ? null : Number(r);
+      e = o === null ? null : Number(o);
       break;
     case Object:
     case Array:
       try {
-        e = JSON.parse(r);
+        e = JSON.parse(o);
       } catch {
         e = null;
       }
   }
   return e;
-} }, W = (r, t) => !_t(r, t), G = { attribute: !0, type: String, converter: R, reflect: !1, useDefault: !1, hasChanged: W };
-Symbol.metadata ?? (Symbol.metadata = Symbol("metadata")), _.litPropertyMetadata ?? (_.litPropertyMetadata = /* @__PURE__ */ new WeakMap());
-let v = class extends HTMLElement {
+} }, W = (o, t) => !l0(o, t), Q = { attribute: !0, type: String, converter: U, reflect: !1, useDefault: !1, hasChanged: W };
+Symbol.metadata ?? (Symbol.metadata = Symbol("metadata")), v.litPropertyMetadata ?? (v.litPropertyMetadata = /* @__PURE__ */ new WeakMap());
+let C = class extends HTMLElement {
   static addInitializer(t) {
     this._$Ei(), (this.l ?? (this.l = [])).push(t);
   }
   static get observedAttributes() {
     return this.finalize(), this._$Eh && [...this._$Eh.keys()];
   }
-  static createProperty(t, e = G) {
+  static createProperty(t, e = Q) {
     if (e.state && (e.attribute = !1), this._$Ei(), this.prototype.hasOwnProperty(t) && ((e = Object.create(e)).wrapped = !0), this.elementProperties.set(t, e), !e.noAccessor) {
       const s = Symbol(), i = this.getPropertyDescriptor(t, s, e);
-      i !== void 0 && gt(this.prototype, t, i);
+      i !== void 0 && d0(this.prototype, t, i);
     }
   }
   static getPropertyDescriptor(t, e, s) {
-    const { get: i, set: o } = yt(this.prototype, t) ?? { get() {
+    const { get: i, set: r } = p0(this.prototype, t) ?? { get() {
       return this[e];
     }, set(n) {
       this[e] = n;
     } };
     return { get: i, set(n) {
       const a = i == null ? void 0 : i.call(this);
-      o == null || o.call(this, n), this.requestUpdate(t, a, s);
+      r == null || r.call(this, n), this.requestUpdate(t, a, s);
     }, configurable: !0, enumerable: !0 };
   }
   static getPropertyOptions(t) {
-    return this.elementProperties.get(t) ?? G;
+    return this.elementProperties.get(t) ?? Q;
   }
   static _$Ei() {
-    if (this.hasOwnProperty(w("elementProperties"))) return;
-    const t = vt(this);
+    if (this.hasOwnProperty(A("elementProperties"))) return;
+    const t = w0(this);
     t.finalize(), t.l !== void 0 && (this.l = [...t.l]), this.elementProperties = new Map(t.elementProperties);
   }
   static finalize() {
-    if (this.hasOwnProperty(w("finalized"))) return;
-    if (this.finalized = !0, this._$Ei(), this.hasOwnProperty(w("properties"))) {
-      const e = this.properties, s = [...mt(e), ...At(e)];
+    if (this.hasOwnProperty(A("finalized"))) return;
+    if (this.finalized = !0, this._$Ei(), this.hasOwnProperty(A("properties"))) {
+      const e = this.properties, s = [...g0(e), ...k0(e)];
       for (const i of s) this.createProperty(i, e[i]);
     }
     const t = this[Symbol.metadata];
@@ -159,7 +160,7 @@ let v = class extends HTMLElement {
   }
   createRenderRoot() {
     const t = this.shadowRoot ?? this.attachShadow(this.constructor.shadowRootOptions);
-    return ft(t, this.constructor.elementStyles), t;
+    return h0(t, this.constructor.elementStyles), t;
   }
   connectedCallback() {
     var t;
@@ -181,32 +182,32 @@ let v = class extends HTMLElement {
     this._$AK(t, s);
   }
   _$ET(t, e) {
-    var o;
+    var r;
     const s = this.constructor.elementProperties.get(t), i = this.constructor._$Eu(t, s);
     if (i !== void 0 && s.reflect === !0) {
-      const n = (((o = s.converter) == null ? void 0 : o.toAttribute) !== void 0 ? s.converter : R).toAttribute(e, s.type);
+      const n = (((r = s.converter) == null ? void 0 : r.toAttribute) !== void 0 ? s.converter : U).toAttribute(e, s.type);
       this._$Em = t, n == null ? this.removeAttribute(i) : this.setAttribute(i, n), this._$Em = null;
     }
   }
   _$AK(t, e) {
-    var o, n;
+    var r, n;
     const s = this.constructor, i = s._$Eh.get(t);
     if (i !== void 0 && this._$Em !== i) {
-      const a = s.getPropertyOptions(i), h = typeof a.converter == "function" ? { fromAttribute: a.converter } : ((o = a.converter) == null ? void 0 : o.fromAttribute) !== void 0 ? a.converter : R;
-      this._$Em = i, this[i] = h.fromAttribute(e, a.type) ?? ((n = this._$Ej) == null ? void 0 : n.get(i)) ?? null, this._$Em = null;
+      const a = s.getPropertyOptions(i), c = typeof a.converter == "function" ? { fromAttribute: a.converter } : ((r = a.converter) == null ? void 0 : r.fromAttribute) !== void 0 ? a.converter : U;
+      this._$Em = i, this[i] = c.fromAttribute(e, a.type) ?? ((n = this._$Ej) == null ? void 0 : n.get(i)) ?? null, this._$Em = null;
     }
   }
   requestUpdate(t, e, s) {
     var i;
     if (t !== void 0) {
-      const o = this.constructor, n = this[t];
-      if (s ?? (s = o.getPropertyOptions(t)), !((s.hasChanged ?? W)(n, e) || s.useDefault && s.reflect && n === ((i = this._$Ej) == null ? void 0 : i.get(t)) && !this.hasAttribute(o._$Eu(t, s)))) return;
+      const r = this.constructor, n = this[t];
+      if (s ?? (s = r.getPropertyOptions(t)), !((s.hasChanged ?? W)(n, e) || s.useDefault && s.reflect && n === ((i = this._$Ej) == null ? void 0 : i.get(t)) && !this.hasAttribute(r._$Eu(t, s)))) return;
       this.C(t, e, s);
     }
     this.isUpdatePending === !1 && (this._$ES = this._$EP());
   }
-  C(t, e, { useDefault: s, reflect: i, wrapped: o }, n) {
-    s && !(this._$Ej ?? (this._$Ej = /* @__PURE__ */ new Map())).has(t) && (this._$Ej.set(t, n ?? e ?? this[t]), o !== !0 || n !== void 0) || (this._$AL.has(t) || (this.hasUpdated || s || (e = void 0), this._$AL.set(t, e)), i === !0 && this._$Em !== t && (this._$Eq ?? (this._$Eq = /* @__PURE__ */ new Set())).add(t));
+  C(t, e, { useDefault: s, reflect: i, wrapped: r }, n) {
+    s && !(this._$Ej ?? (this._$Ej = /* @__PURE__ */ new Map())).has(t) && (this._$Ej.set(t, n ?? e ?? this[t]), r !== !0 || n !== void 0) || (this._$AL.has(t) || (this.hasUpdated || s || (e = void 0), this._$AL.set(t, e)), i === !0 && this._$Em !== t && (this._$Eq ?? (this._$Eq = /* @__PURE__ */ new Set())).add(t));
   }
   async _$EP() {
     this.isUpdatePending = !0;
@@ -226,21 +227,21 @@ let v = class extends HTMLElement {
     if (!this.isUpdatePending) return;
     if (!this.hasUpdated) {
       if (this.renderRoot ?? (this.renderRoot = this.createRenderRoot()), this._$Ep) {
-        for (const [o, n] of this._$Ep) this[o] = n;
+        for (const [r, n] of this._$Ep) this[r] = n;
         this._$Ep = void 0;
       }
       const i = this.constructor.elementProperties;
-      if (i.size > 0) for (const [o, n] of i) {
-        const { wrapped: a } = n, h = this[o];
-        a !== !0 || this._$AL.has(o) || h === void 0 || this.C(o, void 0, n, h);
+      if (i.size > 0) for (const [r, n] of i) {
+        const { wrapped: a } = n, c = this[r];
+        a !== !0 || this._$AL.has(r) || c === void 0 || this.C(r, void 0, n, c);
       }
     }
     let t = !1;
     const e = this._$AL;
     try {
       t = this.shouldUpdate(e), t ? (this.willUpdate(e), (s = this._$EO) == null || s.forEach((i) => {
-        var o;
-        return (o = i.hostUpdate) == null ? void 0 : o.call(i);
+        var r;
+        return (r = i.hostUpdate) == null ? void 0 : r.call(i);
       }), this.update(e)) : this._$EM();
     } catch (i) {
       throw t = !1, this._$EM(), i;
@@ -276,76 +277,76 @@ let v = class extends HTMLElement {
   firstUpdated(t) {
   }
 };
-v.elementStyles = [], v.shadowRootOptions = { mode: "open" }, v[w("elementProperties")] = /* @__PURE__ */ new Map(), v[w("finalized")] = /* @__PURE__ */ new Map(), j == null || j({ ReactiveElement: v }), (_.reactiveElementVersions ?? (_.reactiveElementVersions = [])).push("2.1.0");
+C.elementStyles = [], C.shadowRootOptions = { mode: "open" }, C[A("elementProperties")] = /* @__PURE__ */ new Map(), C[A("finalized")] = /* @__PURE__ */ new Map(), R == null || R({ ReactiveElement: C }), (v.reactiveElementVersions ?? (v.reactiveElementVersions = [])).push("2.1.0");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const P = globalThis, k = P.trustedTypes, Q = k ? k.createPolicy("lit-html", { createHTML: (r) => r }) : void 0, ht = "$lit$", f = `lit$${Math.random().toFixed(9).slice(2)}$`, at = "?" + f, bt = `<${at}>`, A = document, x = () => A.createComment(""), O = (r) => r === null || typeof r != "object" && typeof r != "function", V = Array.isArray, St = (r) => V(r) || typeof (r == null ? void 0 : r[Symbol.iterator]) == "function", L = `[ 	
-\f\r]`, S = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, X = /-->/g, Y = />/g, g = RegExp(`>|${L}(?:([^\\s"'>=/]+)(${L}*=${L}*(?:[^ 	
-\f\r"'\`<>=]|("|')|))|$)`, "g"), tt = /'/g, et = /"/g, lt = /^(?:script|style|textarea|title)$/i, wt = (r) => (t, ...e) => ({ _$litType$: r, strings: t, values: e }), st = wt(1), E = Symbol.for("lit-noChange"), d = Symbol.for("lit-nothing"), it = /* @__PURE__ */ new WeakMap(), y = A.createTreeWalker(A, 129);
-function ct(r, t) {
-  if (!V(r) || !r.hasOwnProperty("raw")) throw Error("invalid template strings array");
-  return Q !== void 0 ? Q.createHTML(t) : t;
+const L = globalThis, T = L.trustedTypes, X = T ? T.createPolicy("lit-html", { createHTML: (o) => o }) : void 0, c2 = "$lit$", w = `lit$${Math.random().toFixed(9).slice(2)}$`, a2 = "?" + w, _0 = `<${a2}>`, f = document, E = () => f.createComment(""), V = (o) => o === null || typeof o != "object" && typeof o != "function", F = Array.isArray, u0 = (o) => F(o) || typeof (o == null ? void 0 : o[Symbol.iterator]) == "function", z = `[ 	
+\f\r]`, y = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, Y = /-->/g, t2 = />/g, u = RegExp(`>|${z}(?:([^\\s"'>=/]+)(${z}*=${z}*(?:[^ 	
+\f\r"'\`<>=]|("|')|))|$)`, "g"), e2 = /'/g, s2 = /"/g, h2 = /^(?:script|style|textarea|title)$/i, m0 = (o) => (t, ...e) => ({ _$litType$: o, strings: t, values: e }), i2 = m0(1), x = Symbol.for("lit-noChange"), p = Symbol.for("lit-nothing"), o2 = /* @__PURE__ */ new WeakMap(), m = f.createTreeWalker(f, 129);
+function l2(o, t) {
+  if (!F(o) || !o.hasOwnProperty("raw")) throw Error("invalid template strings array");
+  return X !== void 0 ? X.createHTML(t) : t;
 }
-const Pt = (r, t) => {
-  const e = r.length - 1, s = [];
-  let i, o = t === 2 ? "<svg>" : t === 3 ? "<math>" : "", n = S;
+const b0 = (o, t) => {
+  const e = o.length - 1, s = [];
+  let i, r = t === 2 ? "<svg>" : t === 3 ? "<math>" : "", n = y;
   for (let a = 0; a < e; a++) {
-    const h = r[a];
-    let c, p, l = -1, u = 0;
-    for (; u < h.length && (n.lastIndex = u, p = n.exec(h), p !== null); ) u = n.lastIndex, n === S ? p[1] === "!--" ? n = X : p[1] !== void 0 ? n = Y : p[2] !== void 0 ? (lt.test(p[2]) && (i = RegExp("</" + p[2], "g")), n = g) : p[3] !== void 0 && (n = g) : n === g ? p[0] === ">" ? (n = i ?? S, l = -1) : p[1] === void 0 ? l = -2 : (l = n.lastIndex - p[2].length, c = p[1], n = p[3] === void 0 ? g : p[3] === '"' ? et : tt) : n === et || n === tt ? n = g : n === X || n === Y ? n = S : (n = g, i = void 0);
-    const $ = n === g && r[a + 1].startsWith("/>") ? " " : "";
-    o += n === S ? h + bt : l >= 0 ? (s.push(c), h.slice(0, l) + ht + h.slice(l) + f + $) : h + f + (l === -2 ? a : $);
+    const c = o[a];
+    let h, d, l = -1, g = 0;
+    for (; g < c.length && (n.lastIndex = g, d = n.exec(c), d !== null); ) g = n.lastIndex, n === y ? d[1] === "!--" ? n = Y : d[1] !== void 0 ? n = t2 : d[2] !== void 0 ? (h2.test(d[2]) && (i = RegExp("</" + d[2], "g")), n = u) : d[3] !== void 0 && (n = u) : n === u ? d[0] === ">" ? (n = i ?? y, l = -1) : d[1] === void 0 ? l = -2 : (l = n.lastIndex - d[2].length, h = d[1], n = d[3] === void 0 ? u : d[3] === '"' ? s2 : e2) : n === s2 || n === e2 ? n = u : n === Y || n === t2 ? n = y : (n = u, i = void 0);
+    const k = n === u && o[a + 1].startsWith("/>") ? " " : "";
+    r += n === y ? c + _0 : l >= 0 ? (s.push(h), c.slice(0, l) + c2 + c.slice(l) + w + k) : c + w + (l === -2 ? a : k);
   }
-  return [ct(r, o + (r[e] || "<?>") + (t === 2 ? "</svg>" : t === 3 ? "</math>" : "")), s];
+  return [l2(o, r + (o[e] || "<?>") + (t === 2 ? "</svg>" : t === 3 ? "</math>" : "")), s];
 };
-class U {
+class S {
   constructor({ strings: t, _$litType$: e }, s) {
     let i;
     this.parts = [];
-    let o = 0, n = 0;
-    const a = t.length - 1, h = this.parts, [c, p] = Pt(t, e);
-    if (this.el = U.createElement(c, s), y.currentNode = this.el.content, e === 2 || e === 3) {
+    let r = 0, n = 0;
+    const a = t.length - 1, c = this.parts, [h, d] = b0(t, e);
+    if (this.el = S.createElement(h, s), m.currentNode = this.el.content, e === 2 || e === 3) {
       const l = this.el.content.firstChild;
       l.replaceWith(...l.childNodes);
     }
-    for (; (i = y.nextNode()) !== null && h.length < a; ) {
+    for (; (i = m.nextNode()) !== null && c.length < a; ) {
       if (i.nodeType === 1) {
-        if (i.hasAttributes()) for (const l of i.getAttributeNames()) if (l.endsWith(ht)) {
-          const u = p[n++], $ = i.getAttribute(l).split(f), T = /([.?@])?(.*)/.exec(u);
-          h.push({ type: 1, index: o, name: T[2], strings: $, ctor: T[1] === "." ? xt : T[1] === "?" ? Ot : T[1] === "@" ? Ut : D }), i.removeAttribute(l);
-        } else l.startsWith(f) && (h.push({ type: 6, index: o }), i.removeAttribute(l));
-        if (lt.test(i.tagName)) {
-          const l = i.textContent.split(f), u = l.length - 1;
-          if (u > 0) {
-            i.textContent = k ? k.emptyScript : "";
-            for (let $ = 0; $ < u; $++) i.append(l[$], x()), y.nextNode(), h.push({ type: 2, index: ++o });
-            i.append(l[u], x());
+        if (i.hasAttributes()) for (const l of i.getAttributeNames()) if (l.endsWith(c2)) {
+          const g = d[n++], k = i.getAttribute(l).split(w), Z = /([.?@])?(.*)/.exec(g);
+          c.push({ type: 1, index: r, name: Z[2], strings: k, ctor: Z[1] === "." ? C0 : Z[1] === "?" ? x0 : Z[1] === "@" ? $0 : N }), i.removeAttribute(l);
+        } else l.startsWith(w) && (c.push({ type: 6, index: r }), i.removeAttribute(l));
+        if (h2.test(i.tagName)) {
+          const l = i.textContent.split(w), g = l.length - 1;
+          if (g > 0) {
+            i.textContent = T ? T.emptyScript : "";
+            for (let k = 0; k < g; k++) i.append(l[k], E()), m.nextNode(), c.push({ type: 2, index: ++r });
+            i.append(l[g], E());
           }
         }
-      } else if (i.nodeType === 8) if (i.data === at) h.push({ type: 2, index: o });
+      } else if (i.nodeType === 8) if (i.data === a2) c.push({ type: 2, index: r });
       else {
         let l = -1;
-        for (; (l = i.data.indexOf(f, l + 1)) !== -1; ) h.push({ type: 7, index: o }), l += f.length - 1;
+        for (; (l = i.data.indexOf(w, l + 1)) !== -1; ) c.push({ type: 7, index: r }), l += w.length - 1;
       }
-      o++;
+      r++;
     }
   }
   static createElement(t, e) {
-    const s = A.createElement("template");
+    const s = f.createElement("template");
     return s.innerHTML = t, s;
   }
 }
-function b(r, t, e = r, s) {
+function $(o, t, e = o, s) {
   var n, a;
-  if (t === E) return t;
+  if (t === x) return t;
   let i = s !== void 0 ? (n = e._$Co) == null ? void 0 : n[s] : e._$Cl;
-  const o = O(t) ? void 0 : t._$litDirective$;
-  return (i == null ? void 0 : i.constructor) !== o && ((a = i == null ? void 0 : i._$AO) == null || a.call(i, !1), o === void 0 ? i = void 0 : (i = new o(r), i._$AT(r, e, s)), s !== void 0 ? (e._$Co ?? (e._$Co = []))[s] = i : e._$Cl = i), i !== void 0 && (t = b(r, i._$AS(r, t.values), i, s)), t;
+  const r = V(t) ? void 0 : t._$litDirective$;
+  return (i == null ? void 0 : i.constructor) !== r && ((a = i == null ? void 0 : i._$AO) == null || a.call(i, !1), r === void 0 ? i = void 0 : (i = new r(o), i._$AT(o, e, s)), s !== void 0 ? (e._$Co ?? (e._$Co = []))[s] = i : e._$Cl = i), i !== void 0 && (t = $(o, i._$AS(o, t.values), i, s)), t;
 }
-class Ct {
+class f0 {
   constructor(t, e) {
     this._$AV = [], this._$AN = void 0, this._$AD = t, this._$AM = e;
   }
@@ -356,30 +357,30 @@ class Ct {
     return this._$AM._$AU;
   }
   u(t) {
-    const { el: { content: e }, parts: s } = this._$AD, i = ((t == null ? void 0 : t.creationScope) ?? A).importNode(e, !0);
-    y.currentNode = i;
-    let o = y.nextNode(), n = 0, a = 0, h = s[0];
-    for (; h !== void 0; ) {
-      if (n === h.index) {
-        let c;
-        h.type === 2 ? c = new H(o, o.nextSibling, this, t) : h.type === 1 ? c = new h.ctor(o, h.name, h.strings, this, t) : h.type === 6 && (c = new Mt(o, this, t)), this._$AV.push(c), h = s[++a];
+    const { el: { content: e }, parts: s } = this._$AD, i = ((t == null ? void 0 : t.creationScope) ?? f).importNode(e, !0);
+    m.currentNode = i;
+    let r = m.nextNode(), n = 0, a = 0, c = s[0];
+    for (; c !== void 0; ) {
+      if (n === c.index) {
+        let h;
+        c.type === 2 ? h = new P(r, r.nextSibling, this, t) : c.type === 1 ? h = new c.ctor(r, c.name, c.strings, this, t) : c.type === 6 && (h = new M0(r, this, t)), this._$AV.push(h), c = s[++a];
       }
-      n !== (h == null ? void 0 : h.index) && (o = y.nextNode(), n++);
+      n !== (c == null ? void 0 : c.index) && (r = m.nextNode(), n++);
     }
-    return y.currentNode = A, i;
+    return m.currentNode = f, i;
   }
   p(t) {
     let e = 0;
     for (const s of this._$AV) s !== void 0 && (s.strings !== void 0 ? (s._$AI(t, s, e), e += s.strings.length - 2) : s._$AI(t[e])), e++;
   }
 }
-class H {
+class P {
   get _$AU() {
     var t;
     return ((t = this._$AM) == null ? void 0 : t._$AU) ?? this._$Cv;
   }
   constructor(t, e, s, i) {
-    this.type = 2, this._$AH = d, this._$AN = void 0, this._$AA = t, this._$AB = e, this._$AM = s, this.options = i, this._$Cv = (i == null ? void 0 : i.isConnected) ?? !0;
+    this.type = 2, this._$AH = p, this._$AN = void 0, this._$AA = t, this._$AB = e, this._$AM = s, this.options = i, this._$Cv = (i == null ? void 0 : i.isConnected) ?? !0;
   }
   get parentNode() {
     let t = this._$AA.parentNode;
@@ -393,7 +394,7 @@ class H {
     return this._$AB;
   }
   _$AI(t, e = this) {
-    t = b(this, t, e), O(t) ? t === d || t == null || t === "" ? (this._$AH !== d && this._$AR(), this._$AH = d) : t !== this._$AH && t !== E && this._(t) : t._$litType$ !== void 0 ? this.$(t) : t.nodeType !== void 0 ? this.T(t) : St(t) ? this.k(t) : this._(t);
+    t = $(this, t, e), V(t) ? t === p || t == null || t === "" ? (this._$AH !== p && this._$AR(), this._$AH = p) : t !== this._$AH && t !== x && this._(t) : t._$litType$ !== void 0 ? this.$(t) : t.nodeType !== void 0 ? this.T(t) : u0(t) ? this.k(t) : this._(t);
   }
   O(t) {
     return this._$AA.parentNode.insertBefore(t, this._$AB);
@@ -402,26 +403,26 @@ class H {
     this._$AH !== t && (this._$AR(), this._$AH = this.O(t));
   }
   _(t) {
-    this._$AH !== d && O(this._$AH) ? this._$AA.nextSibling.data = t : this.T(A.createTextNode(t)), this._$AH = t;
+    this._$AH !== p && V(this._$AH) ? this._$AA.nextSibling.data = t : this.T(f.createTextNode(t)), this._$AH = t;
   }
   $(t) {
-    var o;
-    const { values: e, _$litType$: s } = t, i = typeof s == "number" ? this._$AC(t) : (s.el === void 0 && (s.el = U.createElement(ct(s.h, s.h[0]), this.options)), s);
-    if (((o = this._$AH) == null ? void 0 : o._$AD) === i) this._$AH.p(e);
+    var r;
+    const { values: e, _$litType$: s } = t, i = typeof s == "number" ? this._$AC(t) : (s.el === void 0 && (s.el = S.createElement(l2(s.h, s.h[0]), this.options)), s);
+    if (((r = this._$AH) == null ? void 0 : r._$AD) === i) this._$AH.p(e);
     else {
-      const n = new Ct(i, this), a = n.u(this.options);
+      const n = new f0(i, this), a = n.u(this.options);
       n.p(e), this.T(a), this._$AH = n;
     }
   }
   _$AC(t) {
-    let e = it.get(t.strings);
-    return e === void 0 && it.set(t.strings, e = new U(t)), e;
+    let e = o2.get(t.strings);
+    return e === void 0 && o2.set(t.strings, e = new S(t)), e;
   }
   k(t) {
-    V(this._$AH) || (this._$AH = [], this._$AR());
+    F(this._$AH) || (this._$AH = [], this._$AR());
     const e = this._$AH;
     let s, i = 0;
-    for (const o of t) i === e.length ? e.push(s = new H(this.O(x()), this.O(x()), this, this.options)) : s = e[i], s._$AI(o), i++;
+    for (const r of t) i === e.length ? e.push(s = new P(this.O(E()), this.O(E()), this, this.options)) : s = e[i], s._$AI(r), i++;
     i < e.length && (this._$AR(s && s._$AB.nextSibling, i), e.length = i);
   }
   _$AR(t = this._$AA.nextSibling, e) {
@@ -436,62 +437,62 @@ class H {
     this._$AM === void 0 && (this._$Cv = t, (e = this._$AP) == null || e.call(this, t));
   }
 }
-class D {
+class N {
   get tagName() {
     return this.element.tagName;
   }
   get _$AU() {
     return this._$AM._$AU;
   }
-  constructor(t, e, s, i, o) {
-    this.type = 1, this._$AH = d, this._$AN = void 0, this.element = t, this.name = e, this._$AM = i, this.options = o, s.length > 2 || s[0] !== "" || s[1] !== "" ? (this._$AH = Array(s.length - 1).fill(new String()), this.strings = s) : this._$AH = d;
+  constructor(t, e, s, i, r) {
+    this.type = 1, this._$AH = p, this._$AN = void 0, this.element = t, this.name = e, this._$AM = i, this.options = r, s.length > 2 || s[0] !== "" || s[1] !== "" ? (this._$AH = Array(s.length - 1).fill(new String()), this.strings = s) : this._$AH = p;
   }
   _$AI(t, e = this, s, i) {
-    const o = this.strings;
+    const r = this.strings;
     let n = !1;
-    if (o === void 0) t = b(this, t, e, 0), n = !O(t) || t !== this._$AH && t !== E, n && (this._$AH = t);
+    if (r === void 0) t = $(this, t, e, 0), n = !V(t) || t !== this._$AH && t !== x, n && (this._$AH = t);
     else {
       const a = t;
-      let h, c;
-      for (t = o[0], h = 0; h < o.length - 1; h++) c = b(this, a[s + h], e, h), c === E && (c = this._$AH[h]), n || (n = !O(c) || c !== this._$AH[h]), c === d ? t = d : t !== d && (t += (c ?? "") + o[h + 1]), this._$AH[h] = c;
+      let c, h;
+      for (t = r[0], c = 0; c < r.length - 1; c++) h = $(this, a[s + c], e, c), h === x && (h = this._$AH[c]), n || (n = !V(h) || h !== this._$AH[c]), h === p ? t = p : t !== p && (t += (h ?? "") + r[c + 1]), this._$AH[c] = h;
     }
     n && !i && this.j(t);
   }
   j(t) {
-    t === d ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, t ?? "");
+    t === p ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, t ?? "");
   }
 }
-class xt extends D {
+class C0 extends N {
   constructor() {
     super(...arguments), this.type = 3;
   }
   j(t) {
-    this.element[this.name] = t === d ? void 0 : t;
+    this.element[this.name] = t === p ? void 0 : t;
   }
 }
-class Ot extends D {
+class x0 extends N {
   constructor() {
     super(...arguments), this.type = 4;
   }
   j(t) {
-    this.element.toggleAttribute(this.name, !!t && t !== d);
+    this.element.toggleAttribute(this.name, !!t && t !== p);
   }
 }
-class Ut extends D {
-  constructor(t, e, s, i, o) {
-    super(t, e, s, i, o), this.type = 5;
+class $0 extends N {
+  constructor(t, e, s, i, r) {
+    super(t, e, s, i, r), this.type = 5;
   }
   _$AI(t, e = this) {
-    if ((t = b(this, t, e, 0) ?? d) === E) return;
-    const s = this._$AH, i = t === d && s !== d || t.capture !== s.capture || t.once !== s.once || t.passive !== s.passive, o = t !== d && (s === d || i);
-    i && this.element.removeEventListener(this.name, this, s), o && this.element.addEventListener(this.name, this, t), this._$AH = t;
+    if ((t = $(this, t, e, 0) ?? p) === x) return;
+    const s = this._$AH, i = t === p && s !== p || t.capture !== s.capture || t.once !== s.once || t.passive !== s.passive, r = t !== p && (s === p || i);
+    i && this.element.removeEventListener(this.name, this, s), r && this.element.addEventListener(this.name, this, t), this._$AH = t;
   }
   handleEvent(t) {
     var e;
     typeof this._$AH == "function" ? this._$AH.call(((e = this.options) == null ? void 0 : e.host) ?? this.element, t) : this._$AH.handleEvent(t);
   }
 }
-class Mt {
+class M0 {
   constructor(t, e, s) {
     this.element = t, this.type = 6, this._$AN = void 0, this._$AM = e, this.options = s;
   }
@@ -499,27 +500,27 @@ class Mt {
     return this._$AM._$AU;
   }
   _$AI(t) {
-    b(this, t);
+    $(this, t);
   }
 }
-const z = P.litHtmlPolyfillSupport;
-z == null || z(U, H), (P.litHtmlVersions ?? (P.litHtmlVersions = [])).push("3.3.0");
-const Ht = (r, t, e) => {
+const D = L.litHtmlPolyfillSupport;
+D == null || D(S, P), (L.litHtmlVersions ?? (L.litHtmlVersions = [])).push("3.3.0");
+const y0 = (o, t, e) => {
   const s = (e == null ? void 0 : e.renderBefore) ?? t;
   let i = s._$litPart$;
   if (i === void 0) {
-    const o = (e == null ? void 0 : e.renderBefore) ?? null;
-    s._$litPart$ = i = new H(t.insertBefore(x(), o), o, void 0, e ?? {});
+    const r = (e == null ? void 0 : e.renderBefore) ?? null;
+    s._$litPart$ = i = new P(t.insertBefore(E(), r), r, void 0, e ?? {});
   }
-  return i._$AI(r), i;
+  return i._$AI(o), i;
 };
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const m = globalThis;
-class C extends v {
+const b = globalThis;
+class H extends C {
   constructor() {
     super(...arguments), this.renderOptions = { host: this }, this._$Do = void 0;
   }
@@ -530,7 +531,7 @@ class C extends v {
   }
   update(t) {
     const e = this.render();
-    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t), this._$Do = Ht(e, this.renderRoot, this.renderOptions);
+    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t), this._$Do = y0(e, this.renderRoot, this.renderOptions);
   }
   connectedCallback() {
     var t;
@@ -541,127 +542,135 @@ class C extends v {
     super.disconnectedCallback(), (t = this._$Do) == null || t.setConnected(!1);
   }
   render() {
-    return E;
+    return x;
   }
 }
-var nt;
-C._$litElement$ = !0, C.finalized = !0, (nt = m.litElementHydrateSupport) == null || nt.call(m, { LitElement: C });
-const I = m.litElementPolyfillSupport;
-I == null || I({ LitElement: C });
-(m.litElementVersions ?? (m.litElementVersions = [])).push("4.2.0");
+var r2;
+H._$litElement$ = !0, H.finalized = !0, (r2 = b.litElementHydrateSupport) == null || r2.call(b, { LitElement: H });
+const j = b.litElementPolyfillSupport;
+j == null || j({ LitElement: H });
+(b.litElementVersions ?? (b.litElementVersions = [])).push("4.2.0");
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const Tt = (r) => (t, e) => {
+const A0 = (o) => (t, e) => {
   e !== void 0 ? e.addInitializer(() => {
-    customElements.define(r, t);
-  }) : customElements.define(r, t);
+    customElements.define(o, t);
+  }) : customElements.define(o, t);
 };
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-const Nt = { attribute: !0, type: String, converter: R, reflect: !1, hasChanged: W }, Rt = (r = Nt, t, e) => {
+const L0 = { attribute: !0, type: String, converter: U, reflect: !1, hasChanged: W }, H0 = (o = L0, t, e) => {
   const { kind: s, metadata: i } = e;
-  let o = globalThis.litPropertyMetadata.get(i);
-  if (o === void 0 && globalThis.litPropertyMetadata.set(i, o = /* @__PURE__ */ new Map()), s === "setter" && ((r = Object.create(r)).wrapped = !0), o.set(e.name, r), s === "accessor") {
+  let r = globalThis.litPropertyMetadata.get(i);
+  if (r === void 0 && globalThis.litPropertyMetadata.set(i, r = /* @__PURE__ */ new Map()), s === "setter" && ((o = Object.create(o)).wrapped = !0), r.set(e.name, o), s === "accessor") {
     const { name: n } = e;
     return { set(a) {
-      const h = t.get.call(this);
-      t.set.call(this, a), this.requestUpdate(n, h, r);
+      const c = t.get.call(this);
+      t.set.call(this, a), this.requestUpdate(n, c, o);
     }, init(a) {
-      return a !== void 0 && this.C(n, void 0, r, a), a;
+      return a !== void 0 && this.C(n, void 0, o, a), a;
     } };
   }
   if (s === "setter") {
     const { name: n } = e;
     return function(a) {
-      const h = this[n];
-      t.call(this, a), this.requestUpdate(n, h, r);
+      const c = this[n];
+      t.call(this, a), this.requestUpdate(n, c, o);
     };
   }
   throw Error("Unsupported decorator location: " + s);
 };
-function dt(r) {
-  return (t, e) => typeof e == "object" ? Rt(r, t, e) : ((s, i, o) => {
-    const n = i.hasOwnProperty(o);
-    return i.constructor.createProperty(o, s), n ? Object.getOwnPropertyDescriptor(i, o) : void 0;
-  })(r, t, e);
+function B(o) {
+  return (t, e) => typeof e == "object" ? H0(o, t, e) : ((s, i, r) => {
+    const n = i.hasOwnProperty(r);
+    return i.constructor.createProperty(r, s), n ? Object.getOwnPropertyDescriptor(i, r) : void 0;
+  })(o, t, e);
 }
 /**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */
-function kt(r) {
-  return dt({ ...r, state: !0, attribute: !1 });
+function E0(o) {
+  return B({ ...o, state: !0, attribute: !1 });
 }
-const rt = {}, Dt = 5;
-async function pt(r, t) {
-  const e = r.split("+"), s = t ? e[1] : e[0], i = t ? "32" : "0", o = (Dt * (t ? 2 : 1)).toString();
-  let a = await (async (h) => {
-    const c = rt.resolve(process.cwd(), "../icons", `${h}.svg`);
-    return rt.readFile(c, "utf8");
-  })(s);
-  return a = a.replace(
-    /<svg\b([^>]*)>/,
-    `<svg$1 x="${i}" y="${i}">`
-  ), a = a.replace(/stroke-width="[^"]*"/g, `stroke-width="${o}"`), e[1] && !t && (a = await jt(a, r)), a;
-}
-async function jt(r, t) {
-  const e = `
-<defs>
-  <mask id="quarterMask">
-    <rect width="64" height="64" fill="white"/>
-    <rect x="32" y="32" width="32" height="32" fill="black"/>
-  </mask>
-</defs>
-`;
-  r = r.replace(
-    /<svg\b[^>]*>/,
-    (n) => n + e
-  ), r = r.replace(
-    /<(path|rect|circle|line|polygon|polyline)\b/g,
-    '<$1 mask="url(#quarterMask)"'
-  );
-  const o = `<g transform="translate(32,32) scale(0.5)">
-${(await pt(t, !0)).replace(/<\/?svg\b[^>]*>/g, "")}
-</g>`;
-  return r = r.replace(/<\/svg>/, `${o}</svg>`), r;
-}
-var Lt = Object.defineProperty, zt = Object.getOwnPropertyDescriptor, F = (r, t, e, s) => {
-  for (var i = s > 1 ? void 0 : s ? zt(t, e) : t, o = r.length - 1, n; o >= 0; o--)
-    (n = r[o]) && (i = (s ? n(t, e, i) : n(i)) || i);
-  return s && i && Lt(t, e, i), i;
+var V0 = Object.defineProperty, S0 = Object.getOwnPropertyDescriptor, M = (o, t, e, s) => {
+  for (var i = s > 1 ? void 0 : s ? S0(t, e) : t, r = o.length - 1, n; r >= 0; r--)
+    (n = o[r]) && (i = (s ? n(t, e, i) : n(i)) || i);
+  return s && i && V0(t, e, i), i;
 };
-let M = class extends C {
+let _ = class extends H {
   constructor() {
-    super(...arguments), this.id = "top-right", this.svg = void 0;
+    super(...arguments), this.id = "topright", this.size = "16", this.weight = "5", this.color = "hsl(0deg 0% 0%)", this.svg = void 0;
   }
-  updated(r) {
-    super.updated(r), r.has("id") && (async () => this.svg = await pt(this.id, !1))();
+  updated(o) {
+    super.updated(o), o.has("id") && (async () => {
+      var t;
+      return this.svg = (t = await this.icon(!1)) == null ? void 0 : t.outerHTML;
+    })();
   }
   render() {
-    return this.svg ? st`<span .innerHTML=${this.svg}></span>` : st``;
+    return this.svg ? i2`<span .innerHTML=${this.svg}></span>` : i2``;
+  }
+  async icon(o) {
+    const t = this.id.split("+"), e = o ? t[1] : t[0], s = o ? "32" : this.size, i = o ? "32" : "0", r = (parseFloat(this.weight) * (o ? 2 : 1)).toString();
+    let a = await (async (d) => {
+      try {
+        const l = new URL((/* @__PURE__ */ Object.assign({ "../icons/add.svg": d2, "../icons/audio.svg": p2, "../icons/bottom-left.svg": g2, "../icons/bottom-right.svg": k2, "../icons/camera-video.svg": w2, "../icons/camera.svg": v2, "../icons/cmd.svg": _2, "../icons/code.svg": u2, "../icons/collapse.svg": m2, "../icons/copyright.svg": b2, "../icons/document.svg": f2, "../icons/down.svg": C2, "../icons/download.svg": x2, "../icons/edit.svg": $2, "../icons/expand.svg": M2, "../icons/github.svg": y2, "../icons/grid.svg": A2, "../icons/heart.svg": L2, "../icons/home.svg": H2, "../icons/info.svg": E2, "../icons/instagram.svg": V2, "../icons/language.svg": S2, "../icons/left.svg": P2, "../icons/lock-closed.svg": B2, "../icons/lock-open.svg": Z2, "../icons/lock.svg": O2, "../icons/login.svg": U2, "../icons/ma.svg": T2, "../icons/mail.svg": N2, "../icons/menu.svg": R2, "../icons/microphone.svg": z2, "../icons/negative.svg": D2, "../icons/options.svg": j2, "../icons/pants.svg": q2, "../icons/pause.svg": I2, "../icons/person.svg": W2, "../icons/play.svg": F2, "../icons/positive.svg": J2, "../icons/remove.svg": K2, "../icons/right.svg": G2, "../icons/search.svg": Q2, "../icons/send.svg": X2, "../icons/settings.svg": Y2, "../icons/signal.svg": t0, "../icons/tiktok.svg": e0, "../icons/top-left.svg": s0, "../icons/top-right.svg": i0, "../icons/trash.svg": o0, "../icons/up.svg": r0, "../icons/youtube.svg": n0 }))[`../icons/${d}.svg`], import.meta.url).href;
+        return await (await fetch(l)).text();
+      } catch {
+        return await (await fetch(`/icons/${d}.svg`)).text();
+      }
+    })(e);
+    const c = new DOMParser().parseFromString(a, "image/svg+xml"), h = c.querySelector("svg");
+    if (h)
+      return h.setAttribute("x", i), h.setAttribute("y", i), h.setAttribute("width", s), h.setAttribute("height", s), h.setAttribute("fill", "none"), c.querySelectorAll("[stroke]").forEach((d) => d.setAttribute("stroke", this.color)), c.querySelectorAll("[stroke-width]").forEach((d) => d.setAttribute("stroke-width", r)), t[1] && !o && await this.child(h), h;
+  }
+  async child(o) {
+    const t = "http://www.w3.org/2000/svg";
+    let e = o.querySelector("defs");
+    e || (e = document.createElementNS(t, "defs"), o.prepend(e));
+    const s = document.createElementNS(t, "mask");
+    s.setAttribute("id", "quarterMask");
+    const i = document.createElementNS(t, "rect");
+    i.setAttribute("width", "64"), i.setAttribute("height", "64"), i.setAttribute("fill", "white"), s.appendChild(i);
+    const r = document.createElementNS(t, "rect");
+    r.setAttribute("x", "32"), r.setAttribute("y", "32"), r.setAttribute("width", "32"), r.setAttribute("height", "32"), r.setAttribute("fill", "black"), s.appendChild(r), e.appendChild(s), o.querySelectorAll("path, rect, circle, line, polygon, polyline").forEach((a) => {
+      a.setAttribute("mask", "url(#quarterMask)");
+    });
+    const n = await this.icon(!0);
+    n && o.appendChild(n);
   }
 };
-M.styles = $t`
+_.styles = a0`
     svg {
         display: block;
     }
   `;
-F([
-  dt()
-], M.prototype, "id", 2);
-F([
-  kt()
-], M.prototype, "svg", 2);
-M = F([
-  Tt("ma")
-], M);
+M([
+  B()
+], _.prototype, "id", 2);
+M([
+  B()
+], _.prototype, "size", 2);
+M([
+  B()
+], _.prototype, "weight", 2);
+M([
+  B()
+], _.prototype, "color", 2);
+M([
+  E0()
+], _.prototype, "svg", 2);
+_ = M([
+  A0("ma-icon")
+], _);
 export {
-  M as MaIcon
+  _ as MaIcon
 };
