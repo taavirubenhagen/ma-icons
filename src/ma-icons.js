@@ -17,13 +17,7 @@ class MaIcon extends HTMLElement {
     this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)";
     this.size = this.getAttribute("size") ?? "16";
     this.weight = this.getAttribute("weight") ?? "5";
-    const style = document.createElement("style");
-    style.textContent = `
-      svg {
-        display: block;
-      }
-    `;
-    this.innerHTML = `<span style="display: block">${(await this.icon(false))?.outerHTML ?? "error"}</span>`;
+    this.innerHTML = `<div style="display: inline-block;">${(await this.icon(false))?.outerHTML ?? "error"}</div>`;
     //this.appendChild(style);
     //this.appendChild((await this.icon(false))?.outerHTML ?? "error");
   }
