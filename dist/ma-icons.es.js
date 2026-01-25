@@ -12,7 +12,7 @@ class u extends HTMLElement {
     console.log("rendering icon"), this.name = this.getAttribute("name") ?? "topright", this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)", this.size = this.getAttribute("size") ?? "16", this.weight = this.getAttribute("weight") ?? "5", this.innerHTML = (await this.icon(!1))?.outerHTML ?? "error";
   }
   async icon(t) {
-    const e = this.name.split("-"), r = t ? e[1] : e[0], n = t ? "32" : this.size, c = t ? "32" : "0", o = (parseFloat(this.weight) * (t ? 2 : 1)).toString(), i = `/icons/${r}.svg`;
+    const e = this.name.split("-"), r = t ? e[1] : e[0], n = t ? "32" : this.size, c = t ? "32" : "0", o = (parseFloat(this.weight) * (t ? 2 : 1)).toString(), i = `./icons/${r}.svg`;
     let l = await (await fetch(i)).text();
     const a = new DOMParser().parseFromString(l, "image/svg+xml"), s = a.querySelector("svg");
     if (s)
