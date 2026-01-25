@@ -29,8 +29,8 @@ if (typeof window !== 'undefined') {
       const size = isChild ? "32" : this.size;
       const offset = isChild ? "32" : "0";
       const weight = (parseFloat(this.weight) * (isChild ? 2 : 1)).toString();
-      const u = new URL(`./icons/${name}.svg`, import.meta.url).href;
-      let svgText = await (await fetch(u)).text();
+      const url = new URL(`../icons/${name}.svg`, import.meta.url).href;
+      let svgText = await (await fetch(url)).text();
       const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
       const svgEl = doc.querySelector("svg");
       if (!svgEl) return;
