@@ -24,8 +24,8 @@ class MaIcon extends HTMLElement {
       }
     `;
     this.innerHTML = `<span style="display: block">${(await this.icon(false))?.outerHTML ?? "error"}</span>`;
-    this.appendChild(style);
-    this.appendChild((await this.icon(false))?.outerHTML ?? "error");
+    //this.appendChild(style);
+    //this.appendChild((await this.icon(false))?.outerHTML ?? "error");
   }
 
   async icon(isChild) {
