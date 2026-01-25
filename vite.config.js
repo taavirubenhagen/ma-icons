@@ -1,21 +1,17 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/component.ts'),
+      entry: 'src/ma-icons.js',
       name: 'MaIcons',
-      formats: ['es', 'iife'],
-      fileName: (format) => `ma-icons.${format}.js`
+      formats: ['es'],
+      fileName: () => 'ma-icons.js'
     },
     rollupOptions: {
       output: {
-        globals: {
-          // No external dependencies, but this is where you'd list them if needed
-        }
+        inlineDynamicImports: true
       }
     }
-  },
-  publicDir: 'public'
+  }
 });

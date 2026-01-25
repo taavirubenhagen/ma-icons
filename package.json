@@ -1,40 +1,24 @@
 {
   "name": "ma-icons",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "description": "Ma Icons by Taavi Rübenhagen",
   "type": "module",
-  "main": "dist/ma-icons.iife.js",
-  "unpkg": "dist/ma-icon.iife.js",
-  "module": "dist/ma-icons.es.js",
+  "main": "./dist/ma-icons.js",
+  "module": "./dist/ma-icons.js",
   "exports": {
-    "import": "./dist/ma-icons.es.js",
-    "require": "./dist/ma-icons.iife.js"
+    ".": {
+      "import": "./dist/ma-icons.js"
+    }
   },
-  "keywords": [
-    "svg",
-    "icons",
-    "web components",
-    "ma-icons"
-  ],
-  "files": [
-    "dist",
-    "icons",
-    "README.md",
-    "LICENSE.md"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "dev": "vite",
-    "build": "node src/update.ts && vite build",
+    "update": "bun run src/update.ts",
     "github": "git pull origin main && git add . && git commit -m 'Untitled' && git push",
-    "deploy": "npm run build && npm publish && npm run github"
+    "deploy": "bun x vite build && npm publish && bun run github"
   },
   "author": "Taavi Rübenhagen",
-  "license": "BSD-4-Clause-Shortened",
-  "dependencies": {
-    "lit": "^3.3.0",
-    "vite": "^6.3.0"
-  },
+  "license": "BSD-2-Clause-Shortened",
   "devDependencies": {
-    "@types/node": "^25.0.10"
+    "vite": "^latest"
   }
 }
