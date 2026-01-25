@@ -23,7 +23,7 @@ class MaIcon extends HTMLElement {
         display: block;
       }
     `;
-    this.innerHTML = "";
+    this.innerHTML = `<span style="display: block">${(await this.icon(false))?.outerHTML ?? "error"}</span>`;
     this.appendChild(style);
     this.appendChild((await this.icon(false))?.outerHTML ?? "error");
   }
