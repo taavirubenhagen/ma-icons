@@ -26,7 +26,7 @@ class MaIcon extends HTMLElement {
     const size = isChild ? "32" : this.size;
     const offset = isChild ? "32" : "0";
     const weight = (parseFloat(this.weight) * (isChild ? 2 : 1)).toString();
-    const url = `./icons/${name}.svg`;
+    const url = `/icons/${name}.svg`;
     let svgText = await (await fetch(url)).text();
     const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
     const svgEl = doc.querySelector("svg");
