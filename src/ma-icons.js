@@ -20,7 +20,7 @@ if (typeof window !== 'undefined') {
     async render() {
       this.id = this.getAttribute("id") ?? "topright";
       this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)";
-      this.innerHTML = (await this.icon(false))?.outerHTML ?? "";
+      this.innerHTML = "test"; //(await this.icon(false))?.outerHTML ?? "";
     }
     
     async icon(isChild) {

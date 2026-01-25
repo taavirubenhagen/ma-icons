@@ -14,7 +14,7 @@ if (typeof window < "u") {
       this.render();
     }
     async render() {
-      this.id = this.getAttribute("id") ?? "topright", this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)", this.innerHTML = (await this.icon(!1))?.outerHTML ?? "";
+      this.id = this.getAttribute("id") ?? "topright", this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)", this.innerHTML = "test";
     }
     async icon(t) {
       const i = this.id.split("-"), c = t ? i[1] : i[0], r = t ? "32" : this.size, o = t ? "32" : "0", s = (parseFloat(this.weight) * (t ? 2 : 1)).toString(), n = new URL((/* @__PURE__ */ Object.assign({}))[`./icons/${c}.svg`], import.meta.url).href;
