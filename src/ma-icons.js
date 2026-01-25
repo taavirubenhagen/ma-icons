@@ -17,10 +17,15 @@ class MaIcon extends HTMLElement {
     this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)";
     this.size = this.getAttribute("size") ?? "16";
     this.weight = this.getAttribute("weight") ?? "5";
-    this.style = `svg {
-      display: block;
-    }`;
-    this.innerHTML = (await this.icon(false))?.outerHTML ?? "error";
+    const style = document.createElement("style");
+    style.textContent = `
+      svg {
+        display: block;
+      }
+    `;
+    this.innerHTML = "";
+    this.appendChild(style);
+    this.appendChild((await this.icon(false))?.outerHTML ?? "error");
   }
 
   async icon(isChild) {
