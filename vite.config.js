@@ -5,8 +5,8 @@ export default defineConfig({
     lib: {
       entry: 'src/ma-icons.js',
       name: 'MaIcons',
-      formats: ['es'],
-      fileName: () => 'ma-icons.js'
+      formats: ['es', 'iife'],
+      fileName: (format) => `ma-icons.${format}.js`
     },
     rollupOptions: {
       output: {
