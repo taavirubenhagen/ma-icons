@@ -21,7 +21,6 @@ class MaIcon extends HTMLElement {
   }
 
   async icon(isChild) {
-    return "eeee";
     const ids = this.name.split("-");
     const name = isChild ? ids[1] : ids[0];
     const size = isChild ? "32" : this.size;

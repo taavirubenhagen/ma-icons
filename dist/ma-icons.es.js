@@ -1,33 +1,37 @@
-class o extends HTMLElement {
+class u extends HTMLElement {
   static get observedAttributes() {
     return ["name", "size", "weight", "color"];
   }
   connectedCallback() {
     this.render();
   }
-  attributeChangedCallback(t, i, s) {
+  attributeChangedCallback(t, e, r) {
     this.render();
   }
   async render() {
     console.log("rendering icon"), this.name = this.getAttribute("name") ?? "topright", this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)", this.size = this.getAttribute("size") ?? "16", this.weight = this.getAttribute("weight") ?? "5", this.innerHTML = (await this.icon(!1))?.outerHTML ?? "error";
   }
   async icon(t) {
-    return "eeee";
+    const e = this.name.split("-"), r = t ? e[1] : e[0], n = t ? "32" : this.size, c = t ? "32" : "0", o = (parseFloat(this.weight) * (t ? 2 : 1)).toString(), i = `/icons/${r}.svg`;
+    let a = await (await fetch(i)).text();
+    const l = new DOMParser().parseFromString(a, "image/svg+xml"), s = l.querySelector("svg");
+    if (s)
+      return s.setAttribute("x", c), s.setAttribute("y", c), s.setAttribute("width", n), s.setAttribute("height", n), s.setAttribute("fill", "none"), l.querySelectorAll("[stroke]").forEach((h) => h.setAttribute("stroke", this.color)), l.querySelectorAll("[stroke-width]").forEach((h) => h.setAttribute("stroke-width", o)), e[1] && !t && await this.child(s), s;
   }
   async child(t) {
-    const i = "http://www.w3.org/2000/svg";
-    let s = t.querySelector("defs");
-    s || (s = document.createElementNS(i, "defs"), t.prepend(s));
-    const r = document.createElementNS(i, "mask"), c = `quarterMask-${Math.random().toString(36).substring(2, 9)}`;
-    r.setAttribute("id", c);
-    const n = document.createElementNS(i, "rect");
-    n.setAttribute("width", "64"), n.setAttribute("height", "64"), n.setAttribute("fill", "white"), r.appendChild(n);
-    const e = document.createElementNS(i, "rect");
-    e.setAttribute("x", "32"), e.setAttribute("y", "32"), e.setAttribute("width", "32"), e.setAttribute("height", "32"), e.setAttribute("fill", "black"), r.appendChild(e), s.appendChild(r), t.querySelectorAll("path, rect, circle, line, polygon, polyline").forEach((a) => {
-      a.setAttribute("mask", `url(#${c})`);
+    const e = "http://www.w3.org/2000/svg";
+    let r = t.querySelector("defs");
+    r || (r = document.createElementNS(e, "defs"), t.prepend(r));
+    const n = document.createElementNS(e, "mask"), c = `quarterMask-${Math.random().toString(36).substring(2, 9)}`;
+    n.setAttribute("id", c);
+    const o = document.createElementNS(e, "rect");
+    o.setAttribute("width", "64"), o.setAttribute("height", "64"), o.setAttribute("fill", "white"), n.appendChild(o);
+    const i = document.createElementNS(e, "rect");
+    i.setAttribute("x", "32"), i.setAttribute("y", "32"), i.setAttribute("width", "32"), i.setAttribute("height", "32"), i.setAttribute("fill", "black"), n.appendChild(i), r.appendChild(n), t.querySelectorAll("path, rect, circle, line, polygon, polyline").forEach((l) => {
+      l.setAttribute("mask", `url(#${c})`);
     });
-    const l = await this.icon(!0);
-    l && t.appendChild(l);
+    const a = await this.icon(!0);
+    a && t.appendChild(a);
   }
 }
-customElements.define("ma-icon", o);
+customElements.define("ma-icon", u);
