@@ -17,7 +17,7 @@ class MaIcon extends HTMLElement {
     this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)";
     this.size = this.getAttribute("size") ?? "16";
     this.weight = this.getAttribute("weight") ?? "5";
-    this.innerHTML = `<div style="display: inline-block;">${(await this.icon(false))?.outerHTML ?? "error"}</div>`;
+    this.innerHTML = `<div style="display: inline-block; background-color: red;">${(await this.icon(false))?.outerHTML ?? "error"}</div>`;
     //this.appendChild(style);
     //this.appendChild((await this.icon(false))?.outerHTML ?? "error");
   }
