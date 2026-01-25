@@ -3,7 +3,7 @@ class u extends HTMLElement {
     return ["name", "size", "weight", "color"];
   }
   connectedCallback() {
-    this.render();
+    requestAnimationFrame(() => this.render());
   }
   attributeChangedCallback(t, e, r) {
     this.render();
@@ -13,10 +13,10 @@ class u extends HTMLElement {
   }
   async icon(t) {
     const e = this.name.split("-"), r = t ? e[1] : e[0], n = t ? "32" : this.size, c = t ? "32" : "0", o = (parseFloat(this.weight) * (t ? 2 : 1)).toString(), i = `/icons/${r}.svg`;
-    let a = await (await fetch(i)).text();
-    const l = new DOMParser().parseFromString(a, "image/svg+xml"), s = l.querySelector("svg");
+    let l = await (await fetch(i)).text();
+    const a = new DOMParser().parseFromString(l, "image/svg+xml"), s = a.querySelector("svg");
     if (s)
-      return s.setAttribute("x", c), s.setAttribute("y", c), s.setAttribute("width", n), s.setAttribute("height", n), s.setAttribute("fill", "none"), l.querySelectorAll("[stroke]").forEach((h) => h.setAttribute("stroke", this.color)), l.querySelectorAll("[stroke-width]").forEach((h) => h.setAttribute("stroke-width", o)), e[1] && !t && await this.child(s), s;
+      return s.setAttribute("x", c), s.setAttribute("y", c), s.setAttribute("width", n), s.setAttribute("height", n), s.setAttribute("fill", "none"), a.querySelectorAll("[stroke]").forEach((h) => h.setAttribute("stroke", this.color)), a.querySelectorAll("[stroke-width]").forEach((h) => h.setAttribute("stroke-width", o)), e[1] && !t && await this.child(s), s;
   }
   async child(t) {
     const e = "http://www.w3.org/2000/svg";
@@ -27,11 +27,11 @@ class u extends HTMLElement {
     const o = document.createElementNS(e, "rect");
     o.setAttribute("width", "64"), o.setAttribute("height", "64"), o.setAttribute("fill", "white"), n.appendChild(o);
     const i = document.createElementNS(e, "rect");
-    i.setAttribute("x", "32"), i.setAttribute("y", "32"), i.setAttribute("width", "32"), i.setAttribute("height", "32"), i.setAttribute("fill", "black"), n.appendChild(i), r.appendChild(n), t.querySelectorAll("path, rect, circle, line, polygon, polyline").forEach((l) => {
-      l.setAttribute("mask", `url(#${c})`);
+    i.setAttribute("x", "32"), i.setAttribute("y", "32"), i.setAttribute("width", "32"), i.setAttribute("height", "32"), i.setAttribute("fill", "black"), n.appendChild(i), r.appendChild(n), t.querySelectorAll("path, rect, circle, line, polygon, polyline").forEach((a) => {
+      a.setAttribute("mask", `url(#${c})`);
     });
-    const a = await this.icon(!0);
-    a && t.appendChild(a);
+    const l = await this.icon(!0);
+    l && t.appendChild(l);
   }
 }
 customElements.define("ma-icon", u);

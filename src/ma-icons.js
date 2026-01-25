@@ -4,7 +4,7 @@ class MaIcon extends HTMLElement {
   }
 
   connectedCallback() {
-    this.render();
+    requestAnimationFrame(() => this.render());
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
