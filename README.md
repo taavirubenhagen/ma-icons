@@ -3,20 +3,11 @@
 Minimalist UI icon pack by Taavi Rübenhagen.
 Still in development.
 
-<html>
-<div id="showcase" style='display: flex;'>
-    <img src="https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg" width="32" style="display: inline;"/>
-    <img src="https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg" width="32" style="display: inline;"/>
-    <img src="https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg" width="32" style="display: inline;"/>
-</div>
-</html>
-
-![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title") ![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title") ![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title")
 ![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title")
-![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title")
-![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title")
-![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title")
-![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/add.svg "a title")
+![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/audio.svg "a title")
+![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/bottomleft.svg "a title")
+![Alt text](https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/icons/bottomright.svg "a title")
+![Alt text](icons/camera.svg "a title")
 
 [Usage](https://rubenhagen.com/ma-icons)
 
