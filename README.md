@@ -6,6 +6,7 @@ Still in development.*
 <!--[Usage](https://rubenhagen.com/ma-icons)-->
 
 <br/>
+<br/>
 <img src="https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/12.svg" width="100%" />
 <br/>
 
