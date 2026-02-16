@@ -26,4 +26,4 @@ Still in development.*
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/12.svg" width="100%" />
+<img src="https://raw.githubusercontent.com/taavirubenhagen/ma-icons/refs/heads/main/13.svg" width="100%" />
