@@ -22,7 +22,7 @@ Still in development.*
 
 <br/>
 
-**Icons [0.12.x]**
+**Icons**
 
 <br/>
 
