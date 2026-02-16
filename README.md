@@ -1,7 +1,7 @@
 **Ma Icons**
 
 *Ultra-minimalist UI icon pack.
-Still in development.
+Still in development.*
 
 <br/>
 
