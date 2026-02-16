@@ -1,9 +1,7 @@
 **Ma Icons**
 
 *Ultra-minimalist UI icon pack.
-Still in development.*
-
-[License](https://github.com/taavirubenhagen/ma-icons?tab=License-1-ov-file)
+Still in development.
 
 <br/>
 
