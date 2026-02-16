@@ -8,13 +8,12 @@ Still in development.*
 **Usage**
 
 ```
-<script src="https://unpkg.com/ma-icons@0.7.x/dist/ma-icons.iife.js"></script>
+<script src="https://unpkg.com/ma-icons@0.12.x/dist/ma-icons.iife.js"></script>
 ```
 
 ```
 <ma-icon
-    name="top-right"
-    secondary=""
+    name="info-topright"
     size="16"
     weight="5"
     color="hsl(0deg 0% 0%)"
