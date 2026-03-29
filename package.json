@@ -1,6 +1,6 @@
 {
   "name": "ma-icons",
-  "version": "0.14.3",
+  "version": "0.14.5",
   "description": "Ma Icons by Taavi Rübenhagen",
   "type": "module",
   "main": "./dist/ma-icons.js",
@@ -15,8 +15,7 @@
     "icons"
   ],
   "scripts": {
-    "update": "bun run src/update.ts",
-    "github": "git pull origin main && git add . && git commit -m 'Untitled' && git push",
+    "github": "git pull origin main && git add . && git commit -m 'minor changes' && git push",
     "deploy": "bun x vite build && npm publish && bun run github"
   },
   "author": "Taavi Rübenhagen",
