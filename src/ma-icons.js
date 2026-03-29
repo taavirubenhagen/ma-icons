@@ -17,7 +17,7 @@ class MaIcon extends HTMLElement {
     this.size = this.getAttribute("size") ?? "16";
     this.weight = this.getAttribute("weight") ?? "5";
     this.style.display = "inline-block";
-    this.style.width = `${this.size}px`;
+    //this.style.width = `${this.size}px`;
     this.innerHTML = (await this.icon(false))?.outerHTML ?? "error";
   }
 
