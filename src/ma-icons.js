@@ -12,15 +12,12 @@ class MaIcon extends HTMLElement {
   }
 
   async render() {
-    const span = document.createElement("span");
-    span.style.display = "inline-block";
-    span.style.width = `${this.getAttribute("size") ?? "16"}px`;
-    this.innerHTML = span.outerHTML;
     this.name = this.getAttribute("name") ?? "topright";
     this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)";
     this.size = this.getAttribute("size") ?? "16";
     this.weight = this.getAttribute("weight") ?? "5";
     this.style.display = "inline-block";
+    this.style.width = `${this.size}px`;
     this.innerHTML = (await this.icon(false))?.outerHTML ?? "error";
   }
 
