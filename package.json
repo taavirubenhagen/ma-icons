@@ -1,6 +1,6 @@
 {
   "name": "ma-icons",
-  "version": "0.14.5",
+  "version": "0.14.6",
   "description": "Ma Icons by Taavi Rübenhagen",
   "type": "module",
   "main": "./dist/ma-icons.js",

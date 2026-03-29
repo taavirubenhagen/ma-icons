@@ -12,7 +12,7 @@ class MaIcon extends HTMLElement {
   }
 
   async render() {
-    this.innerHTML = `<span style="display: inline-block; width: ${this.getAttribute("size") ?? "16"}"></span>`;
+    this.innerHTML = `<span style="display: inline-block; width: ${this.getAttribute("size") ?? "16"}"></span>`.outerHTML;
     this.name = this.getAttribute("name") ?? "topright";
     this.color = this.getAttribute("color") ?? "hsl(0deg 0% 0%)";
     this.size = this.getAttribute("size") ?? "16";
